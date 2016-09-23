@@ -1,0 +1,13 @@
+<h3> Maintenance Minder </h3>
+
+<% if user_signed_in? %>
+
+	<h5> Choose your Manufacture below </h5>
+
+	<p> show list of manufactures from edmunds api as a link to the model/year/mileage page.<p>
+<% else %>
+
+<%= link_to "Log In", new_user_session_path %>
+<%= link_to "Sign Up", new_user_registration_path %>
+
+<% end %>
