@@ -4,9 +4,13 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  has_many :cars
+  has_attached_file :avatar, styles: { medium: "50x50>", thumb: "50x50>"  }, default_url:  "/images/car.png"
+
+  validates_attachment_content_type :avatar, content_type: /\Aimage\/.*\z/
+  validates_with AttachmentSizeValidator, attributes: :avatar, less_than: 1.megabytes
 
   validates :name,     presence: true
-  validates :email,    presence: true
-  validates :password, presence: true
+ 
+
+  has_many :cars
 end
