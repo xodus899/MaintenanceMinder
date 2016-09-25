@@ -1,14 +1,14 @@
 Rails.application.configure do
 
 # Amazon S3 settings for Paperclip uploads
-config.paperclip_defaults = {
-    :storage => :s3,
-    :s3_credentials => {
-      :bucket => 'maintenaceminder', 
-      :access_key_id => ENV['AWS_ACCESS_KEY'],
-      :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
-    }
-  }
+# config.paperclip_defaults = {
+#     :storage => :s3,
+#     :s3_credentials => {
+#       :bucket => 'maintenaceminder', 
+#       :access_key_id => ENV['AWS_ACCESS_KEY'],
+#       :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
+#     }
+#   }
 
  
   # Settings specified here will take precedence over those in config/application.rb.
