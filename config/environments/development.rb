@@ -6,7 +6,7 @@ Rails.application.configure do
     :storage => :s3,
     :s3_credentials => {
       :bucket => 'maintenaceminder',
-      :s3_credentials => "#{Rails.root}/config/aws.yml",
+      # :s3_credentials => "#{Rails.root}/config/aws.yml",
     }
   }
 
