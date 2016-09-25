@@ -3,9 +3,9 @@ gem 'devise'
 
 gem "paperclip", "~> 5.0.0"
 
-gem 'aws-sdk'
+gem 'aws-sdk', '< 2.0'
 
-gem 'aws-s3'
+
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
