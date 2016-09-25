@@ -185,6 +185,7 @@ PLATFORMS
 
 DEPENDENCIES
   aws-sdk (< 2.0)
+  aws-sdk-v1
   byebug
   coffee-rails (~> 4.2)
   devise
