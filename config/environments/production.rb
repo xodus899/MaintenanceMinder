@@ -4,9 +4,9 @@ Rails.application.configure do
   config.paperclip_defaults = {
   storage: :s3,
   s3_credentials: {
-    bucket: ENV.fetch(maintenaceminder),
-    access_key_id: ENV.fetch(AKIAIVFBIPOFPAU7OGKA),
-    secret_access_key: ENV.fetch(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),
+    bucket: ENV.fetch("maintenaceminder"),
+    access_key_id: ENV.fetch("AKIAIVFBIPOFPAU7OGKA"),
+    secret_access_key: ENV.fetch("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"),
     s3_region: ENV.fetch(Us-Standard),
   }
 }
