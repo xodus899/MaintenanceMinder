@@ -6,6 +6,8 @@ gem "paperclip", "~> 5.0.0"
 gem 'aws-sdk', '< 2.0'
 gem 'aws-sdk-v1'
 
+gem 'edmunds_ruby'
+
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

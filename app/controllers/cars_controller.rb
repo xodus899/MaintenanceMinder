@@ -3,7 +3,7 @@ class CarsController < ApplicationController
 	render :home
 	end
 
-	def index
-		render :index
+	def show
+		render :show
 	end
 end

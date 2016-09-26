@@ -1,15 +1,19 @@
-<h3> Maintenance Minder </h3>
 
-<% if user_signed_in? %>
+<h2> Maintenance Minder </h2>
+
+	<h3><em> Input your Automobile Information </em></h3>
+
+	<p> use search field to submit to the api,redirect to another page with vehicle result/service intervals... bottom of the page should include recall link.<p>
+
+<form > 
+		<input class= "js-search-field" type= "text" placeholder= "Year  of Automobile"> 
+		<input class= "js-search-field" type= "text" placeholder= "Make  of Automobile">
+		<input class= "js-search-field" type= "text" placeholder= "Model of Automobile">
+		
+			<button class= "js-search-button"> Find Automobile </button>
+	</form>
 
 
-	<h5> Choose your Manufacture below </h5>
+	<ul class = "js-auto-makes"> 
 
-	<p> show list of manufactures from edmunds api as a link to the model/year/mileage page.<p>
-	
-<% else %>
-
-<%= link_to "Log In", new_user_session_path %>
-<%= link_to "Sign Up", new_user_registration_path %>
-
-<% end %>
+	</ul>
