@@ -1,8 +1,8 @@
 console.log("Lets find a car.")
 
 $(document).ready(function () {
-
 	$(".js-search-button").on("click",findCar);
+
 });
 	function findCar(theCar){
 
@@ -93,24 +93,21 @@ var carId
 function showService(theService){
 	console.log("ALL SERVICE INTERVALS FROM THE SEARCH BAR",theService);
 
+
+$(".js-auto-list").empty();
 var allServices = theService.actionHolder
 	console.log("All SERVICES",allServices)
 
 var actionForService = allServices.action
 	console.log("SERVICE SELECTED",actionForService)
 
-
-
-
-var newAllServices = allServices.concat();
-	console.log(newAllServices)
-
-var acceptedActions = [{action:'Inspect/rotate', item:'Wheels & tires'},{action:'Flush / replace', item:'Coolant'},
-											 {action:'Flush / replace', item:'Brake Fluid'},{action:'Inspect ', item:'Drive belt(s)'},
+var acceptedActions = [{action:'Change', item:'Engine Oil'},{action:'Change', item:'Automatic Transmission fluid'},
+											 {action:'Replace ', item:'Automatic Transmission filter'},{action:'Replace', item:'Air filter'},
+											 {action:'Replace', item:'Spark Plugs'},{action:'Replace', item:'Cabin Air filter'},
+											 {action:'Flush / replace', item:'Coolant'},{action:'Flush / replace', item:'Brake Fluid'},
+											 {action:'Inspect ', item:'Drive belt(s)'},{action:'Inspect/rotate', item:'Wheels & tires'},
 											 {action:'Inspect', item:'Brake system'},{action:'Inspect', item:'Steering & suspension'},
-											 {action:'Replace', item:'Air filter'},{action:'Replace', item:'Spark Plugs'},
-											 {action:'Change', item:'Automatic Transmission fluid'},{action:'Replace ', item:'Automatic Transmission filter'},
-											 {action:'Replace', item:'Cabin Air filter'},{action:'Inspect', item:'Brakes'},]
+											 {action:'Inspect', item:'Brakes'},]
 
 acceptedActions.forEach(function (acceptedService) {
 	allServices.forEach(function (oneService) {
@@ -119,12 +116,51 @@ acceptedActions.forEach(function (acceptedService) {
 				oneService.item.toLowerCase() == acceptedService.item.toLowerCase()) {
 					console.log("FOUND ONE");
 						console.log(oneService);
+	
+			var addToMaintenanceList = `
+			
+				<h5> Maintenance Intervals </h5>
+				<li> 
+					
+							${oneService.action}: ${oneService.item} <br>
+							Every: ${oneService.intervalMileage} Miles <br>
+							Item Description: ${oneService.itemDescription}<br>
+							Time to Complete: ${oneService.laborUnits} Hour(s)<br>
+							Qty Needed: ${oneService.partUnits}<br>
+							Part Cost $ ${oneService.partCostPerUnit}<br>
+					</li>
+
+						`;
+						$(".js-auto-list").append(addToMaintenanceList);
+
+						automobileRecalls(carId);			
 		}
 	});
 });
+function automobileRecalls(theRecalls){
+		// carId = carYear.id
+		// var carId 
+			$.ajax ({ 
+				type: "get",
+			// url for all service intervals a single car from the search
+				url: `https://api.edmunds.com/v1/api/maintenance/recallrepository/findbymodelyearid?modelyearid=${carId}&fmt=json&api_key=tcd64uafxynpwvkeyaxv56qt`, 
+			// success is what you name the next function/action from the ajax url request.this shows the results. without it nothing will appear
+				success: showRecalls,
+			// // error, name of error function when something doesnt work.
+				// error: dreadedError 
+			});
+	}
+	function showRecalls(theRecall){
+	console.log("ALL RECALLS FOR CURRENT CAR",theRecall);
+
+	}
+
+
+
 
 
 }
+
 
 
 
