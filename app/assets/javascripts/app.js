@@ -3,10 +3,7 @@ console.log("Lets find a car.")
 $(document).ready(function () {
 
 	$(".js-search-button").on("click",findCar);
-	
-
 });
-
 	function findCar(theCar){
 
 		// take the parameter name/this causes the page to not refresh.
@@ -33,7 +30,7 @@ $(document).ready(function () {
 		console.log("Vroooooom!");
 	}
 
-
+var carId
 	function loadCar (response) {
 		// these variables are equal to the class set in the home.html.erb  input class field.
 		var theYear = $(".js-search-year").val();
@@ -62,32 +59,66 @@ $(document).ready(function () {
 						carYears.forEach(function(carYear){
 						  if (carYear.year == theYear) {
 						 		console.log("ONE YEAR",carYear);
+					 		 carId = carYear.id
 					 		}
+					 		// shows the id for the single car from search
+								console.log("CAR ID FOR THE CAR YEAR!", carId)
+							// this defines serviceintervals/carid for the maintenance request.
+								serviceIntervals(carId);
 					 });
 					}
 				})	 	 		
 			}
 		});
-	 			
-
-
-		
-
-
-		
-
-
-		// var addCar = `
-		// 				<li>
-		// 					<h5> ${theCar.makes}  
-		// 					</h5> 
-		// 				</li>
-		// 			`;
-		// 		})
-		// 			$(".js-auto-list").html(addCar);
-		 }
-
-
+	}
+	// shows error message if page doesnt load correctly.
 	function dreadedError (error) {
 		console.log(error.responseText);
 	}
+	// function defined for second ajax request to link service intervals for the car.  NEED REDIRECT TO ANOTHER PAGE AND SHOW RESULTS AFTER SUBMISSION
+	function serviceIntervals(theId){
+		// carId = carYear.id
+		// var carId 
+			$.ajax ({ 
+				type: "get",
+			// url for all service intervals a single car from the search
+				url: `https://api.edmunds.com/v1/api/maintenance/actionrepository/findbymodelyearid?modelyearid=${carId}&fmt=json&api_key=tcd64uafxynpwvkeyaxv56qt`, 
+			// success is what you name the next function/action from the ajax url request.this shows the results. without it nothing will appear
+				success: showService,
+			// // error, name of error function when something doesnt work.
+				// error: dreadedError 
+			});
+	}
+
+function showService(response){
+
+	console.log("ALL SERVICE INTERVALS FROM THE SEARCH BAR",response);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// fix ajax link for tomorrow (tuesday) ... for the api maintenance record above.!
+
+
+
+
+
+
+
+
+
+
+
