@@ -12,9 +12,9 @@ $(document).ready(function () {
 		console.log("Did you find the car?");
 
 		// to my understanding use the class created for input field and .val to grab the information inputted.
-		var theYear = $(".js-search-year").val();
-		var theMake = $(".js-search-make").val();
-		var theModel = $(".js-search-model").val();
+		// var theYear = $(".js-search-year").val();
+		// var theMake = $(".js-search-make").val();
+		// var theModel = $(".js-search-model").val();
 
 		console.log("WORKING???");
 		$.ajax ({ 
@@ -60,11 +60,11 @@ var carId
 						  if (carYear.year == theYear) {
 						 		console.log("ONE YEAR",carYear);
 					 		 carId = carYear.id
-					 		}
-					 		// shows the id for the single car from search
+								// shows the id for the single car from search
 								console.log("CAR ID FOR THE CAR YEAR!", carId)
-							// this defines serviceintervals/carid for the maintenance request.
+								// this defines serviceintervals/carid for the maintenance request.
 								serviceIntervals(carId);
+					 		}
 					 });
 					}
 				})	 	 		
@@ -90,9 +90,39 @@ var carId
 			});
 	}
 
-function showService(response){
+function showService(theService){
+	console.log("ALL SERVICE INTERVALS FROM THE SEARCH BAR",theService);
 
-	console.log("ALL SERVICE INTERVALS FROM THE SEARCH BAR",response);
+var allServices = theService.actionHolder
+	console.log("All SERVICES",allServices)
+
+var actionForService = allServices.action
+	console.log("SERVICE SELECTED",actionForService)
+
+
+
+
+var newAllServices = allServices.concat();
+	console.log(newAllServices)
+
+var acceptedActions = [{action:'Inspect/rotate', item:'Wheels & tires'},{action:'Flush / replace', item:'Coolant'},
+											 {action:'Flush / replace', item:'Brake Fluid'},{action:'Inspect ', item:'Drive belt(s)'},
+											 {action:'Inspect', item:'Brake system'},{action:'Inspect', item:'Steering & suspension'},
+											 {action:'Replace', item:'Air filter'},{action:'Replace', item:'Spark Plugs'},
+											 {action:'Change', item:'Automatic Transmission fluid'},{action:'Replace ', item:'Automatic Transmission filter'},
+											 {action:'Replace', item:'Cabin Air filter'},{action:'Inspect', item:'Brakes'},]
+
+acceptedActions.forEach(function (acceptedService) {
+	allServices.forEach(function (oneService) {
+
+		if (oneService.action.toLowerCase() == acceptedService.action.toLowerCase() &&
+				oneService.item.toLowerCase() == acceptedService.item.toLowerCase()) {
+					console.log("FOUND ONE");
+						console.log(oneService);
+		}
+	});
+});
+
 
 }
 
@@ -100,17 +130,6 @@ function showService(response){
 
 
 
-
-
-
-
-
-
-
-
-
-
-// fix ajax link for tomorrow (tuesday) ... for the api maintenance record above.!
 
 
 
