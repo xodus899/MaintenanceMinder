@@ -33,9 +33,10 @@ $(document).on("turbolinks:load", function () {
 var carId
 	function loadCar (response) {
 		// these variables are equal to the class set in the home.html.erb  input class field.
-		var theYear = $(".js-search-year").val();
-		var theMake = $(".js-search-make").val();
-		var theModel = $(".js-search-model").val();
+		var theYear    = $(".js-search-year").val();
+		var theMake    = $(".js-search-make").val();
+		var theModel   = $(".js-search-model").val();
+		
 
 		console.log("RESPONSE", response)
 		// this returns all makes of cars.
@@ -59,7 +60,7 @@ var carId
 						carYears.forEach(function(carYear){
 						  if (carYear.year == theYear) {
 						 		console.log("ONE YEAR",carYear);
-					 		 carId = carYear.id
+					 		  carId = carYear.id
 								// shows the id for the single car from search
 								console.log("CAR ID FOR THE CAR YEAR!", carId)
 								// this defines serviceintervals/carid for the maintenance request.
@@ -95,10 +96,13 @@ function showService(theService){
 
 
 $(".js-auto-list").empty();
+var theMileage = $(".js-search-mileage").val();
 var allServices = theService.actionHolder
 	console.log("All SERVICES",allServices)
 
 var actionForService = allServices.action
+// var milageinterval = allServices.intervalmilage
+// 	console.log("MILEAGE FOUND???", milageinterval)
 	console.log("SERVICE SELECTED",actionForService)
 
 var acceptedActions = [{action:'Change', item:'Engine Oil'},{action:'Change', item:'Automatic Transmission fluid'},
@@ -121,7 +125,6 @@ acceptedActions.forEach(function (acceptedService) {
 			
 				<h5> Maintenance Intervals </h5>
 				<li> 
-					
 							${oneService.action}: ${oneService.item} <br>
 							Every: ${oneService.intervalMileage} Miles <br>
 							Item Description: ${oneService.itemDescription}<br>
@@ -132,15 +135,13 @@ acceptedActions.forEach(function (acceptedService) {
 
 						`;
 						$(".js-auto-list").append(addToMaintenanceList);
-						
 
 						automobileRecalls(carId);			
 		}
 	});
 });
+
 function automobileRecalls(theRecalls){
-		// carId = carYear.id
-		// var carId 
 			$.ajax ({ 
 				type: "get",
 			// url for all service intervals a single car from the search
@@ -162,19 +163,16 @@ function automobileRecalls(theRecalls){
 
 			var recallList = ` 
 				<h5> Recalls for Current Vehicle Selected </h5>
-
 				<li> 
 							Defective Part: 											${recall.componentDescription}<br>
 							Description of defect: 								${recall.defectDescription}<br>
 							Possible Consequense if not repaired: ${recall.consequense}<br>
 							Automobile Manufactured From: 				${recall.manufacturedFrom}<br>
-							Automobile Manufactured To: 					${recall.manufacturedTo}<br>
-							
+							Automobile Manufactured To: 					${recall.manufacturedTo}<br>			
 				</li>
 			`;
 
 			$(".js-auto-recalls").append(recallList);
-	
 		})
 	}
 }
