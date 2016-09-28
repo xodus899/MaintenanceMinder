@@ -1,6 +1,6 @@
 console.log("Lets find a car.")
 
-$(document).on(turbolinks:load,function () {
+$(document).on("turbolinks:load", function () {
 	$(".js-search-button").on("click",findCar);
 
 });

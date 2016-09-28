@@ -8,7 +8,7 @@ gem 'aws-sdk-v1'
 
 gem 'edmunds_ruby'
 
-gem 'sprockets-es6', require: "sprockets/es6"
+gem "sprockets-es6", require: "sprockets/es6"
 
 
 
