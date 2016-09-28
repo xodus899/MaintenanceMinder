@@ -132,6 +132,7 @@ acceptedActions.forEach(function (acceptedService) {
 
 						`;
 						$(".js-auto-list").append(addToMaintenanceList);
+						
 
 						automobileRecalls(carId);			
 		}
@@ -151,14 +152,31 @@ function automobileRecalls(theRecalls){
 			});
 	}
 	function showRecalls(theRecall){
+		// show all recalls for current car selection
 	console.log("ALL RECALLS FOR CURRENT CAR",theRecall);
 
+	var carRecalls = theRecall.recallHolder
+		carRecalls.forEach(function(recall) {
+	// display all recalls available for the car.
+			console.log("FOUND ALL AVAILABLE RECALLS",recall)
+
+			var recallList = ` 
+				<h5> Recalls for Current Vehicle Selected </h5>
+
+				<li> 
+							Defective Part: 											${recall.componentDescription}<br>
+							Description of defect: 								${recall.defectDescription}<br>
+							Possible Consequense if not repaired: ${recall.consequense}<br>
+							Automobile Manufactured From: 				${recall.manufacturedFrom}<br>
+							Automobile Manufactured To: 					${recall.manufacturedTo}<br>
+							
+				</li>
+			`;
+
+			$(".js-auto-recalls").append(recallList);
+	
+		})
 	}
-
-
-
-
-
 }
 
 

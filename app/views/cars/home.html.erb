@@ -10,18 +10,68 @@
 		<input class= "js-search-make" type= "text" placeholder= "Make  of Automobile">
 		<input class= "js-search-model" type= "text" placeholder= "Model of Automobile">
 		
-			<button class= "js-search-button" > Find Automobile </button>
+			<button class= "js-search-button" data-toggle="modal" data-target="#myModal" > Find Automobile </button>
 	</form>
 
-		<div>
-			<ul class = "js-auto-list"> 
-			 </ul> 
-		</div>
-		<div>
+	
+<!-- 	<div id = "myModal1">
 			<ul class = "js-auto-recalls">
 				
 			</ul>
+		</div> -->
+
+
+<!-- first modal for service intervals -->
+<div class="modal fade" id = "myModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title"><button class= "js-search-button" data-toggle="modal" data-target="#myModal1" > CLick To See Available Recalls </button></h4>
+      </div>
+      <div class="modal-body">
+      	<div>
+			<ul class = "js-auto-list"> 
+			 </ul> 
 		</div>
+		</div>
+	
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- second modal for recalls -->
+<div class="modal fade" id = "myModal1" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title"><button class= "js-search-button" data-toggle="modal" data-target="#myModal1" > CLick To See Available Recalls </button></h4>
+      </div>
+      <div class="modal-body">
+    		<div >
+					<ul class = "js-auto-recalls">
+				</ul>
+			</div>
+		</div>
+	
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+
 
 
 

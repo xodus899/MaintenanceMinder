@@ -7,6 +7,10 @@ class UsersController < ApplicationController
 	end
 
 	def create
+		@user = User.new
+			if @user.save
+					Welcomeailer.welcome_email(@user).deliver_now
+		else 
 	  @user = current_user
 	  @user.update(user_params)
 
@@ -22,6 +26,7 @@ class UsersController < ApplicationController
 	 	#render 'image'
 
 	end
+end
 
 private
 
