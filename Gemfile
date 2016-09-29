@@ -3,8 +3,8 @@ gem 'devise'
 # upload picutres
 gem "paperclip", "~> 5.0.0"
 # amazon s3 web services
-gem 'aws-sdk', '< 2.0'
-gem 'aws-sdk-v1'
+gem 'aws-sdk', '~> 2.3'
+
 # edmunds api gem
 gem 'edmunds_ruby'
 # sproeckets for es6 and heroku
