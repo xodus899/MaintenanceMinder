@@ -9,7 +9,8 @@ gem 'aws-sdk-v1'
 gem 'edmunds_ruby'
 # sproeckets for es6 and heroku
 gem "sprockets-es6", require: "sprockets/es6"
-
+# hides secret information
+gem "figaro"
 
 
 
