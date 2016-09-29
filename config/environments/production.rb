@@ -6,7 +6,8 @@ config.paperclip_defaults = {
     :s3_credentials => {
       :bucket => ENV.fetch('bucket_name'), 
       :access_key_id => ENV.fetch('access_key_id'),
-      :secret_access_key => ENV.fetch('secret_access_key')
+      :secret_access_key => ENV.fetch('secret_access_key'),
+      :s3_region => ENV.fetch('region')
     }
   }
 
