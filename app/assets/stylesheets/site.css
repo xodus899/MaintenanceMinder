@@ -1,0 +1,15 @@
+
+body {
+background-image: url("/assets/car.jpg");
+background-size: cover;
+height: 100%;
+width: 100%;
+}
+
+h1 {
+	font-style: italic;
+	text-align: center;
+	padding-top: 100px;
+	padding-right: 30px;
+}
+

@@ -2,12 +2,15 @@ Rails.application.routes.draw do
 
   devise_for :users
 
-	root to: "cars#home"
+	root to: "pages#home"
 
-	resources :cars, except:[:show,:edit,:new,:index,:create,:show,:update,:destroy]
+	resources :cars, except:[:edit,:new,:index,:create,:show,:update,:destroy]
 
-	get "/upload", to: "users#new"
-	post "/upload", to: "users#create", as: :new_avatar
+	resources :pages, except:[:show,:edit,:new,:index,:create,:show,:update,:destroy]
+
+	get "/carsearch", to: "cars#show" 
+	get "/upload",    to: "users#new"
+	post "/upload",   to: "users#create", as: :new_avatar
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
 

@@ -1,29 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html>
-  <head>
-     <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <%= csrf_meta_tags %>
+<body id="page-top">
 
-          <title>MaintenanceMinder</title>
-
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>    
-          <link rel="stylesheet" type="text/css" href="googlemaps.css">
-          <link rel="stylesheet" type="text/css" href= "../../assets/stylesheets/site.css">
-              <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-              <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-              
- 
-
-
-
-
-  <body>
-
-
-
-<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -41,7 +21,6 @@
                     </li>
                     <li>
                         <a class="page-scroll" href="/users/sign_up">Sign Up</a>
-   
                     </li>
                     <li>
                 </ul>
@@ -50,13 +29,19 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-  
 
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">Maintenance Minder</h1>
+                
+                <p>Helping you find Service Intervals and Recall Information</p>
+                <a href="/carsearch" class="btn btn-danger btn-xl page-scroll">Click to Search</a>
+            </div>
+        </div>
+    </header>
 
+   
+</body>
 
-
-
-
-    <%= yield %>
-  </body>
 </html>
