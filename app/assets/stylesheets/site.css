@@ -1,6 +1,6 @@
 
 body {
-background-image: url("/assets/car.jpg");
+background-image: url("https://s3.amazonaws.com/maintenanceminder/car.jpg");
 background-size: cover;
 height: 100%;
 width: 100%;
