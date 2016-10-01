@@ -8,19 +8,77 @@ width: 100%;
 }
 
 h1 {
-	font-style: italic;
-	text-align: center;
-	padding-top: 100px;
-	padding-right: 30px;
+font-style: italic;
+text-align: center;
+padding-top: 100px;
+padding-right: 30px;
 }
+
+h2 {
+color: white;
+text-align: center;
+text-shadow: 2px 2px 2px black;
+
+}
+
 
 
 
 /*``````````````````````````````````````````````````*/
 /*show page for the search.*/
 .searchPage {
-background-image: url("https://static.pexels.com/photos/2400/black-and-white-cars-traffic-vehicles-large.jpg")
+background-image: url("https://s3.amazonaws.com/maintenanceminder/wrench.jpg");
 height: 100%;
 width: 100%;
 }
+
+/*``````````````````````````````````````````````````*/
+/*log in page*/
+.logIn {
+background-image: url("https://s3.amazonaws.com/maintenanceminder/login1.jpg");
+background-size: cover;
+height: 100vh;
+text-align: center;
+/*color: white;*/
+}
+.btn-color {
+color: black;
+background-color: #80858e;
+width: 152px;
+}
+.login_name {
+color: white;
+text-shadow:  2px 2px 3px black;
+}
+
+/*``````````````````````````````````````````````````*/
+/*sign up page*/
+
+.signUp {
+background-image: url("https://s3.amazonaws.com/maintenanceminder/signup.jpg");
+background-size: cover;
+height: 100vh;
+text-align: center;
+
+}
+.btn-color {
+color: black;
+background-color: #80858e;
+width: 152px;
+}
+
+.email {
+color: black;
+}
+
+.signup_name {
+color: white;
+text-shadow:  2px 2px 3px black;
+}
+.minchar {
+color: white;
+text-shadow:  2px 2px 3px black;
+
+}
+
 

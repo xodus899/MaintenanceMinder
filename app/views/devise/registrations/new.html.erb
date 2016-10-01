@@ -1,35 +1,34 @@
+<div class= "signUp"><br><br>
 <h2>Sign up</h2>
-
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
   <div class="field">
-    <%= f.label :name %><br />
+    <%= f.label :name, :class => "signup_name" %><br />
     <%= f.text_field :name, autofocus: true %>
   </div>
 
   <div class="field">
-    <%= f.label :email %><br />
+    <%= f.label :email, :class => "signup_name" %><br />
     <%= f.email_field :email %>
   </div>
 
   <div class="field">
-    <%= f.label :password %>
+    <%= f.label :password, :class => "signup_name" %>
     <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <div class= "minchar"><em>(<%= @minimum_password_length %> characters minimum)</em><div>
     <% end %><br />
     <%= f.password_field :password, autocomplete: "off" %>
   </div>
 
   <div class="field">
-    <%= f.label :password_confirmation %><br />
+    <%= f.label :password_confirmation, :class => "signup_name" %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
+  <div class="actions"><br>
+    <%= f.submit "Sign up", :class => "btn-color" %>
   </div>
 <% end %>
-
-
 <%= render "devise/shared/links" %>
+</div>
