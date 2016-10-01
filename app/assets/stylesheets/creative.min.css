@@ -60,9 +60,25 @@ header{
 	color: red;
 	font-weight:700;
 }
+h1 {
+	text-shadow: 3px 2px 2px black;
+}
+
+p {
+	text-shadow: 3px 2px 2px black;
+
+}
 
 /*button size*/
-.btn{border:none;border-radius:400px;font-weight:700;text-transform:uppercase}
+.btn {
+	border:none;
+	border-radius:500px;
+	font-weight:700;
+	text-transform:uppercase;
+	 box-shadow: 0 8px 16px 0 rgba(0,0,0,1), 0px 10px 20px 0 rgba(0,0,0,1);
+
+}
+
 
 
 

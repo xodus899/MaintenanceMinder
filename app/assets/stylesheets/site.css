@@ -1,5 +1,6 @@
 
-body {
+/*homepage*/
+.home {
 background-image: url("https://s3.amazonaws.com/maintenanceminder/car.jpg");
 background-size: cover;
 height: 100%;
@@ -11,5 +12,15 @@ h1 {
 	text-align: center;
 	padding-top: 100px;
 	padding-right: 30px;
+}
+
+
+
+/*``````````````````````````````````````````````````*/
+/*show page for the search.*/
+.searchPage {
+background-image: url("https://static.pexels.com/photos/2400/black-and-white-cars-traffic-vehicles-large.jpg")
+height: 100%;
+width: 100%;
 }
 
