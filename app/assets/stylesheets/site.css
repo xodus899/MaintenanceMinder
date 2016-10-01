@@ -78,7 +78,7 @@ text-shadow:  2px 2px 3px black;
 /*sign up page*/
 
 .signUp {
-background-image: url("https://s3.amazonaws.com/maintenanceminder/signup.jpg");
+background-image: url("https://s3.amazonaws.com/maintenanceminder/newSignUp.jpg");
 background-size: cover;
 height: 100vh;
 text-align: center;
