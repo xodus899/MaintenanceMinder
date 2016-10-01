@@ -24,12 +24,15 @@ text-shadow: 2px 2px 2px black;
 /*``````````````````````````````````````````````````*/
 /*nav bar logo*/
 .logo {
-position: absolute;
-background: url("/assets/logo.png");
-max-height: 40px;
+position: relative;
+background: url("https://s3.amazonaws.com/maintenanceminder/logo1.png");
 overflow: visible;
 padding-top: 0;
 padding-bottom: 0;
+height:49px;
+width:50px;
+right:570px;
+
 
 
 
