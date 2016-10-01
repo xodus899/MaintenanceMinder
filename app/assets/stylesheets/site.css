@@ -31,6 +31,16 @@ background-image: url("https://s3.amazonaws.com/maintenanceminder/wrench.jpg");
 height: 100%;
 width: 100%;
 }
+.searchForm {
+text-align: center;
+text-shadow: 2px 2px 2px black;
+padding-left: 52px;
+}
+.searchTitle {  
+text-align: center;
+text-shadow: 2px 2px 2px black;
+color: #D3D3D3;
+}
 
 /*``````````````````````````````````````````````````*/
 /*log in page*/
