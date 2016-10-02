@@ -2,81 +2,15 @@
 * Start Bootstrap - Creative v3.3.7+1 (http://startbootstrap.com/template-overviews/creative)
 * Copyright 2013-2016 Start Bootstrap
 * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
-*/
-/*.navbar-default,a{-webkit-transition:all .35s;-moz-transition:all .35s}*/
 
 
-/*centers title and button*/
-.header-content{
-position:relative;
-width:100%;
-text-align:center
 
-}
 
-/*nav bar buttons link size*/
-.navbar-default .nav>li>a,
-a:focus{
-text-transform:uppercase;
-font-weight:700;
-font-size:13px;
-}
 
-header{
-min-height:auto;
--webkit-background-size:cover;
--moz-background-size:cover;
-background-size:cover;
--o-background-size:cover;
-background-position:center;
-}
 
-header 
-.header-content-inner h1{
-font-weight:700;
-text-transform:uppercase
-;margin-top:0;
-margin-bottom:0;
-margin:25px auto;
-}
 
-header 
-.header-content-inner h1{
-font-size:80px;
-}
 
-header 
-.header-content-inner p{
-font-size:45px;
-margin-left:auto;margin-right:auto;
-color:white;
 
-}
-
-header{
-	position: relative;
-	bottom: -20px;
-	color: red;
-	font-weight:700;
-}
-h1 {
-	text-shadow: 3px 2px 2px black;
-}
-
-p {
-	text-shadow: 3px 2px 2px black;
-
-}
-
-/*button size*/
-.btn {
-	border:none;
-	border-radius:500px;
-	font-weight:700;
-	text-transform:uppercase;
-	 box-shadow: 0 8px 16px 0 rgba(0,0,0,1), 0px 10px 20px 0 rgba(0,0,0,1);
-
-}
 
 
 

@@ -4,7 +4,7 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  has_attached_file :avatar, styles: { medium: "50x50>", thumb: "50x50>"  }, default_url:  "/images/car.png"
+  has_attached_file :avatar, styles: { thumb: "50x50>" }, default_url:  "/images/car.png"
 
   validates_attachment_content_type :avatar, content_type: /\Aimage\/.*\z/
   validates_with AttachmentSizeValidator, attributes: :avatar, less_than: 1.megabytes

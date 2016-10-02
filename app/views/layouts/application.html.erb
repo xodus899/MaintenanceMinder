@@ -9,46 +9,62 @@
           <title>MaintenanceMinder</title>
 
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>    
-          <link rel="stylesheet" type="text/css" href="googlemaps.css">
           <link rel="stylesheet" type="text/css" href= "../../assets/stylesheets/site.css">
               <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
               <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-              
- 
-
-
-
-
+  </head>
   <body>
 
-<nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <a class="navbar-brand page-scroll" href="/">Home</a>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                      <a class="logo"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="/users/sign_in">Log In</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="/users/sign_up">Sign Up</a>
-   
-                    </li>
-                    <li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+
+    <div class="container-fluid">
+    <!-- column for home link -->
+      <div class= "col-xs-4 homeLink">
+        <div class="navbar-header">
+          <a class="navbar-brand page-scroll" href="/">Home</a>
         </div>
-        <!-- /.container-fluid -->
-    </nav>
-    <%if user_signed_in? %>
-    <%= render "navbar_shared/navbar" %>
-    <% end %> -->
-    <%= yield %>
+      </div>
+
+      <!-- column for logo -->
+      <div class="col-xs-4 logo">
+        <div class="collapse navbar-collapse">
+        </div>
+      </div>
+
+      <!-- column for log in etc links -->
+      <div class="col-xs-4 links">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <% if current_user %>
+            
+              <a class= "userName" href = "/users/edit" <h5> Hello, <%= current_user.name %> ! </h5> </a>
+              <li class = "avatar"> 
+                <%=image_tag current_user.avatar.url(:thumb) %> 
+              </li>
+            <% end %>
+          </li>
+          <li class= "navLogoutLink">
+            <% if current_user %>
+              <%= link_to "Log Out", destroy_user_session_path, :method => :delete %> 
+          </li>
+            <% end %>
+          <% unless current_user %>
+          <li class= "navLogIn">
+            <%= link_to "Log In", user_session_path %>
+          </li>
+          <li class= "navSignUp">
+            <%= link_to "Sign Up", new_user_registration_path %> 
+          </li>
+            <% end %>
+        </ul>
+      </div>
+      </div>
+      <!-- /.container-fluid -->
+      </nav>
+      <br>
+    <%=yield %>
+
   </body>
 </html>
+
+

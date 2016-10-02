@@ -1,18 +1,34 @@
 
 /*homepage*/
+
 .home {
 background-image: url("https://s3.amazonaws.com/maintenanceminder/car.jpg");
 background-size: cover;
 height: 100%;
 width: 100%;
+
 }
 
+/*title*/
 h1 {
 font-style: italic;
 text-align: center;
 padding-top: 100px;
 padding-right: 30px;
+text-shadow: 3px 2px 2px black;
+position: relative;
+bottom: -20px;
+color: red;
+font-weight:700;
+font-size:80px;
+text-transform:uppercase;
+margin-top:0;
+margin-bottom:0;
+margin:25px auto;
+
 }
+
+
 
 h2 {
 color: white;
@@ -21,9 +37,129 @@ text-shadow: 2px 2px 2px black;
 
 }
 
+.btn {
+  border:none;
+  border-radius:500px;
+  font-weight:700;
+  text-transform:uppercase;
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,1), 0px 10px 20px 0 rgba(0,0,0,1);
+
+}
+.header-content{
+
+text-align:center
+
+}
+
+/*text under the title*/
+.about {
+position:relative;
+text-align:center;
+font-size:45px;
+width:100%;
+margin-left:auto;margin-right:auto;
+color:white;
+text-shadow: 3px 2px 2px black;
+
+}
+
 /*``````````````````````````````````````````````````*/
-/*nav bar logo*/
+/*user profile edit page */
+
+.edit {
+  text-align: center;
+  right:40px;
+
+}
+
+.editBackground {
+  background-image: url(https://s3.amazonaws.com/maintenanceminder/forgot.jpeg);
+  background-size: cover;
+
+}
+
+.cancelACC {
+  color: white;
+  text-shadow: 3px 2px 2px black;
+}
+
+.password {
+  color:white;
+  text-shadow: 3px 2px 2px black;
+}
+
+.eField {
+  color: white;
+  text-shadow: 3px 2px 2px black;
+
+}
+
+.upload {
+  color: white;
+  text-shadow: 3px 2px 2px black;
+}
+
+.button {
+  color: black;
+}
+
+/*``````````````````````````````````````````````````*/
+/* forgot password page */
+
+.forgot {
+  background-image: url(https://s3.amazonaws.com/maintenanceminder/forgot.jpeg);
+  background-size: cover;
+
+}
+
+/*``````````````````````````````````````````````````*/
+/*nav bar */
+
+.navLogIn {
+  left:420px;
+}
+
+.navSignUp {
+  left:420px;
+}
+
+.navLogoutLink {
+  left:425px;
+}
+
+.avatar {
+  display: inline-block;
+position: relative;
+padding-top: 0;
+padding-bottom: 0;
+max-height:40px;
+max-width:40px;
+top: 15px;
+left: 275px;
+
+}
+
+.userName {
+display: inline-block;
+position: relative;
+padding-top: 0;
+padding-bottom: 0;
+height:25px;
+left:465px;
+
+}
+
+.navbar-default .nav>li>a,
+a:focus{
+
+text-transform:uppercase;
+font-weight:700;
+font-size:13px;
+
+}
+
 .logo {
+display: inline-block;
 position: relative;
 background: url("https://s3.amazonaws.com/maintenanceminder/logo1.png");
 overflow: visible;
@@ -31,58 +167,64 @@ padding-top: 0;
 padding-bottom: 0;
 height:49px;
 width:50px;
-right:570px;
-
-
-
+left: 165px;
 
 }
-
-
-
-
 
 
 /*``````````````````````````````````````````````````*/
 /*show page for the search.*/
+
 .searchPage {
 background-image: url("https://s3.amazonaws.com/maintenanceminder/wrench.jpg");
 height: 100%;
 width: 100%;
+
 }
+
 .searchForm {
 text-align: center;
 text-shadow: 2px 2px 2px black;
 padding-left: 52px;
+
 }
+
 .searchTitle {  
 text-align: center;
 text-shadow: 5px 5px 5px black;
 color: #D3D3D3;
+
 }
+
 .mapText {
 text-shadow: 5px 5px 5px black;
 color: #D3D3D3;
+
 }
 
 
 /*``````````````````````````````````````````````````*/
 /*log in page*/
+
 .logIn {
 background-image: url("https://s3.amazonaws.com/maintenanceminder/login1.jpg");
 background-size: cover;
 height: 100vh;
 text-align: center;
-/*color: white;*/
+
 }
+
 .btn-color {
 color: black;
 background-color: #80858e;
 width: 152px;
+
 }
+
 .login_name {
 color: white;
 text-shadow:  2px 2px 3px black;
+
 }
 
 /*``````````````````````````````````````````````````*/
@@ -94,31 +236,36 @@ background-size: cover;
 height: 100vh;
 text-align: center;
 
+
 }
+
 .btn-color {
 color: black;
 background-color: #80858e;
 width: 152px;
+
 }
 
 .email {
 color: black;
+
 }
 
 .signup_name {
 color: white;
 text-shadow:  2px 2px 3px black;
+
 }
-.minchar {
+
+.minCharTxt {
 color: white;
 text-shadow:  2px 2px 3px black;
+
 
 }
 
 /*``````````````````````````````````````````````````*/
 /*Modals*/
-
-
 
 .modal.left .modal-dialog,
 .modal.right .modal-dialog {
@@ -130,65 +277,79 @@ height: 100%;
 -ms-transform: translate3d(0%, 0, 0);
 -o-transform: translate3d(0%, 0, 0);
 transform: translate3d(0%, 0, 0);
+
 }
 
 .modal.left .modal-content,
 .modal.right .modal-content {
 height: 100%;
 overflow-y: auto;
+
 }
 
 .modal.left .modal-body,
 .modal.right .modal-body {
 padding: 15px 15px 80px;
+
 }
 
 /*Left*/
+
 .modal.left.fade .modal-dialog{
 left: -320px;
 -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
 -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
 -o-transition: opacity 0.3s linear, left 0.3s ease-out;
 transition: opacity 0.3s linear, left 0.3s ease-out;
+
 }
 
 .modal.left.fade.in .modal-dialog{
 left: 0;
+
 }
 
 /*Right*/
+
 .modal.right.fade .modal-dialog {
 right: -320px;
 -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
 -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
 -o-transition: opacity 0.3s linear, right 0.3s ease-out;
 transition: opacity 0.3s linear, right 0.3s ease-out;
+
 }
 
 .modal.right.fade.in .modal-dialog {
 right: 0;
+
 }
 
 /* ----- MODAL STYLE ----- */
+
 .modal-content {
 border-radius: 0;
 border: none;
+
 }
 
 .modal-header {
 border-bottom-color: #e65c00;
 background-color: #d9d9d9;
-;
+
 }
 
-/* ----- v CAN BE DELETED v ----- */
+/* ----- Modal styling for colors text etc. ----- */
+
 body {
 background-color: #78909C;
+
 }
 
 .bothModals {
 padding-top: 60px;
 padding-bottom: 85px;
+
 }
 
 .btn-default {
@@ -197,10 +358,12 @@ padding: 10px 15px;
 border-radius: 0;
 font-size: 16px;
 background-color: #FFFFFF;
+
 }
 
 .btn-default:focus {
 outline: 0;
+
 }
 
 .modal-footer {
@@ -210,6 +373,7 @@ width: 100%;
 padding: 15px;
 background-color: #212121;
 text-align: center;
+
 }
 
 .modal-footer > a {
@@ -217,5 +381,6 @@ text-decoration: none;
 font-weight: bold;
 font-size: 16px;
 color: #fff;
+
 }
 

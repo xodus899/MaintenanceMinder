@@ -16,7 +16,7 @@
   <div class="field">
     <%= f.label :password, :class => "signup_name" %>
     <% if @minimum_password_length %>
-    <div class= "minchar"><em>(<%= @minimum_password_length %> characters minimum)</em><div>
+    <div><em class= "minCharTxt">(<%= @minimum_password_length %> characters minimum)</em><div>
     <% end %><br />
     <%= f.password_field :password, autocomplete: "off" %>
   </div>
