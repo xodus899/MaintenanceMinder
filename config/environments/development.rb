@@ -1,15 +1,7 @@
 Rails.application.configure do
   Paperclip.options[:command_path] = "/usr/local/bin/"
 
-
-  #  config.paperclip_defaults = {
-  #   :storage => :s3,
-  #   :s3_credentials => {
-  #     :bucket => 'maintenaceminder',
-  #     # :s3_credentials => "#{Rails.root}/config/aws.yml",
-  #   }
-  # }
-
+config.action_mailer.default_url_options = { :host => "localhost:3000" }
   
   # Settings specified here will take precedence over those in config/application.rb.
 

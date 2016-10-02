@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 	get "/carsearch", to: "cars#show" 
 	get "/users/edit",    to: "users#new"
 	post "/upload",   to: "users#create", as: :new_avatar
+	match '*path', to: redirect('/'), via: :all
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
 
