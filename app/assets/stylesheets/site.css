@@ -12,10 +12,9 @@ width: 100%;
 
 /*title*/
 h1 {
-font-family: 'Playfair Display SC', serif;
-font-style: italic;
+font-family: 'PT Sans', sans-serif;
 text-align: center;
-padding-top: 100px;
+/*padding-top: 100px;*/
 padding-right: 30px;
 text-shadow: 3px 2px 2px black;
 position: relative;
@@ -52,6 +51,14 @@ width: 250px;
 .header-content{
 
 text-align:center
+
+}
+
+.color {
+border-radius:100px;
+background-color: rgba(0,0,0,0.2);
+margin:80px;
+padding:15px;
 
 }
 
