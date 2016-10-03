@@ -1,5 +1,7 @@
 Rails.application.configure do
 
+config.mailer_sender = 'MaintenanceMinder@maintenanceminder.co'
+
 # Amazon S3 settings for Paperclip uploads
 config.paperclip_defaults = {
     :storage => :s3,
