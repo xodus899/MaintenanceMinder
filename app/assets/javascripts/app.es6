@@ -77,6 +77,7 @@ var carId
 								serviceIntervals(carId);
 								automobileRecalls(carId);			
 
+
 					 		}
 					 });
 					}
@@ -113,44 +114,61 @@ var allServices = theService.actionHolder
 	console.log("All SERVICES",allServices)
 
 var actionForService = allServices.action
-// var milageinterval = allServices.intervalmilage
-// 	console.log("MILEAGE FOUND???", milageinterval)
+
 	console.log("SERVICE SELECTED",actionForService)
 
-var acceptedActions = [{action:'Change', item:'Engine Oil'},{action:'Change', item:'Automatic Transmission fluid'},
-											 {action:'Replace ', item:'Automatic Transmission filter'},{action:'Replace', item:'Air filter'},
-											 {action:'Replace', item:'Spark Plugs'},{action:'Replace', item:'Cabin Air filter'},
-											 {action:'Flush / replace', item:'Coolant'},{action:'Flush / replace', item:'Brake Fluid'},
-											 {action:'Inspect ', item:'Drive belt(s)'},{action:'Inspect/rotate', item:'Wheels & tires'},
-											 {action:'Inspect', item:'Brake system'},{action:'Inspect', item:'Steering & suspension'},
-											 {action:'Inspect', item:'Brakes'},]
+	allServices.forEach(function(service){
+		console.log("WEEEE",service)
 
-acceptedActions.forEach(function (acceptedService) {
-	allServices.forEach(function (oneService) {
-		var count = 0
-		if (oneService.action.toLowerCase() == acceptedService.action.toLowerCase() &&
-				oneService.item.toLowerCase() == acceptedService.item.toLowerCase()) {
-					console.log("FOUND ONE");
-						console.log(oneService);
-			
-			var addToMaintenanceList = `
+					var addToMaintenanceList = `
 			
 				<br><li> 
-							<b> ${oneService.action}: ${oneService.item} </b><br>
-							Every: ${oneService.intervalMileage} Miles <br>
-							Item Description: ${oneService.itemDescription}<br>
-							Time to Complete: ${oneService.laborUnits} Hour(s)<br>
-							Qty Needed: ${oneService.partUnits}<br>
-							Part Cost $ ${oneService.partCostPerUnit}<br>
+							<b> ${service.action}: ${service.item} </b><br>
+							Every: ${service.intervalMileage} Miles <br>
+							Item Description: ${service.itemDescription}<br>
+							Time to Complete: ${service.laborUnits} Hour(s)<br>
+							Qty Needed: ${service.partUnits}<br>
+							Part Cost $ ${service.partCostPerUnit}<br>
 					</li>
 
 						`;
 
 						$(".js-auto-list").append(addToMaintenanceList);
+	})
 
-		}
-	});
-});
+// var acceptedActions = [{action:'Change', item:'Engine Oil'},{action:'Change', item:'Automatic Transmission fluid'},
+// 											 {action:'Replace ', item:'Automatic Transmission filter'},{action:'Replace', item:'Air filter'},
+// 											 {action:'Replace', item:'Spark Plugs'},{action:'Replace', item:'Cabin Air filter'},
+// 											 {action:'Flush / replace', item:'Coolant'},{action:'Flush / replace', item:'Brake Fluid'},
+// 											 {action:'Inspect ', item:'Drive belt(s)'},{action:'Inspect/rotate', item:'Wheels & tires'},
+// 											 {action:'Inspect', item:'Brake system'},{action:'Inspect', item:'Steering & suspension'},
+// 											 {action:'Inspect', item:'Brakes'},]
+
+// acceptedActions.forEach(function (acceptedService) {
+// 	allServices.forEach(function (oneService) {
+// 		if (oneService.action.toLowerCase() == acceptedService.action.toLowerCase() &&
+// 				oneService.item.toLowerCase() == acceptedService.item.toLowerCase()) {
+// 					console.log("FOUND ONE");
+// 						console.log(oneService);
+			
+			// var addToMaintenanceList = `
+			
+			// 	<br><li> 
+			// 				<b> ${oneService.action}: ${oneService.item} </b><br>
+			// 				Every: ${oneService.intervalMileage} Miles <br>
+			// 				Item Description: ${oneService.itemDescription}<br>
+			// 				Time to Complete: ${oneService.laborUnits} Hour(s)<br>
+			// 				Qty Needed: ${oneService.partUnits}<br>
+			// 				Part Cost $ ${oneService.partCostPerUnit}<br>
+			// 		</li>
+
+			// 			`;
+
+			// 			$(".js-auto-list").append(addToMaintenanceList);
+
+		// }
+// 	});
+// });
 
 }
 
@@ -170,15 +188,17 @@ function automobileRecalls(theRecalls){
 	console.log("ALL RECALLS FOR CURRENT CAR",theRecall);
 
 	var carRecalls = theRecall.recallHolder
+	
 		carRecalls.forEach(function(recall) {
 	// display all recalls available for the car.
 			console.log("FOUND ALL AVAILABLE RECALLS",recall)
+
 
 			var recallList = ` 
 				
 				<br><li> 
 
-							<b> Defective Part: 											${recall.componentDescription} </b> <br>
+							<b> Defective Part: 									${recall.componentDescription} </b> <br>
 							<br>
 							Description of defect: 								${recall.defectDescription}<br>
 							<br>

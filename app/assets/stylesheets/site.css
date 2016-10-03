@@ -7,6 +7,7 @@ background-size: cover;
 height: 100%;
 width: 100%;
 
+
 }
 
 /*title*/
@@ -56,9 +57,10 @@ text-align:center
 
 /*text under the title*/
 .about {
+font-family: 'David Libre', serif;
 position:relative;
 text-align:center;
-font-size:45px;
+font-size:50px;
 width:100%;
 margin-left:auto;margin-right:auto;
 color:white;
@@ -117,11 +119,10 @@ background-size: cover;
 
 /*``````````````````````````````````````````````````*/
 /*nav bar */
-.bttn {
-  background-color: transparent;
-}
+
 .navLogIn {
 left:420px;
+
 }
 
 .navSignUp {
@@ -133,19 +134,17 @@ left:425px;
 }
 
 .avatar {
-display: inline-block;
 position: relative;
 padding-top: 0;
 padding-bottom: 0;
 max-height:40px;
 max-width:40px;
-top: 15px;
+top: 7px;
 left: 275px;
 
 }
 
 .userName {
-display: inline-block;
 position: relative;
 padding-top: 0;
 padding-bottom: 0;
@@ -160,6 +159,7 @@ a:focus{
 text-transform:uppercase;
 font-weight:700;
 font-size:13px;
+
 
 }
 
@@ -396,26 +396,85 @@ color: #fff;
 @media only screen
   and (max-width: 650px) {
 
-    h1{
-      font-size: 50px;
-    }
-    .about {
-      font-size: 40px;
-    }
+  h1{
+  font-size: 50px;
+  }
+  .about {
+  font-size: 40px;
+  }
+
+    .navLogIn {
+  left:150px;
+
+  }
+
+  .navSignUp {
+  left:150px;
+  bottom:10px;
+  }
+
+  .navLogoutLink {
+  left:200px;
+  bottom: 15px;
+  }
+  .avatar {
+  left:150px;
+  top:-20px;
+  }
+  .logo {
+    left: 10%;
+    top: 20px;
+  }  
+  .userName {
+    left: 200px;
+  }
 
 }
+  
+
   
 
 
 @media only screen
   and (max-width: 320px) {
 
-    h1{
-      font-size: 40px;
-    }
-     .about {
-      font-size: 30px;
-    }
-  
+  h1{
+    font-size: 40px;
+  }
+   .about {
+    font-size: 30px;
+  }
 
+
+    .navLogIn {
+  left:80px;
+
+  }
+
+  .navSignUp {
+  left:78px;
+  bottom:10px;
+  }
+
+  .navLogoutLink {
+  left:75px;
+  bottom: 10px;
+  }
+  .avatar {
+  left:35px;
+  top:-10px;
+  }
+
+  .logo {
+    left: 5%;
+    top: 20px;
+  }  
+  .userName {
+    left: 80px;
+  }
 }
+
+
+
+
+

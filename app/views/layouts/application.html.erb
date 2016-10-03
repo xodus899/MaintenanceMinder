@@ -1,7 +1,9 @@
 <!DOCTYPE html>
+
 <html>
   <head>
      <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content= "IE">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <%= csrf_meta_tags %>
           <style>
@@ -17,26 +19,29 @@
   </head>
   <body>
 
+
     <nav class="navbar navbar-default navbar-fixed-top">
 
     <div class="container-fluid">
+   
+
     <!-- column for home link -->
       <div class= "col-xs-4 homeLink">
-        <div class="navbar-header">
-          <a class="navbar-brand page-scroll" href="/">Home</a>
+        <div class="navbar-header" >
+          <a class="navbar-brand " href="/">Home</a>
         </div>
       </div>
 
       <!-- column for logo -->
       <div class="col-xs-4 logo">
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse" >
         </div>
       </div>
 
       <!-- column for log in etc links -->
       <div class="col-xs-4 links">
 
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right" >
           <li>
             <% if current_user %>
             
@@ -67,8 +72,12 @@
       <br>
     <%=yield %>
 
+
   </body>
 </html>
+
+
+
 
 
 
