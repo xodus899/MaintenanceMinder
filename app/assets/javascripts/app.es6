@@ -127,17 +127,16 @@ var acceptedActions = [{action:'Change', item:'Engine Oil'},{action:'Change', it
 
 acceptedActions.forEach(function (acceptedService) {
 	allServices.forEach(function (oneService) {
-
+		var count = 0
 		if (oneService.action.toLowerCase() == acceptedService.action.toLowerCase() &&
 				oneService.item.toLowerCase() == acceptedService.item.toLowerCase()) {
 					console.log("FOUND ONE");
 						console.log(oneService);
-	
+			
 			var addToMaintenanceList = `
 			
-				<h5> Maintenance Intervals </h5>
-				<li> 
-							${oneService.action}: ${oneService.item} <br>
+				<br><li> 
+							<b> ${oneService.action}: ${oneService.item} </b><br>
 							Every: ${oneService.intervalMileage} Miles <br>
 							Item Description: ${oneService.itemDescription}<br>
 							Time to Complete: ${oneService.laborUnits} Hour(s)<br>
@@ -146,6 +145,7 @@ acceptedActions.forEach(function (acceptedService) {
 					</li>
 
 						`;
+
 						$(".js-auto-list").append(addToMaintenanceList);
 
 		}
@@ -175,10 +175,13 @@ function automobileRecalls(theRecalls){
 			console.log("FOUND ALL AVAILABLE RECALLS",recall)
 
 			var recallList = ` 
-				<h5> Recalls for Current Vehicle Selected </h5>
-				<li> 
-							Defective Part: 											${recall.componentDescription}<br>
+				
+				<br><li> 
+
+							<b> Defective Part: 											${recall.componentDescription} </b> <br>
+							<br>
 							Description of defect: 								${recall.defectDescription}<br>
+							<br>
 							Possible Consequense if not repaired: ${recall.consequense}<br>
 							Automobile Manufactured From: 				${recall.manufacturedFrom}<br>
 							Automobile Manufactured To: 					${recall.manufacturedTo}<br>			

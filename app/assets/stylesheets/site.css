@@ -11,22 +11,24 @@ width: 100%;
 
 /*title*/
 h1 {
+font-family: 'Playfair Display SC', serif;
 font-style: italic;
 text-align: center;
 padding-top: 100px;
 padding-right: 30px;
 text-shadow: 3px 2px 2px black;
 position: relative;
-bottom: -20px;
+bottom: 5%;
 color: red;
 font-weight:700;
-font-size:80px;
+font-size:85px;
 text-transform:uppercase;
 margin-top:0;
 margin-bottom:0;
 margin:25px auto;
 
 }
+
 
 
 
@@ -38,11 +40,12 @@ text-shadow: 2px 2px 2px black;
 }
 
 .btn {
-  border:none;
-  border-radius:500px;
-  font-weight:700;
-  text-transform:uppercase;
-   box-shadow: 0 8px 16px 0 rgba(0,0,0,1), 0px 10px 20px 0 rgba(0,0,0,1);
+border:none;
+border-radius:500px;
+font-weight:700;
+text-transform:uppercase;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,1), 0px 10px 20px 0 rgba(0,0,0,1);
+width: 250px;
 
 }
 .header-content{
@@ -67,48 +70,48 @@ text-shadow: 3px 2px 2px black;
 /*user profile edit page */
 
 .edit {
-  text-align: center;
-  right:40px;
+text-align: center;
+right:40px;
 
 }
 
 .editBackground {
-  background-image: url(https://s3.amazonaws.com/maintenanceminder/forgot.jpeg);
-  background-size: cover;
+background-image: url(https://s3.amazonaws.com/maintenanceminder/forgot.jpeg);
+background-size: cover;
 
 }
 
 .cancelACC {
-  color: white;
-  text-shadow: 3px 2px 2px black;
+color: white;
+text-shadow: 3px 2px 2px black;
 }
 
 .password {
-  color:white;
-  text-shadow: 3px 2px 2px black;
+color:white;
+text-shadow: 3px 2px 2px black;
 }
 
 .eField {
-  color: white;
-  text-shadow: 3px 2px 2px black;
+color: white;
+text-shadow: 3px 2px 2px black;
 
 }
 
 .upload {
-  color: white;
-  text-shadow: 3px 2px 2px black;
+color: white;
+text-shadow: 3px 2px 2px black;
 }
 
 .button {
-  color: black;
+color: black;
 }
 
 /*``````````````````````````````````````````````````*/
 /* forgot password page */
 
 .forgot {
-  background-image: url(https://s3.amazonaws.com/maintenanceminder/forgot.jpeg);
-  background-size: cover;
+background-image: url(https://s3.amazonaws.com/maintenanceminder/forgot.jpeg);
+background-size: cover;
 
 }
 
@@ -116,19 +119,19 @@ text-shadow: 3px 2px 2px black;
 /*nav bar */
 
 .navLogIn {
-  left:420px;
+left:420px;
 }
 
 .navSignUp {
-  left:420px;
+left:420px;
 }
 
 .navLogoutLink {
-  left:425px;
+left:425px;
 }
 
 .avatar {
-  display: inline-block;
+display: inline-block;
 position: relative;
 padding-top: 0;
 padding-bottom: 0;
@@ -177,8 +180,9 @@ left: 165px;
 
 .searchPage {
 background-image: url("https://s3.amazonaws.com/maintenanceminder/wrench.jpg");
-height: 100%;
-width: 100%;
+background-repeat: no-repeat;
+background-size: cover;
+
 
 }
 
@@ -264,6 +268,7 @@ text-shadow:  2px 2px 3px black;
 
 }
 
+
 /*``````````````````````````````````````````````````*/
 /*Modals*/
 
@@ -271,7 +276,7 @@ text-shadow:  2px 2px 3px black;
 .modal.right .modal-dialog {
 position: fixed;
 margin: auto;
-width: 450px;
+width: 30%;
 height: 100%;
 -webkit-transform: translate3d(0%, 0, 0);
 -ms-transform: translate3d(0%, 0, 0);
@@ -384,3 +389,30 @@ color: #fff;
 
 }
 
+
+
+@media only screen
+  and (max-width: 650px) {
+
+    h1{
+      font-size: 50px;
+    }
+    .about {
+      font-size: 40px;
+
+}
+  
+
+
+@media only screen
+  and (max-width: 320px) {
+
+    h1{
+      font-size: 40px;
+    }
+     .about {
+      font-size: 30px;
+    }
+  
+
+}

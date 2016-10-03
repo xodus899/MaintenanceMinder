@@ -13,7 +13,10 @@ class UsersController < ApplicationController
 					Welcomeailer.welcome_email(@user).deliver_now
 		else 
 	  @user = current_user
-	  @user.update(user_params)
+
+	  if params[:user] != nil
+		  @user.update(user_params)
+		 end
 
 
 	 	# if @user.update(user_params)
