@@ -396,8 +396,8 @@ body {
   font-weight: bold;
   font-size: 16px;
   color: #fff;
-
 }
+
 @media only screen
 and (max-width: 1196px) {
 
@@ -436,8 +436,7 @@ h1{
 .userName {
   left: 380px;
 
-}
-
+  }
 }
 
 @media only screen
@@ -474,8 +473,7 @@ h1{
 }  
 .userName {
   left: 360px;
-}
-
+  }
 }
 
 @media only screen
@@ -512,8 +510,7 @@ h1{
 }  
 .userName {
   left: 300px;
-}
-
+  }
 }
 
 @media only screen
@@ -550,8 +547,7 @@ h1{
 }  
 .userName {
   left: 260px;
-}
-
+  }
 }
 
 @media only screen
@@ -588,11 +584,8 @@ h1{
 }  
 .userName {
   left: 210px;
+  }
 }
-
-}
-
-
 
 @media only screen
 and (max-width: 650px) {
@@ -628,6 +621,7 @@ h1{
 }  
 .userName {
   left: 200px;
+  }
 }
 
 @media only screen
@@ -664,6 +658,7 @@ h1{
 }  
 .userName {
   left: 130px;
+  }
 }
 
 @media only screen
@@ -700,9 +695,9 @@ h1{
 }  
 .userName {
   left: 110px;
+  }
 }
 
-}
 @media only screen
 and (max-width: 432px) {
 
@@ -739,6 +734,7 @@ h1{
 }  
 .userName {
   left: 75px;
+  }
 }
 
 @media only screen
@@ -746,7 +742,6 @@ and (max-width: 320px) {
 
 h1{
   font-size: 40px;
-
   right:40px;
 }
 .about {
@@ -788,6 +783,7 @@ bottom:10px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,1), 0px 10px 20px 0 rgba(0,0,0,1);
   width: 150px;
 
+  }
 }
 
 
