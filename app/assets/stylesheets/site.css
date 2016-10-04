@@ -410,7 +410,7 @@ body {
 @media only screen
 and (max-width: 1196px) {
 
-h1{
+h1 {
   font-size: 50px;
 
 }
@@ -476,13 +476,13 @@ h1{
   -ms-transform: translate3d(0%, 0, 0);
   -o-transform: translate3d(0%, 0, 0);
   transform: translate3d(0%, 0, 0);
-
+  }
 }
 
 @media only screen
 and (max-width: 1063px) {
 
-h1{
+h1  {
   font-size: 50px;
   left:15px;
 }
@@ -544,13 +544,13 @@ h1{
   -ms-transform: translate3d(0%, 0, 0);
   -o-transform: translate3d(0%, 0, 0);
   transform: translate3d(0%, 0, 0);
-
+  }
 }
 
 @media only screen
 and (max-width: 977px) {
 
-h1{
+h1 {
   font-size: 50px;
   left:15px;
 }
@@ -613,13 +613,13 @@ h1{
   -ms-transform: translate3d(0%, 0, 0);
   -o-transform: translate3d(0%, 0, 0);
   transform: translate3d(0%, 0, 0);
-
+  }
 }
 
 @media only screen
 and (max-width: 846px) {
 
-h1{
+h1 {
   font-size: 50px;
   left:15px;
 }
@@ -682,13 +682,13 @@ h1{
   -ms-transform: translate3d(0%, 0, 0);
   -o-transform: translate3d(0%, 0, 0);
   transform: translate3d(0%, 0, 0);
-
+  }
 }
 
 @media only screen
 and (max-width: 767px) {
 
-h1{
+h1 {
   font-size: 50px;
   left:10px;
 }
@@ -751,13 +751,13 @@ h1{
   -ms-transform: translate3d(0%, 0, 0);
   -o-transform: translate3d(0%, 0, 0);
   transform: translate3d(0%, 0, 0);
-
+  }
 }
 
 @media only screen
 and (max-width: 650px) {
 
-h1{
+h1 {
   font-size: 45px;
   left:15px;
 }
@@ -819,6 +819,7 @@ h1{
   -ms-transform: translate3d(0%, 0, 0);
   -o-transform: translate3d(0%, 0, 0);
   transform: translate3d(0%, 0, 0);
+  }
 
 }
 
@@ -887,13 +888,14 @@ h1{
   -ms-transform: translate3d(0%, 0, 0);
   -o-transform: translate3d(0%, 0, 0);
   transform: translate3d(0%, 0, 0);
+  }
 
 }
 
 @media only screen
 and (max-width: 450px) {
 
-h1{
+h1 {
   font-size: 30px;
   left:15px;
 }
@@ -955,13 +957,13 @@ h1{
   -ms-transform: translate3d(0%, 0, 0);
   -o-transform: translate3d(0%, 0, 0);
   transform: translate3d(0%, 0, 0);
-
+ }
 }
 
 @media only screen
 and (max-width: 432px) {
 
-h1{
+h1 {
   font-size: 30px;
   right:10px;
 }
@@ -1033,7 +1035,7 @@ h1{
 @media only screen
 and (max-width: 320px) {
 
-h1{
+h1 {
   left: 10px;
   font-family: 'PT Sans', sans-serif;
   font-size: 20px;
