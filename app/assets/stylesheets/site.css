@@ -2,30 +2,30 @@
 /*homepage*/
 
 .home {
-background-image: url("https://s3.amazonaws.com/maintenanceminder/car.jpg");
-background-size: cover;
-height: 100%;
-width: 100%;
+  background-image: url("https://s3.amazonaws.com/maintenanceminder/car.jpg");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
 
 
 }
 
 /*title*/
 h1 {
-font-family: 'PT Sans', sans-serif;
-text-align: center;
-/*padding-top: 100px;*/
-padding-right: 30px;
-text-shadow: 3px 2px 2px black;
-position: relative;
-bottom: 5%;
-color: red;
-font-weight:700;
-font-size:85px;
-text-transform:uppercase;
-margin-top:0;
-margin-bottom:0;
-margin:25px auto;
+  font-family: 'PT Sans', sans-serif;
+  text-align: center;
+  /*padding-top: 100px;*/
+  padding-right: 30px;
+  text-shadow: 3px 2px 2px black;
+  position: relative;
+  bottom: 5%;
+  color: red;
+  font-weight:700;
+  font-size:85px;
+  text-transform:uppercase;
+  margin-top:0;
+  margin-bottom:0;
+  margin:25px auto;
 
 }
 
@@ -33,46 +33,46 @@ margin:25px auto;
 
 
 h2 {
-color: white;
-text-align: center;
-text-shadow: 2px 2px 2px black;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
 
 }
 
 .btn {
-border:none;
-border-radius:500px;
-font-weight:700;
-text-transform:uppercase;
-box-shadow: 0 8px 16px 0 rgba(0,0,0,1), 0px 10px 20px 0 rgba(0,0,0,1);
-width: 250px;
+  border:none;
+  border-radius:500px;
+  font-weight:700;
+  text-transform:uppercase;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,1), 0px 10px 20px 0 rgba(0,0,0,1);
+  width: 250px;
 
 }
 
 .header-content{
 
-text-align:center
+  text-align:center;
 
 }
 
 .color {
-border-radius:100px;
-background-color: rgba(0,0,0,0.2);
-margin:80px;
-padding:15px;
+  border-radius:100px;
+  background-color: rgba(0,0,0,0.2);
+  margin:80px;
+  padding:15px;
 
 }
 
 /*text under the title*/
 .about {
-font-family: 'David Libre', serif;
-position:relative;
-text-align:center;
-font-size:50px;
-width:100%;
-margin-left:auto;margin-right:auto;
-color:white;
-text-shadow: 3px 2px 2px black;
+  font-family: 'David Libre', serif;
+  position:relative;
+  text-align:center;
+  font-size:50px;
+  width:100%;
+  margin-left:auto;margin-right:auto;
+  color:white;
+  text-shadow: 3px 2px 2px black;
 
 }
 
@@ -80,48 +80,48 @@ text-shadow: 3px 2px 2px black;
 /*user profile edit page */
 
 .edit {
-text-align: center;
-right:40px;
+  text-align: center;
+  right:40px;
 
 }
 
 .editBackground {
-background-image: url(https://s3.amazonaws.com/maintenanceminder/forgot.jpeg);
-background-size: cover;
+  background-image: url(https://s3.amazonaws.com/maintenanceminder/forgot.jpeg);
+  background-size: cover;
 
 }
 
 .cancelACC {
-color: white;
-text-shadow: 3px 2px 2px black;
+  color: white;
+  text-shadow: 3px 2px 2px black;
 }
 
 .password {
-color:white;
-text-shadow: 3px 2px 2px black;
+  color:white;
+  text-shadow: 3px 2px 2px black;
 }
 
 .eField {
-color: white;
-text-shadow: 3px 2px 2px black;
+  color: white;
+  text-shadow: 3px 2px 2px black;
 
 }
 
 .upload {
-color: white;
-text-shadow: 3px 2px 2px black;
+  color: white;
+  text-shadow: 3px 2px 2px black;
 }
 
 .button {
-color: black;
+  color: black;
 }
 
 /*``````````````````````````````````````````````````*/
 /* forgot password page */
 
 .forgot {
-background-image: url(https://s3.amazonaws.com/maintenanceminder/forgot.jpeg);
-background-size: cover;
+  background-image: url(https://s3.amazonaws.com/maintenanceminder/forgot.jpeg);
+  background-size: cover;
 
 }
 
@@ -129,58 +129,58 @@ background-size: cover;
 /*nav bar */
 
 .navLogIn {
-left:420px;
+  left:420px;
 
 }
 
 .navSignUp {
-left:420px;
+  left:420px;
 }
 
 .navLogoutLink {
-left:425px;
+  left:425px;
 }
 
 .avatar {
-position: relative;
-padding-top: 0;
-padding-bottom: 0;
-max-height:40px;
-max-width:40px;
-top: 7px;
-left: 275px;
+  position: relative;
+  padding-top: 0;
+  padding-bottom: 0;
+  max-height:40px;
+  max-width:40px;
+  top: 7px;
+  left: 275px;
 
 }
 
 .userName {
-position: relative;
-padding-top: 0;
-padding-bottom: 0;
-height:25px;
-left:465px;
+  position: relative;
+  padding-top: 0;
+  padding-bottom: 0;
+  height:25px;
+  left:465px;
 
 }
 
 .navbar-default .nav>li>a,
-a:focus{
+a:focus {
 
-text-transform:uppercase;
-font-weight:700;
-font-size:13px;
+  text-transform:uppercase;
+  font-weight:700;
+  font-size:13px;
 
 
 }
 
 .logo {
-display: inline-block;
-position: relative;
-background: url("https://s3.amazonaws.com/maintenanceminder/logo1.png");
-overflow: visible;
-padding-top: 0;
-padding-bottom: 0;
-height:49px;
-width:50px;
-left: 200px;
+  display: inline-block;
+  position: relative;
+  background: url("https://s3.amazonaws.com/maintenanceminder/logo1.png");
+  overflow: visible;
+  padding-top: 0;
+  padding-bottom: 0;
+  height:49px;
+  width:50px;
+  left: 200px;
 
 }
 
@@ -189,30 +189,30 @@ left: 200px;
 /*show page for the search.*/
 
 .searchPage {
-background-image: url("https://s3.amazonaws.com/maintenanceminder/wrench.jpg");
-background-repeat: no-repeat;
-background-size: cover;
+  background-image: url("https://s3.amazonaws.com/maintenanceminder/wrench.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 
 
 }
 
 .searchForm {
-text-align: center;
-text-shadow: 2px 2px 2px black;
-padding-left: 52px;
+  text-align: center;
+  text-shadow: 2px 2px 2px black;
+  padding-left: 52px;
 
 }
 
 .searchTitle {  
-text-align: center;
-text-shadow: 5px 5px 5px black;
-color: #D3D3D3;
+  text-align: center;
+  text-shadow: 5px 5px 5px black;
+  color: #D3D3D3;
 
 }
 
 .mapText {
-text-shadow: 5px 5px 5px black;
-color: #D3D3D3;
+  text-shadow: 5px 5px 5px black;
+  color: #D3D3D3;
 
 }
 
@@ -222,22 +222,22 @@ color: #D3D3D3;
 
 .logIn {
 background-image: url("https://s3.amazonaws.com/maintenanceminder/login1.jpg");
-background-size: cover;
-height: 100vh;
-text-align: center;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
 
 }
 
 .btn-color {
-color: black;
-background-color: #80858e;
-width: 152px;
+  color: black;
+  background-color: #80858e;
+  width: 152px;
 
 }
 
 .login_name {
-color: white;
-text-shadow:  2px 2px 3px black;
+  color: white;
+  text-shadow:  2px 2px 3px black;
 
 }
 
@@ -245,35 +245,35 @@ text-shadow:  2px 2px 3px black;
 /*sign up page*/
 
 .signUp {
-background-image: url("https://s3.amazonaws.com/maintenanceminder/newSignUp.jpg");
-background-size: cover;
-height: 100vh;
-text-align: center;
+  background-image: url("https://s3.amazonaws.com/maintenanceminder/newSignUp.jpg");
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
 
 
 }
 
 .btn-color {
-color: black;
-background-color: #80858e;
-width: 152px;
+  color: black;
+  background-color: #80858e;
+  width: 152px;
 
 }
 
 .email {
-color: black;
+  color: black;
 
 }
 
 .signup_name {
-color: white;
-text-shadow:  2px 2px 3px black;
+  color: white;
+  text-shadow:  2px 2px 3px black;
 
 }
 
 .minCharTxt {
-color: white;
-text-shadow:  2px 2px 3px black;
+  color: white;
+  text-shadow:  2px 2px 3px black;
 
 
 }
@@ -284,27 +284,27 @@ text-shadow:  2px 2px 3px black;
 
 .modal.left .modal-dialog,
 .modal.right .modal-dialog {
-position: fixed;
-margin: auto;
-width: 30%;
-height: 100%;
--webkit-transform: translate3d(0%, 0, 0);
--ms-transform: translate3d(0%, 0, 0);
--o-transform: translate3d(0%, 0, 0);
-transform: translate3d(0%, 0, 0);
+  position: fixed;
+  margin: auto;
+  width: 30%;
+  height: 100%;
+  -webkit-transform: translate3d(0%, 0, 0);
+  -ms-transform: translate3d(0%, 0, 0);
+  -o-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
 
 }
 
 .modal.left .modal-content,
 .modal.right .modal-content {
-height: 100%;
-overflow-y: auto;
+  height: 100%;
+  overflow-y: auto;
 
 }
 
 .modal.left .modal-body,
 .modal.right .modal-body {
-padding: 15px 15px 80px;
+  padding: 15px 15px 80px;
 
 }
 
@@ -312,486 +312,481 @@ padding: 15px 15px 80px;
 
 .modal.left.fade .modal-dialog{
 left: -320px;
--webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
--moz-transition: opacity 0.3s linear, left 0.3s ease-out;
--o-transition: opacity 0.3s linear, left 0.3s ease-out;
-transition: opacity 0.3s linear, left 0.3s ease-out;
+  -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+  -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+  -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+  transition: opacity 0.3s linear, left 0.3s ease-out;
 
 }
 
 .modal.left.fade.in .modal-dialog{
-left: 0;
+  left: 0;
 
 }
 
 /*Right*/
 
 .modal.right.fade .modal-dialog {
-right: -320px;
--webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
--moz-transition: opacity 0.3s linear, right 0.3s ease-out;
--o-transition: opacity 0.3s linear, right 0.3s ease-out;
-transition: opacity 0.3s linear, right 0.3s ease-out;
+  right: -320px;
+  -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+  -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+  -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+  transition: opacity 0.3s linear, right 0.3s ease-out;
 
 }
 
 .modal.right.fade.in .modal-dialog {
-right: 0;
+  right: 0;
 
 }
 
 /* ----- MODAL STYLE ----- */
 
 .modal-content {
-border-radius: 0;
-border: none;
+  border-radius: 0;
+  border: none;
 
 }
 
 .modal-header {
-border-bottom-color: #e65c00;
-background-color: #d9d9d9;
+  border-bottom-color: #e65c00;
+  background-color: #d9d9d9;
 
 }
 
 /* ----- Modal styling for colors text etc. ----- */
 
 body {
-background-color: #78909C;
+  background-color: #78909C;
 
 }
 
 .bothModals {
-padding-top: 60px;
-padding-bottom: 85px;
+  padding-top: 60px;
+  padding-bottom: 85px;
 
 }
 
 .btn-default {
-margin: 15px;
-padding: 10px 15px;
-border-radius: 0;
-font-size: 16px;
-background-color: #FFFFFF;
+  margin: 15px;
+  padding: 10px 15px;
+  border-radius: 0;
+  font-size: 16px;
+  background-color: #FFFFFF;
 
 }
 
 .btn-default:focus {
-outline: 0;
+  outline: 0;
 
 }
 
 .modal-footer {
-position: fixed;
-bottom: 0;
-width: 100%;
-padding: 15px;
-background-color: #212121;
-text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  background-color: #212121;
+  text-align: center;
 
 }
 
 .modal-footer > a {
-text-decoration: none;
-font-weight: bold;
-font-size: 16px;
-color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
 
 }
 @media only screen
-  and (max-width: 1196px) {
+and (max-width: 1196px) {
 
-  h1{
+h1{
   font-size: 50px;
-  }
-  .about {
+}
+.about {
   font-size: 40px;
-  }
+}
 
-    .navLogIn {
+.navLogIn {
   left:150px;
 
-  }
+}
 
-  .navSignUp {
+.navSignUp {
   left:150px;
   bottom:10px;
-  }
+}
 
-  .navLogoutLink {
+.navLogoutLink {
   left:330px;
   bottom: 0px;
-  }
-  .avatar {
+
+}
+.avatar {
   left:200px;
   top: 10px;
-  }
-  .logo {
-    left: 12%;
-    top: 2px;
-  }  
-  .userName {
-    left: 380px;
-  }
+
+}
+.logo {
+  left: 12%;
+  top: 2px;
+
+}  
+.userName {
+  left: 380px;
+
+}
 
 }
 
 @media only screen
-  and (max-width: 1063px) {
+and (max-width: 1063px) {
 
-  h1{
+h1{
   font-size: 50px;
-  }
-  .about {
+}
+.about {
   font-size: 40px;
-  }
+}
 
-    .navLogIn {
+.navLogIn {
   left:150px;
 
-  }
+}
 
-  .navSignUp {
+.navSignUp {
   left:150px;
   bottom:10px;
-  }
+}
 
-  .navLogoutLink {
+.navLogoutLink {
   left:300px;
   bottom: 0px;
-  }
-  .avatar {
+}
+.avatar {
   left:190px;
   top: 10px;
-  }
-  .logo {
-    left: 12%;
-    top: 2px;
-  }  
-  .userName {
-    left: 360px;
-  }
+}
+.logo {
+  left: 12%;
+  top: 2px;
+}  
+.userName {
+  left: 360px;
+}
 
 }
 
 @media only screen
-  and (max-width: 977px) {
+and (max-width: 977px) {
 
-  h1{
+h1{
   font-size: 50px;
-  }
-  .about {
+}
+.about {
   font-size: 40px;
-  }
+}
 
-    .navLogIn {
+.navLogIn {
   left:150px;
 
-  }
+}
 
-  .navSignUp {
+.navSignUp {
   left:150px;
   bottom:10px;
-  }
+}
 
-  .navLogoutLink {
+.navLogoutLink {
   left:240px;
   bottom: 0px;
-  }
-  .avatar {
+}
+.avatar {
   left:130px;
   top: 10px;
-  }
-  .logo {
-    left: 12%;
-    top: 2px;
-  }  
-  .userName {
-    left: 300px;
-  }
+}
+.logo {
+  left: 12%;
+  top: 2px;
+}  
+.userName {
+  left: 300px;
+}
 
 }
 
 @media only screen
-  and (max-width: 846px) {
+and (max-width: 846px) {
 
-  h1{
+h1{
   font-size: 50px;
-  }
-  .about {
+}
+.about {
   font-size: 40px;
-  }
+}
 
-    .navLogIn {
+.navLogIn {
   left:150px;
 
-  }
+}
 
-  .navSignUp {
+.navSignUp {
   left:150px;
   bottom:10px;
-  }
+}
 
-  .navLogoutLink {
+.navLogoutLink {
   left:260px;
   bottom: 10px;
-  }
-  .avatar {
+}
+.avatar {
   left:80px;
   top: 10px;
-  }
-  .logo {
-    left: 12%;
-    top: 2px;
-  }  
-  .userName {
-    left: 260px;
-  }
+}
+.logo {
+  left: 12%;
+  top: 2px;
+}  
+.userName {
+  left: 260px;
+}
 
 }
 
 @media only screen
-  and (max-width: 767px) {
+and (max-width: 767px) {
 
-  h1{
+h1{
   font-size: 50px;
-  }
-  .about {
+}
+.about {
   font-size: 40px;
-  }
+}
 
-    .navLogIn {
+.navLogIn {
   left:150px;
 
-  }
+}
 
-  .navSignUp {
+.navSignUp {
   left:150px;
   bottom:20px;
-  }
+}
 
-  .navLogoutLink {
+.navLogoutLink {
   left:220px;
   bottom: 30px;
-  }
-  .avatar {
+}
+.avatar {
   left:150px;
   top: -10px;
-  }
-  .logo {
-    left: 12%;
-    top: 2px;
-  }  
-  .userName {
-    left: 210px;
-  }
+}
+.logo {
+  left: 12%;
+  top: 2px;
+}  
+.userName {
+  left: 210px;
+}
 
 }
 
 
 
 @media only screen
-  and (max-width: 650px) {
+and (max-width: 650px) {
 
-  h1{
+h1{
   font-size: 50px;
-  }
-  .about {
+}
+.about {
   font-size: 40px;
-  }
+}
 
-    .navLogIn {
+.navLogIn {
   left:150px;
 
-  }
+}
 
-  .navSignUp {
+.navSignUp {
   left:150px;
   bottom:10px;
-  }
+}
 
-  .navLogoutLink {
+.navLogoutLink {
   left:200px;
   bottom: 15px;
-  }
-  .avatar {
+}
+.avatar {
   left:150px;
   top:-20px;
-  }
-  .logo {
-    left: 10%;
-    top: 20px;
-  }  
-  .userName {
-    left: 200px;
-  }
+}
+.logo {
+  left: 10%;
+  top: 20px;
+}  
+.userName {
+  left: 200px;
+}
+
+@media only screen
+and (max-width: 550px) {
+
+h1{
+  font-size: 50px;
+}
+.about {
+  font-size: 40px;
+}
+
+.navLogIn {
+  left:150px;
 
 }
 
-
-@media only screen
-  and (max-width: 550px) {
-
-  h1{
-  font-size: 50px;
-  }
-  .about {
-  font-size: 40px;
-  }
-
-    .navLogIn {
-  left:150px;
-
-  }
-
-  .navSignUp {
+.navSignUp {
   left:150px;
   bottom:10px;
-  }
+}
 
-  .navLogoutLink {
+.navLogoutLink {
   left:150px;
   bottom: 30px;
-  }
-  .avatar {
+}
+.avatar {
   left:90px;
   top:-20px;
-  }
-  .logo {
-    left: 10%;
-    top: 50px;
-  }  
-  .userName {
-    left: 130px;
-  }
+}
+.logo {
+  left: 10%;
+  top: 50px;
+}  
+.userName {
+  left: 130px;
+}
 
-  @media only screen
-  and (max-width: 450px) {
+@media only screen
+and (max-width: 450px) {
 
-  h1{
+h1{
   font-size: 50px;
-  }
-  .about {
+}
+.about {
   font-size: 40px;
-  }
+}
 
-    .navLogIn {
+.navLogIn {
   left:150px;
 
-  }
+}
 
-  .navSignUp {
+.navSignUp {
   left:150px;
   bottom:10px;
-  }
+}
 
-  .navLogoutLink {
+.navLogoutLink {
   left:140px;
   bottom: 30px;
-  }
-  .avatar {
+}
+.avatar {
   left:70px;
   top:-20px;
-  }
-  .logo {
-    left: 10%;
-    top: 50px;
-  }  
-  .userName {
-    left: 110px;
-  }
+}
+.logo {
+  left: 10%;
+  top: 50px;
+}  
+.userName {
+  left: 110px;
+}
 
 }
 @media only screen
-  and (max-width: 432px) {
+and (max-width: 432px) {
 
-  h1{
-    font-size: 40px;
-  }
-   .about {
-    font-size: 30px;
-  }
+h1{
+  font-size: 40px;
+}
+.about {
+  font-size: 30px;
+}
 
 
-    .navLogIn {
+.navLogIn {
   left:80px;
 
-  }
+}
 
-  .navSignUp {
+.navSignUp {
   left:78px;
   bottom:10px;
-  }
+}
 
-  .navLogoutLink {
+.navLogoutLink {
   left:75px;
   bottom: 30px;
-  }
-  .avatar {
+}
+.avatar {
   left:30px;
   top:-10px;
-  }
-
-  .logo {
-    left: 5%;
-    top: 60px;
-  }  
-  .userName {
-    left: 75px;
-  }
-
 }
-  
 
-  
-
+.logo {
+  left: 5%;
+  top: 60px;
+}  
+.userName {
+  left: 75px;
+}
 
 @media only screen
-  and (max-width: 320px) {
+and (max-width: 320px) {
 
-  h1{
-    font-size: 40px;
+h1{
+  font-size: 40px;
 
-    right:40px;
-  }
-   .about {
-    font-size: 30px;
-  }
+  right:40px;
+}
+.about {
+  font-size: 30px;
+}
 
 
-    .navLogIn {
+.navLogIn {
   left:80px;
 
-  }
+}
 
-  .navSignUp {
-  left:78px;
-  bottom:10px;
-  }
+.navSignUp {
+left:78px;
+bottom:10px;
+}
 
-  .navLogoutLink {
+.navLogoutLink {
   left:75px;
   bottom: 10px;
-  }
-  .avatar {
+}
+.avatar {
   left:35px;
   top:-10px;
-  }
+}
 
-  .logo {
-    left: 5%;
-    top: 20px;
-  }  
-  .userName {
-    left: 80px;
-  }
+.logo {
+  left: 5%;
+  top: 20px;
+}  
+.userName {
+  left: 80px;
+}
 .btn {
-border:none;
-border-radius:500px;
-font-weight:700;
-text-transform:uppercase;
-box-shadow: 0 8px 16px 0 rgba(0,0,0,1), 0px 10px 20px 0 rgba(0,0,0,1);
-width: 150px;
+  border:none;
+  border-radius:500px;
+  font-weight:700;
+  text-transform:uppercase;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,1), 0px 10px 20px 0 rgba(0,0,0,1);
+  width: 150px;
 
 }
 
