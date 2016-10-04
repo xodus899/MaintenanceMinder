@@ -802,7 +802,7 @@ h1 {
 .modal.left .modal-dialog {
   position: fixed;
   margin: auto;
-  width: 50%;
+  width: 80%;
   height: 100%;
   -webkit-transform: translate3d(0%, 0, 0);
   -ms-transform: translate3d(0%, 0, 0);
@@ -813,7 +813,7 @@ h1 {
 .modal.right .modal-dialog {
   position: fixed;
   margin: auto;
-  width: 50%;
+  width: 80%;
   height: 100%;
   -webkit-transform: translate3d(0%, 0, 0);
   -ms-transform: translate3d(0%, 0, 0);
@@ -871,7 +871,7 @@ h1{
 .modal.left .modal-dialog {
   position: fixed;
   margin: auto;
-  width: 50%;
+  width: 80%;
   height: 100%;
   -webkit-transform: translate3d(0%, 0, 0);
   -ms-transform: translate3d(0%, 0, 0);
@@ -882,7 +882,7 @@ h1{
 .modal.right .modal-dialog {
   position: fixed;
   margin: auto;
-  width: 50%;
+  width: 80%;
   height: 100%;
   -webkit-transform: translate3d(0%, 0, 0);
   -ms-transform: translate3d(0%, 0, 0);
@@ -940,7 +940,7 @@ h1 {
 .modal.left .modal-dialog {
   position: fixed;
   margin: auto;
-  width: 50%;
+  width: 80%;
   height: 100%;
   -webkit-transform: translate3d(0%, 0, 0);
   -ms-transform: translate3d(0%, 0, 0);
@@ -951,7 +951,7 @@ h1 {
 .modal.right .modal-dialog {
   position: fixed;
   margin: auto;
-  width: 50%;
+  width: 80%;
   height: 100%;
   -webkit-transform: translate3d(0%, 0, 0);
   -ms-transform: translate3d(0%, 0, 0);
@@ -965,11 +965,11 @@ and (max-width: 432px) {
 
 h1 {
   font-size: 30px;
-  right:5px;
+  right:10px;
 }
 .about {
   font-size: 25px;
-  
+  right:5px;
 }
 
 
@@ -1011,7 +1011,7 @@ h1 {
 .modal.left .modal-dialog {
   position: fixed;
   margin: auto;
-  width: 50%;
+  width: 80%;
   height: 100%;
   -webkit-transform: translate3d(0%, 0, 0);
   -ms-transform: translate3d(0%, 0, 0);
@@ -1022,7 +1022,7 @@ h1 {
 .modal.right .modal-dialog {
   position: fixed;
   margin: auto;
-  width: 50%;
+  width: 80%;
   height: 100%;
   -webkit-transform: translate3d(0%, 0, 0);
   -ms-transform: translate3d(0%, 0, 0);
