@@ -48,6 +48,7 @@ box-shadow: 0 8px 16px 0 rgba(0,0,0,1), 0px 10px 20px 0 rgba(0,0,0,1);
 width: 250px;
 
 }
+
 .header-content{
 
 text-align:center
@@ -397,6 +398,195 @@ font-size: 16px;
 color: #fff;
 
 }
+@media only screen
+  and (max-width: 1196px) {
+
+  h1{
+  font-size: 50px;
+  }
+  .about {
+  font-size: 40px;
+  }
+
+    .navLogIn {
+  left:150px;
+
+  }
+
+  .navSignUp {
+  left:150px;
+  bottom:10px;
+  }
+
+  .navLogoutLink {
+  left:330px;
+  bottom: 0px;
+  }
+  .avatar {
+  left:200px;
+  top: 10px;
+  }
+  .logo {
+    left: 12%;
+    top: 2px;
+  }  
+  .userName {
+    left: 380px;
+  }
+
+}
+
+@media only screen
+  and (max-width: 1063px) {
+
+  h1{
+  font-size: 50px;
+  }
+  .about {
+  font-size: 40px;
+  }
+
+    .navLogIn {
+  left:150px;
+
+  }
+
+  .navSignUp {
+  left:150px;
+  bottom:10px;
+  }
+
+  .navLogoutLink {
+  left:300px;
+  bottom: 0px;
+  }
+  .avatar {
+  left:190px;
+  top: 10px;
+  }
+  .logo {
+    left: 12%;
+    top: 2px;
+  }  
+  .userName {
+    left: 360px;
+  }
+
+}
+
+@media only screen
+  and (max-width: 977px) {
+
+  h1{
+  font-size: 50px;
+  }
+  .about {
+  font-size: 40px;
+  }
+
+    .navLogIn {
+  left:150px;
+
+  }
+
+  .navSignUp {
+  left:150px;
+  bottom:10px;
+  }
+
+  .navLogoutLink {
+  left:240px;
+  bottom: 0px;
+  }
+  .avatar {
+  left:130px;
+  top: 10px;
+  }
+  .logo {
+    left: 12%;
+    top: 2px;
+  }  
+  .userName {
+    left: 300px;
+  }
+
+}
+
+@media only screen
+  and (max-width: 846px) {
+
+  h1{
+  font-size: 50px;
+  }
+  .about {
+  font-size: 40px;
+  }
+
+    .navLogIn {
+  left:150px;
+
+  }
+
+  .navSignUp {
+  left:150px;
+  bottom:10px;
+  }
+
+  .navLogoutLink {
+  left:260px;
+  bottom: 10px;
+  }
+  .avatar {
+  left:80px;
+  top: 10px;
+  }
+  .logo {
+    left: 12%;
+    top: 2px;
+  }  
+  .userName {
+    left: 260px;
+  }
+
+}
+
+@media only screen
+  and (max-width: 767px) {
+
+  h1{
+  font-size: 50px;
+  }
+  .about {
+  font-size: 40px;
+  }
+
+    .navLogIn {
+  left:150px;
+
+  }
+
+  .navSignUp {
+  left:150px;
+  bottom:20px;
+  }
+
+  .navLogoutLink {
+  left:220px;
+  bottom: 30px;
+  }
+  .avatar {
+  left:150px;
+  top: -10px;
+  }
+  .logo {
+    left: 12%;
+    top: 2px;
+  }  
+  .userName {
+    left: 210px;
+  }
+
+}
 
 
 
@@ -437,6 +627,120 @@ color: #fff;
   }
 
 }
+
+
+@media only screen
+  and (max-width: 550px) {
+
+  h1{
+  font-size: 50px;
+  }
+  .about {
+  font-size: 40px;
+  }
+
+    .navLogIn {
+  left:150px;
+
+  }
+
+  .navSignUp {
+  left:150px;
+  bottom:10px;
+  }
+
+  .navLogoutLink {
+  left:150px;
+  bottom: 30px;
+  }
+  .avatar {
+  left:90px;
+  top:-20px;
+  }
+  .logo {
+    left: 10%;
+    top: 50px;
+  }  
+  .userName {
+    left: 130px;
+  }
+
+  @media only screen
+  and (max-width: 450px) {
+
+  h1{
+  font-size: 50px;
+  }
+  .about {
+  font-size: 40px;
+  }
+
+    .navLogIn {
+  left:150px;
+
+  }
+
+  .navSignUp {
+  left:150px;
+  bottom:10px;
+  }
+
+  .navLogoutLink {
+  left:140px;
+  bottom: 30px;
+  }
+  .avatar {
+  left:70px;
+  top:-20px;
+  }
+  .logo {
+    left: 10%;
+    top: 50px;
+  }  
+  .userName {
+    left: 110px;
+  }
+
+}
+@media only screen
+  and (max-width: 432px) {
+
+  h1{
+    font-size: 40px;
+  }
+   .about {
+    font-size: 30px;
+  }
+
+
+    .navLogIn {
+  left:80px;
+
+  }
+
+  .navSignUp {
+  left:78px;
+  bottom:10px;
+  }
+
+  .navLogoutLink {
+  left:75px;
+  bottom: 30px;
+  }
+  .avatar {
+  left:30px;
+  top:-10px;
+  }
+
+  .logo {
+    left: 5%;
+    top: 60px;
+  }  
+  .userName {
+    left: 75px;
+  }
+
+}
   
 
   
@@ -447,6 +751,8 @@ color: #fff;
 
   h1{
     font-size: 40px;
+
+    right:40px;
   }
    .about {
     font-size: 30px;
@@ -479,8 +785,15 @@ color: #fff;
   .userName {
     left: 80px;
   }
-}
+.btn {
+border:none;
+border-radius:500px;
+font-weight:700;
+text-transform:uppercase;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,1), 0px 10px 20px 0 rgba(0,0,0,1);
+width: 150px;
 
+}
 
 
 
