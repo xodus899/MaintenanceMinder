@@ -437,6 +437,15 @@ h1{
   left: 380px;
 
   }
+   .btn {
+  border:none;
+  border-radius:500px;
+  font-weight:700;
+  text-transform:uppercase;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,1), 0px 10px 20px 0 rgba(0,0,0,1);
+  width: 195px;
+
+  }
 }
 
 @media only screen
@@ -473,6 +482,15 @@ h1{
 }  
 .userName {
   left: 360px;
+  }
+   .btn {
+  border:none;
+  border-radius:500px;
+  font-weight:700;
+  text-transform:uppercase;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,1), 0px 10px 20px 0 rgba(0,0,0,1);
+  width: 185px;
+
   }
 }
 
@@ -511,6 +529,15 @@ h1{
 .userName {
   left: 300px;
   }
+   .btn {
+  border:none;
+  border-radius:500px;
+  font-weight:700;
+  text-transform:uppercase;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,1), 0px 10px 20px 0 rgba(0,0,0,1);
+  width: 185px;
+
+  }
 }
 
 @media only screen
@@ -547,6 +574,15 @@ h1{
 }  
 .userName {
   left: 260px;
+  }
+   .btn {
+  border:none;
+  border-radius:500px;
+  font-weight:700;
+  text-transform:uppercase;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,1), 0px 10px 20px 0 rgba(0,0,0,1);
+  width: 185px;
+
   }
 }
 
@@ -585,6 +621,15 @@ h1{
 .userName {
   left: 210px;
   }
+  .btn {
+  border:none;
+  border-radius:500px;
+  font-weight:700;
+  text-transform:uppercase;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,1), 0px 10px 20px 0 rgba(0,0,0,1);
+  width: 185px;
+
+  }
 }
 
 @media only screen
@@ -621,6 +666,15 @@ h1{
 }  
 .userName {
   left: 200px;
+  }
+  .btn {
+  border:none;
+  border-radius:500px;
+  font-weight:700;
+  text-transform:uppercase;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,1), 0px 10px 20px 0 rgba(0,0,0,1);
+  width: 185px;
+
   }
 }
 
@@ -659,6 +713,15 @@ h1{
 .userName {
   left: 130px;
   }
+  .btn {
+  border:none;
+  border-radius:500px;
+  font-weight:700;
+  text-transform:uppercase;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,1), 0px 10px 20px 0 rgba(0,0,0,1);
+  width: 180px;
+
+  }
 }
 
 @media only screen
@@ -695,6 +758,15 @@ h1{
 }  
 .userName {
   left: 110px;
+  }
+  .btn {
+  border:none;
+  border-radius:500px;
+  font-weight:700;
+  text-transform:uppercase;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,1), 0px 10px 20px 0 rgba(0,0,0,1);
+  width: 170px;
+
   }
 }
 
@@ -734,6 +806,15 @@ h1{
 }  
 .userName {
   left: 75px;
+  }
+  .btn {
+  border:none;
+  border-radius:500px;
+  font-weight:700;
+  text-transform:uppercase;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,1), 0px 10px 20px 0 rgba(0,0,0,1);
+  width: 160px;
+
   }
 }
 
