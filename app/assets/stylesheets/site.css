@@ -195,6 +195,7 @@ a:focus {
 }
 
 .searchForm {
+
   text-align: center;
   text-shadow: 2px 2px 2px black;
   padding-left: 52px;
@@ -205,12 +206,16 @@ a:focus {
   text-align: center;
   text-shadow: 5px 5px 5px black;
   color: #D3D3D3;
+  
 
 }
 
 .mapText {
   text-shadow: 5px 5px 5px black;
   color: #D3D3D3;
+   border-radius:0px;
+  background-color: rgba(0,0,0,0.6);
+  margin:0px;
 
 }
 
@@ -238,6 +243,13 @@ background-image: url("https://s3.amazonaws.com/maintenanceminder/login1.jpg");
   text-shadow:  2px 2px 3px black;
 
 }
+.linkOpacity{
+  
+  border-radius:10px;
+  background-color: rgba(0,0,0,0.6);
+  padding:10px;
+}
+
 
 /*``````````````````````````````````````````````````*/
 /*sign up page*/
@@ -273,6 +285,11 @@ background-image: url("https://s3.amazonaws.com/maintenanceminder/login1.jpg");
   color: white;
   text-shadow:  2px 2px 3px black;
 
+}
+.loginlinkOpacity {
+  border-radius:5px;
+  background-color: rgba(0,0,0,0.8);
+  padding:5px;
 
 }
 
