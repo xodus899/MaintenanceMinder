@@ -29,7 +29,7 @@ $(document).on("turbolinks:load", function () {
 			error: dreadedError 
 		});
 		// 
-		console.log("Vroooooom!");
+		// console.log("Vroooooom!");
 	}
 // going to store the dealer location 
 // var theZipCode
@@ -48,31 +48,31 @@ var carId
 		// initates find dealer down at the bottom
 		// automobileDealers(zipCode)
 		
-		console.log("RESPONSE", response)
+		// console.log("RESPONSE", response)
 		// this returns all makes of cars.
 		var carMakes = response.makes
 		console.log("CAR MAKES", carMakes)
 		// loop to loop over user input for one car make.
 		carMakes.forEach(function(carMake){
 			if (carMake.name.toLowerCase() == theMake.toLowerCase() ) {
-				console.log("ONE CAR MAKE", carMake);
+				// console.log("ONE CAR MAKE", carMake);
 				// variable set to carMake input . models to retrieve all models for the make.
 				var carModels = carMake.models
-				console.log("CAR MODELS", carModels);
+				// console.log("CAR MODELS", carModels);
 				// loop to return one model.
 				carModels.forEach(function(carModel){
 					if (carModel.name.toLowerCase() == theModel.toLowerCase() ){
-						console.log("ONE MODEL", carModel);
+						// console.log("ONE MODEL", carModel);
 						 // variable set to car model to go inside the array for model then years to show all years
 							 var carYears = carModel.years
-						 			console.log("MANY YEARS",carYears)
+						 			// console.log("MANY YEARS",carYears)
 						 	// loop to show one single year for that make and model from user input
 						carYears.forEach(function(carYear){
 						  if (carYear.year == theYear) {
-						 		console.log("ONE YEAR",carYear);
+						 		// console.log("ONE YEAR",carYear);
 					 		  carId = carYear.id
 								// shows the id for the single car from search
-								console.log("CAR ID FOR THE CAR YEAR!", carId)
+								// console.log("CAR ID FOR THE CAR YEAR!", carId)
 								// this defines serviceintervals/carid for the maintenance request.
 								serviceIntervals(carId);
 								automobileRecalls(carId);			
@@ -105,20 +105,20 @@ var carId
 	}
 
 function showService(theService){
-	console.log("ALL SERVICE INTERVALS FROM THE SEARCH BAR",theService);
+	// console.log("ALL SERVICE INTERVALS FROM THE SEARCH BAR",theService);
 
 
 $(".js-auto-list").empty();
 var theMileage = $(".js-search-mileage").val();
 var allServices = theService.actionHolder
-	console.log("All SERVICES",allServices)
+	// console.log("All SERVICES",allServices)
 
 var actionForService = allServices.action
 
-	console.log("SERVICE SELECTED",actionForService)
+	// console.log("SERVICE SELECTED",actionForService)
 
 	allServices.forEach(function(service){
-		console.log("WEEEE",service)
+		// console.log("WEEEE",service)
 
 					var addToMaintenanceList = `
 			
@@ -185,13 +185,14 @@ function automobileRecalls(theRecalls){
 	}
 	function showRecalls(theRecall){
 		// show all recalls for current car selection
-	console.log("ALL RECALLS FOR CURRENT CAR",theRecall);
+	// console.log("ALL RECALLS FOR CURRENT CAR",theRecall);
 
 	var carRecalls = theRecall.recallHolder
+	$(".js-auto-recalls").empty();
 	
 		carRecalls.forEach(function(recall) {
 	// display all recalls available for the car.
-			console.log("FOUND ALL AVAILABLE RECALLS",recall)
+			// console.log("FOUND ALL AVAILABLE RECALLS",recall)
 
 
 			var recallList = ` 

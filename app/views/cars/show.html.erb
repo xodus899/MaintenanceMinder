@@ -8,6 +8,8 @@
 </html>
 
 <!-- Modals for search ````````````````````````````````````````````````````````````````````````````````````````````````````````````` -->
+
+
 <form>
   <div class= "searchForm">
   <br>
@@ -16,12 +18,66 @@
     <h3> Maintenance Minder </h3>
     <h3><em> Find Maintenance and Recalls for Your Vehicle </em></h3>
   </div>
-		<input class= "js-search-year"    type= "text" placeholder= "Year"> <br><br>
-		<input class= "js-search-make"    type= "text" placeholder= "Make"><br><br>
-		<input class= "js-search-model"   type= "text" placeholder= "Model"><br><br>	
-			<button class= "js-search-button" data-toggle="modal" data-target="#myModal" > Find Automobile </button>
+    <input class= "js-search-year"  id=  "year"    type= "text" placeholder= "Year"> <br><br>
+    <input class= "js-search-make"  id=  "make"    type= "text" placeholder= "Make"><br><br>
+    <input class= "js-search-model" id=  "model"   type= "text" placeholder= "Model"><br><br> 
+      <button class= "js-search-button" data-toggle="modal" data-target="#myModal"> Find Automobile </button>
    </div>
-	</form>
+  </form>
+<!-- 
+  <script>
+
+  var storageSearches = localStorage.getItem("saved_searches");
+
+  if (storageSearches === null) {
+    var savedSearches = [];
+    getData();
+  }
+  else {
+    var savedSearches = JSON.parse(storageSearches);
+    // display saved searches if needed    
+    console.log("NOT SURE IF SAVED!");
+  }
+
+  function getData() {
+
+    var button = document.getElementById(".js-search-button");
+    button.addEventListener("click",saveData,false);
+    console.log("NOT SURE IF SAVED!");
+
+  }
+
+  function saveData () {
+    
+  var searchYear = document.getElementById("year").value;
+  var searchMake = document.getElementById("makes").value;
+  var searchModel = document.getElementById("models").value;
+  
+  var currentSearch = {
+    year: searchYear,
+    make: searchMake,
+    year: searchYear
+  }
+  savedSearches.push(currentSearch);
+
+  localStorage.setItem("saved_searches", JSON.stringify(savedSearches));
+
+  display(searchYear);
+
+  function display(searchYear) {
+    var theContent = document.getElementById("box").value;
+    var moreContent = localStorage.getItem(searchYear);
+    theContent.innerHtml = searchYear + moreContent;
+  }
+  
+  }
+
+window.addEventListener("load",getData,false);  
+
+</script>
+<section id= "box"> 
+Nothing???
+</section> -->
 
 <!-- first modal for service intervals -->
 <div class="container bothModals">

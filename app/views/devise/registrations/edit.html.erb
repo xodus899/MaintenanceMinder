@@ -1,6 +1,5 @@
-<body class= "editBackground">
-<div class= "container-fluid">
-<br><br><br><br>
+<div id= "editBackground">
+<div class= "container-fluid"> 
 <h2>Edit <%= resource_name.to_s.humanize %></h2>
 <div class = "edit">
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
@@ -46,6 +45,7 @@
 </div>
 
 <br>
+<!-- form to upload avatar -->
 <div class = "upload">
   <h3> Upload an avatar </h3>
   <br>
@@ -61,4 +61,5 @@
 <br>
 <h3 ><%= link_to "Back", :back %></h3>
  </div>
-</body>
+</div>
+
