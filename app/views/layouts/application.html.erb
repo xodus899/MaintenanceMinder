@@ -43,7 +43,7 @@
           <li>
             <% if current_user %>
             
-              <a class= "userName" href = "/users/edit" <h5> Hello, <%= current_user.name %> ! </h5> </a>
+              <a class= "userName" href = "/users/edit" > <h5> Hello, <%= current_user.name %> ! </h5> </a>
               <li class = "avatar"> 
                 <%=image_tag current_user.avatar.url(:thumb) %> 
               </li>
