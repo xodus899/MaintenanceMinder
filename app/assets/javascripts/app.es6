@@ -2,10 +2,19 @@
 console.log("Lets find a car.")
 
 $(document).on("turbolinks:load", function () {
+	let $navLinks = $("#navLinks");
+
 	$(".js-search-button").on("click",findCar);
 	// $(".js-search-dealers").on("click",findDealers);
 
+	$("#menuBtn").click(function (e) {
+		e.preventDefault();
+
+		$navLinks.toggleClass("hideNav");
+	});
+
 });
+
 	function findCar(theCar){
 
 		// take the parameter name/this causes the page to not refresh.

@@ -1,6 +1,10 @@
 
   @import 'https://fonts.googleapis.com/css?family=PT+Sans';
 /*homepage*/
+html,body {
+  height:100%;
+  margin:0;
+}
 
 .home {
   background-image: url("https://s3.amazonaws.com/maintenanceminder/car.jpg");
@@ -131,61 +135,60 @@ h2 {
 /*``````````````````````````````````````````````````*/
 /*nav bar */
 
-.navLogIn {
-  left:420px;
+nav {
+  height:60px;
+  width:100%;
+  padding:5px;
+  background-color: white;
+}
+
+#navLinks {
+  list-style: none;
+  position:absolute;
+  right:5px;
+  top: 65px;
+  padding:20px;
+  background-color: red;
+} 
+
+#userAvatar {
+  height:50px;
+  width: 50px;
+  background-color: red;
+  float: left;
 
 }
 
-.navSignUp {
-  left:420px;
-}
-
-.navLogoutLink {
-  left:425px;
-}
-
-.avatar {
-  position: relative;
-  padding-top: 0;
-  padding-bottom: 0;
-  max-height:40px;
-  max-width:40px;
-  top: 7px;
-  left: 275px;
+#avatar {
+  position:relative;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%); 
 
 }
 
-.userName {
-  position: relative;
-  padding-top: 0;
-  padding-bottom: 0;
-  height:25px;
-  left:465px;
-
+#menuBtn {
+  width: 50px;
+  height: 50px;
+  display: block;
+  float: right;
+  background-color: red;
 }
 
-.navbar-default .nav>li>a,
-a:focus {
-
-  text-transform:uppercase;
-  font-weight:700;
-  font-size:13px;
-
-
+.hideNav {
+  display: none;
 }
 
-.logo {
-  display: inline-block;
-  position: relative;
-  background: url("https://s3.amazonaws.com/maintenanceminder/logo1.png");
-  overflow: visible;
-  padding-top: 0;
-  padding-bottom: 0;
-  height:49px;
+#logo {
+  background-image: url("https://s3.amazonaws.com/maintenanceminder/logo1.png");
+  background-color: red;
+  height:50px;
   width:50px;
-  left: 200px;
-
+  position: absolute;
+  left: 50%;
+  margin-left: -25px;
 }
+
 
 
 /*``````````````````````````````````````````````````*/
@@ -388,11 +391,6 @@ left: -320px;
 
 /* ----- Modal styling for colors text etc. ----- */
 
-body {
-  background-color: #78909C;
-
-}
-
 .bothModals {
   padding-top: 20px;
   padding-bottom: 65px;
@@ -431,7 +429,7 @@ body {
   color: #fff;
 }
 
-@media only screen
+/*@media only screen
 and (max-width: 1196px) {
 
 h1 {
@@ -569,9 +567,9 @@ h1  {
   -o-transform: translate3d(0%, 0, 0);
   transform: translate3d(0%, 0, 0);
   }
-}
+}*/
 
-@media only screen
+/*@media only screen
 and (max-width: 977px) {
 
 h1 {
@@ -707,8 +705,8 @@ h1 {
   -o-transform: translate3d(0%, 0, 0);
   transform: translate3d(0%, 0, 0);
   }
-}
-
+}*/
+/*
 @media only screen
 and (max-width: 767px) {
 
@@ -983,8 +981,9 @@ h1 {
   transform: translate3d(0%, 0, 0);
  }
 }
+*/
 /*google css sheet*/
-
+/*
 html, body {
   height: 100%;
   margin: 0;
@@ -1190,3 +1189,4 @@ bottom:10px;
 
 
 
+*/

@@ -12,41 +12,37 @@
 
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>    
           <link rel="stylesheet" type="text/css" href= "../../assets/stylesheets/site.css">
-              <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-              <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+            <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+             <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
   <body>
 
+    <!-- <nav class="navbar navbar-default navbar-fixed-top">
 
-    <nav class="navbar navbar-default navbar-fixed-top">
-
-    <div class="container-fluid">
+    <div class="container-fluid"> -->
    
-
-    <!-- column for home link -->
-      <div class= "col-xs-4 homeLink">
+      <!-- column for home link -->
+      <!-- <div class= "col-xs-4 homeLink">
         <div class="navbar-header" >
           <a class="navbar-brand " href="/">Home</a>
         </div>
       </div>
-
+ -->
       <!-- column for logo -->
-      <div class="col-xs-4 logo">
+      <!-- <div class="col-xs-4 logo">
         <div class="collapse navbar-collapse" >
         </div>
-      </div>
+      </div> -->
 
       <!-- column for log in etc links -->
-      <div class="col-xs-4 links">
+      <!-- <div class="col-xs-4 links">
 
         <ul class="nav navbar-nav navbar-right" >
           <li>
             <% if current_user %>
             
               <a class= "userName" href = "/users/edit" > <h5> Hello, <%= current_user.name %> ! </h5> </a>
-              <li class = "avatar"> 
-                <%=image_tag current_user.avatar.url(:thumb) %> 
-              </li>
+                <%=image_tag current_user.avatar.url(:thumb), :class => "avatar" %> 
             <% end %>
           </li>
           <li class= "navLogoutLink">
@@ -64,10 +60,43 @@
             <% end %>
         </ul>
       </div>
-      </div>
+      </div> -->
       <!-- /.container-fluid -->
-      </nav>
-      <br>
+      <!-- </nav> -->
+    <nav> 
+      <% if current_user %>
+      <div id="userAvatar">
+         <%=image_tag current_user.avatar.url(:thumb), :id => "avatar" %> 
+      </div>
+      <div id= "logo"> 
+      </div>
+      <% end %>
+      
+      <a id="menuBtn" href="#">
+      </a>
+
+      <ul id="navLinks" class= "hideNav"> 
+        <li>
+          <%= link_to "Home", root_path %>
+        </li>
+        <% if current_user %>
+        <li> 
+          <a class= "userName" href = "/users/edit" > <h5> Hello, <%= current_user.name %> ! </h5> </a>
+        </li>
+        <li>
+          <%= link_to "Log Out", destroy_user_session_path, :method => :delete %>
+        </li>
+        <% else %>
+        <li>
+            <%= link_to "Log In", user_session_path %>
+        </li>
+        <li>
+            <%= link_to "Sign Up", new_user_registration_path %>
+        </li>
+        <% end %>
+      </ul>
+
+    </nav>
     <%=yield %>
   </body>
 </html>
