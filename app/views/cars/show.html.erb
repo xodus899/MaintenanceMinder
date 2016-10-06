@@ -144,8 +144,9 @@ Nothing???
 
     <input id="destination-input" class="controls" type="text"
         placeholder="Enter a destination location">
+ 
 
-    <div id="mode-selector" class="controls">
+<!--     <div id="mode-selector" class="controls">
       <input type="radio" name="type" id="changemode-walking" checked="checked">
       <label for="changemode-walking">Walking</label>
 
@@ -155,7 +156,7 @@ Nothing???
       <input type="radio" name="type" id="changemode-driving">
       <label for="changemode-driving">Driving</label>
     </div>
-
+ -->
     <div id="map"></div>
 
     <script>
@@ -163,7 +164,7 @@ Nothing???
       function initMap() {
         var origin_place_id = null;
         var destination_place_id = null;
-        var travel_mode = 'WALKING';
+        var travel_mode = 'DRIVING';
         var map = new google.maps.Map(document.getElementById('map'), {
           mapTypeControl: false,
           center: {lat: 26.0112,lng: -80.1495},
@@ -190,15 +191,15 @@ Nothing???
 
         // Sets a listener on a radio button to change the filter type on Places
         // Autocomplete.
-        function setupClickListener(id, mode) {
-          var radioButton = document.getElementById(id);
-          radioButton.addEventListener('click', function() {
-            travel_mode = mode;
-          });
-        }
-        setupClickListener('changemode-walking', 'WALKING');
-        setupClickListener('changemode-transit', 'TRANSIT');
-        setupClickListener('changemode-driving', 'DRIVING');
+        // function setupClickListener(id, mode) {
+        //   var radioButton = document.getElementById(id);
+        //   radioButton.addEventListener('click', function() {
+        //     travel_mode = mode;
+        //   });
+        // }
+        // setupClickListener('changemode-walking', 'WALKING');
+        // setupClickListener('changemode-transit', 'TRANSIT');
+        // setupClickListener('changemode-driving', 'DRIVING');
 
         function expandViewportToFitPlace(map, place) {
           if (place.geometry.viewport) {

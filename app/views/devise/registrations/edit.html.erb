@@ -1,65 +1,63 @@
 <div id= "editBackground">
-<div class= "container-fluid"> 
-<h2>Edit <%= resource_name.to_s.humanize %></h2>
-<div class = "edit">
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
-  <%= devise_error_messages! %>
+  <h2>Edit <%= resource_name.to_s.humanize %></h2>
+  <div id= "edit">
+      <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+      <%= devise_error_messages! %>
 
-  <div class="field">
-    <%= f.label :email, :class => "eField" %><br />
-    <%= f.email_field :email, autofocus: true %>
+    <div class="field">
+      <%= f.label :email, :id => "textAboveField" %><br />
+      <%= f.email_field :email, autofocus: true %>
+    </div>
+
+    <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label :password,:id => "textAboveField" %><br />
+      <%= f.password_field :password, autocomplete: "off", placeholder: "Blank for no change" %>
+      <% if @minimum_password_length %>
+      <br />
+      <% end %>
+    </div>
+
+    <div class="field">
+      <%= f.label :password_confirmation,:id => "textAboveField" %><br />
+      <%= f.password_field :password_confirmation, autocomplete: "off" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :current_password,:id => "textAboveField" %> <br />
+      <%= f.password_field :current_password, autocomplete: "off" %>
+    </div>
+
+    <div class="actions">
+    <br>
+      <%= f.submit "Update" %>
+    </div>
+    <% end %>
+
+    <div id= "textAboveField">
+      <h3>Cancel my account</h3>
+    </div>
+
+    <p><%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
+    <br>
+    <h3 ><%= link_to "Back", :back %></h3>
   </div>
 
-  <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
-    <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :password,:class => "password" %><br />
-    <%= f.password_field :password, autocomplete: "off", placeholder: "Blank for no change" %>
-    <% if @minimum_password_length %>
-      <br />
+  <!-- form to upload avatar -->
+  <div id="upload">
+    <h3> Upload an avatar </h3>
+    <br>
+      <%= form_for @user, url: new_avatar_path, html: { multipart: true },method: :post  do |form| %>
+      <%= form.file_field :avatar %>
+    <br>
+    <div class = "button">
+      <%= form.submit "Upload Avatar" %> 
+    </div>
       <% end %>
   </div>
 
-  <div class="field">
-    <%= f.label :password_confirmation,:class => "password" %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :current_password,:class => "password" %> <br />
-    <%= f.password_field :current_password, autocomplete: "off" %>
-  </div>
-
-  <div class="actions">
-  <br>
-  
-    <%= f.submit "Update" %>
-  </div>
-<% end %>
-<div class= "cancelACC">
-<h3>Cancel my account</h3>
-</div>
-<p><%= button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?" }, method: :delete %></p>
-</div>
-
-<br>
-<!-- form to upload avatar -->
-<div class = "upload">
-  <h3> Upload an avatar </h3>
-  <br>
-    <%= form_for @user, url: new_avatar_path, html: { multipart: true },method: :post  do |form| %>
-      <%= form.file_field :avatar %>
-      <br>
-      <div class = "button">
-        <%= form.submit "Upload Avatar" %> 
-        </div>
-        <br>
-  <% end %>
-  </div>
-<br>
-<h3 ><%= link_to "Back", :back %></h3>
- </div>
 </div>
 

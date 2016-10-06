@@ -1,15 +1,16 @@
 
-  @import 'https://fonts.googleapis.com/css?family=PT+Sans';
+@import 'https://fonts.googleapis.com/css?family=PT+Sans';
 /*homepage*/
 html,body {
   height:100%;
   margin:0;
+  min-width: 280px;
 }
 
 .home {
   background-image: url("https://s3.amazonaws.com/maintenanceminder/car.jpg");
   background-size: cover;
-  padding:80px;
+  padding:10px;
   height: 100%;
   width: 100%;
 
@@ -19,22 +20,16 @@ html,body {
 /*/*title*/
 h1 {
   font-family: 'PT Sans', sans-serif;
-  right:22px;
   text-shadow: 3px 2px 2px black;
-  position: relative;
-  bottom: 5%;
   color: red;
   font-weight:700;
-  font-size:85px;
+  font-size:;
   text-transform:uppercase;
   margin-top:0;
   margin-bottom:0;
-  margin:25px auto;
+  margin: auto;
 
 }
-
-
-
 
 h2 {
   color: white;
@@ -54,8 +49,9 @@ h2 {
 }
 
 .header-content{
-
+  margin:auto;
   text-align:center;
+  max-width: 400px
 
 }
 
@@ -63,16 +59,17 @@ h2 {
   border-radius:100px;
   background-color: rgba(0,0,0,0.2);
 
-  padding:15px;
+  padding:20px;
 
 }
 
 /*text under the title*/
+
 .about {
   font-family: 'David Libre', serif;
   position:relative;
   text-align:center;
-  font-size:50px;
+  font-size:30px;
   width:100%;
   margin-left:auto;margin-right:auto;
   color:white;
@@ -83,40 +80,29 @@ h2 {
 /*``````````````````````````````````````````````````*/
 /*user profile edit page */
 
-.edit {
-  text-align: center;
-  right:40px;
-}
-#editBackground  > .container-fluid {
-  padding-top:60px;
+#edit {
+  float:left;
+
 }
 
 #editBackground {
   background-image: url(https://s3.amazonaws.com/maintenanceminder/forgot.jpeg);
   background-size: cover;
   height:100%;
+  padding:5px;
 
 }
 
-.cancelACC {
-  color: white;
-  text-shadow: 3px 2px 2px black;
-}
-
-.password {
+#textAboveField {
   color:white;
   text-shadow: 3px 2px 2px black;
 }
 
-.eField {
+
+#upload {
   color: white;
   text-shadow: 3px 2px 2px black;
-
-}
-
-.upload {
-  color: white;
-  text-shadow: 3px 2px 2px black;
+  float:right;
 }
 
 .button {
@@ -148,13 +134,14 @@ nav {
   right:5px;
   top: 65px;
   padding:20px;
-  background-color: red;
+  background-color: white;
+  cursor: pointer;
 } 
 
 #userAvatar {
   height:50px;
   width: 50px;
-  background-color: red;
+ 
   float: left;
 
 }
@@ -172,7 +159,22 @@ nav {
   height: 50px;
   display: block;
   float: right;
-  background-color: red;
+
+  cursor: pointer;
+}
+#menu-btn span{
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 3px;
+  top:25%;
+  left:35%;
+  transform:translate(-35%,-35%);
+  margin: 4px ;
+  background: rgb(0,0,0);
+  z-index: 99;
+
+
 }
 
 .hideNav {
@@ -181,7 +183,7 @@ nav {
 
 #logo {
   background-image: url("https://s3.amazonaws.com/maintenanceminder/logo1.png");
-  background-color: red;
+ 
   height:50px;
   width:50px;
   position: absolute;
@@ -206,7 +208,8 @@ nav {
 
   text-align: center;
   text-shadow: 2px 2px 2px black;
-  padding-left: 52px;
+  padding:0 5px;
+
 
 }
 
@@ -240,14 +243,14 @@ nav {
 
 }
 
-.btn-color {
+#btn-color {
   color: black;
   background-color: #80858e;
   width: 152px;
 
 }
 
-.login_name {
+#loginTextAboveField {
   color: white;
   text-shadow:  2px 2px 3px black;
 
@@ -269,29 +272,15 @@ nav {
   padding-top:60px;
   height: 100vh;
   text-align: center;
-
-
 }
 
-.btn-color {
+#btn-color {
   color: black;
   background-color: #80858e;
   width: 152px;
-
 }
 
-.email {
-  color: black;
-
-}
-
-.signup_name {
-  color: white;
-  text-shadow:  2px 2px 3px black;
-
-}
-
-.minCharTxt {
+#signupTextAboveField {
   color: white;
   text-shadow:  2px 2px 3px black;
 
@@ -302,7 +291,6 @@ nav {
   padding:5px;
 
 }
-
 
 /*``````````````````````````````````````````````````*/
 /*Modals*/
@@ -428,6 +416,117 @@ left: -320px;
   font-size: 16px;
   color: #fff;
 }
+
+/*Google Maps on search page*/
+
+#map {
+  height: 350px;
+}
+.controls {
+  margin-top: 10px;
+  border: 1px solid transparent;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 32px;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#origin-input {
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 200px;
+}
+
+#destination-input {
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 200px;
+}
+
+#origin-input:focus,
+#destination-input:focus {
+  border-color: #4d90fe ;
+}
+
+#mode-selector {
+  color: #fff;
+  background-color: #4d90fe ;
+  margin-left: 12px;
+  padding: 5px 11px 0px 11px;
+}
+
+#mode-selector label {
+  font-size: 13px;
+  font-weight: 300;
+}
+
+
+@media only screen
+and (min-width: 800px) { 
+
+h1 {
+  font-size: 40px;
+}
+.header-content {
+  margin-top: 5%;
+  }
+}
+
+@media only screen
+and (max-width: 450px) { 
+  #origin-input {
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 140px;
+}
+
+#destination-input {
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 140px;
+  }
+    .modal.left .modal-dialog {
+  position: fixed;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translate3d(0%, 0, 0);
+  -ms-transform: translate3d(0%, 0, 0);
+  -o-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
+
+}
+.modal.right .modal-dialog {
+  position: fixed;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translate3d(0%, 0, 0);
+  -ms-transform: translate3d(0%, 0, 0);
+  -o-transform: translate3d(0%, 0, 0);
+  transform: translate3d(0%, 0, 0);
+  }
+}
+}
+
 
 /*@media only screen
 and (max-width: 1196px) {
