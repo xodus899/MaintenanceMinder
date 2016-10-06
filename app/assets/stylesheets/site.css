@@ -13,29 +13,25 @@ html,body {
   padding:10px;
   height: 100%;
   width: 100%;
-
-
 }
 
 /*/*title*/
+
 h1 {
   font-family: 'PT Sans', sans-serif;
   text-shadow: 3px 2px 2px black;
   color: red;
   font-weight:700;
-  font-size:;
   text-transform:uppercase;
   margin-top:0;
   margin-bottom:0;
   margin: auto;
-
 }
 
 h2 {
   color: white;
   text-align: center;
   text-shadow: 2px 2px 2px black;
-
 }
 
 .btn {
@@ -45,22 +41,18 @@ h2 {
   text-transform:uppercase;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,1), 0px 10px 20px 0 rgba(0,0,0,1);
   width: 250px;
-
 }
 
 .header-content{
   margin:auto;
   text-align:center;
-  max-width: 400px
-
+  max-width: 400px;
 }
 
 .color {
   border-radius:100px;
   background-color: rgba(0,0,0,0.2);
-
   padding:20px;
-
 }
 
 /*text under the title*/
@@ -74,7 +66,6 @@ h2 {
   margin-left:auto;margin-right:auto;
   color:white;
   text-shadow: 3px 2px 2px black;
-
 }
 
 /*``````````````````````````````````````````````````*/
@@ -82,7 +73,6 @@ h2 {
 
 #edit {
   float:left;
-
 }
 
 #editBackground {
@@ -90,7 +80,6 @@ h2 {
   background-size: cover;
   height:100%;
   padding:5px;
-
 }
 
 #textAboveField {
@@ -115,7 +104,6 @@ h2 {
 .forgot {
   background-image: url(https://s3.amazonaws.com/maintenanceminder/forgot.jpeg);
   background-size: cover;
-
 }
 
 /*``````````````````````````````````````````````````*/
@@ -141,9 +129,7 @@ nav {
 #userAvatar {
   height:50px;
   width: 50px;
- 
   float: left;
-
 }
 
 #avatar {
@@ -151,7 +137,6 @@ nav {
   top:50%;
   left:50%;
   transform:translate(-50%,-50%); 
-
 }
 
 #menuBtn {
@@ -159,9 +144,9 @@ nav {
   height: 50px;
   display: block;
   float: right;
-
   cursor: pointer;
 }
+
 #menu-btn span{
   position: relative;
   display: block;
@@ -173,8 +158,6 @@ nav {
   margin: 4px ;
   background: rgb(0,0,0);
   z-index: 99;
-
-
 }
 
 .hideNav {
@@ -183,15 +166,12 @@ nav {
 
 #logo {
   background-image: url("https://s3.amazonaws.com/maintenanceminder/logo1.png");
- 
   height:50px;
   width:50px;
   position: absolute;
   left: 50%;
   margin-left: -25px;
 }
-
-
 
 /*``````````````````````````````````````````````````*/
 /*show page for the search.*/
@@ -200,8 +180,6 @@ nav {
   background-image: url("https://s3.amazonaws.com/maintenanceminder/wrench.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-
-
 }
 
 .searchForm {
@@ -209,16 +187,12 @@ nav {
   text-align: center;
   text-shadow: 2px 2px 2px black;
   padding:0 5px;
-
-
 }
 
 .searchTitle {  
   text-align: center;
   text-shadow: 5px 5px 5px black;
   color: #D3D3D3;
-  
-
 }
 
 .mapText {
@@ -227,9 +201,7 @@ nav {
    border-radius:0px;
   background-color: rgba(0,0,0,0.6);
   margin:0px;
-
 }
-
 
 /*``````````````````````````````````````````````````*/
 /*log in page*/
@@ -240,14 +212,12 @@ nav {
   padding-top: 60px;
   height: 100vh;
   text-align: center;
-
 }
 
 #btn-color {
   color: black;
   background-color: #80858e;
   width: 152px;
-
 }
 
 #loginTextAboveField {
@@ -256,7 +226,6 @@ nav {
 
 }
 .linkOpacity{
-  
   border-radius:10px;
   background-color: rgba(0,0,0,0.6);
   padding:10px;
@@ -283,8 +252,8 @@ nav {
 #signupTextAboveField {
   color: white;
   text-shadow:  2px 2px 3px black;
-
 }
+
 .loginlinkOpacity {
   border-radius:5px;
   background-color: rgba(0,0,0,0.8);
@@ -422,18 +391,9 @@ left: -320px;
 #map {
   height: 350px;
 }
-.controls {
-  margin-top: 10px;
-  border: 1px solid transparent;
-  border-radius: 2px 0 0 2px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  height: 32px;
-  outline: none;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-}
 
 #origin-input {
+  margin:5px;
   background-color: #fff;
   font-size: 15px;
   font-weight: 300;
@@ -444,6 +404,7 @@ left: -320px;
 }
 
 #destination-input {
+  margin:5px;
   background-color: #fff;
   font-size: 15px;
   font-weight: 300;
@@ -457,19 +418,6 @@ left: -320px;
 #destination-input:focus {
   border-color: #4d90fe ;
 }
-
-#mode-selector {
-  color: #fff;
-  background-color: #4d90fe ;
-  margin-left: 12px;
-  padding: 5px 11px 0px 11px;
-}
-
-#mode-selector label {
-  font-size: 13px;
-  font-weight: 300;
-}
-
 
 @media only screen
 and (min-width: 800px) { 
@@ -485,6 +433,7 @@ h1 {
 @media only screen
 and (max-width: 450px) { 
   #origin-input {
+  margin:5px;
   background-color: #fff;
   font-size: 15px;
   font-weight: 300;
@@ -495,6 +444,7 @@ and (max-width: 450px) {
 }
 
 #destination-input {
+  margin:5px;
   background-color: #fff;
   font-size: 15px;
   font-weight: 300;
