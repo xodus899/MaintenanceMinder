@@ -69,7 +69,8 @@ carId = carYear.id
 console.log("CAR ID FOR THE CAR YEAR!", carId)
 // this defines serviceintervals/carid for the maintenance request.
 serviceIntervals(carId);
-automobileRecalls(carId);			
+automobileRecalls(carId);	
+automobileTsbs(carId);		
 
 					 		}
 					 });
@@ -205,49 +206,48 @@ $(".js-auto-recalls").append(recallList);
 	})
 }
 
-// function automobileDealers(zipCode){
-// 	// $(".js-search-dealers").on("click",findDealers);
-// 			$.ajax ({ 
-// 				type: "get",
-// 			// url for all dealers in the area for the car from the search
-// 				url: `http://api.edmunds.com/api/dealer/v2/franchises/?zipcode=${theZipCode}&radius=${theRadius}&make=${theMake}&state=new&pageNum=1&pageSize=10&sortby=distance%3AASC&view=basic&api_key=tcd64uafxynpwvkeyaxv56qt`, 
-// 			// success is what you name the next function/action from the ajax url request.this shows the results. without it nothing will appear
-// 				success: findDealers,
-// 			});
-// 	}
-// 	function findDealers(theDealer){
-// 			// theDealer.preventDefault();
-			// var nameOfPlace = $(".js-name-search" ).val();
-// 		var theZipCode    =	  $(".js-zipCode-search").val();
-// 		var theRadius = 	$(".js-mileRadius-search").val();
-// 		// show all recalls for current car selection
-// 	console.log("ALL DEALERS IN THE AREA",theDealer);
-// 	$(".js-auto-dealers").empty();
+function automobileTsbs(theTsb) {
+$.ajax ({ 
+	type: "get",
+	// url for all service intervals a single car from the search
+	url: `https://api.edmunds.com/v1/api/maintenance/servicebulletinrepository/findbymodelyearid?modelyearid=${carId}&fmt=json&api_key=tcd64uafxynpwvkeyaxv56qt`, 
+	// success is what you name the next function/action from the ajax url request.this shows the results. without it nothing will appear
+	success: showTsbs,
+	// // error, name of error function when something doesnt work.
+	// error: dreadedError 
+	});
+}
+function showTsbs(theServiceBulletin){
+// show all recalls for current car selection
+console.log("ALL BULLETINS FOR CURRENT CAR",theServiceBulletin);
 
-// 	var locations = theDealer.franchises
-// 	console.log("IS THIS WORKING????",location)
-	
-// 	locations.forEach(function (theLocation) {
-// 			var dealerList = ` 
-// 				<h5> Dealers In Your Area </h5>
-// 				<li> 
-// 					Dealer: 	  				 ${theLocation.name}<br>
-// 					Still Open: 				 ${theLocation.active}	<br>	
-// 					Address: 						 ${theLocation.address.street},
-// 															 ${theLocation.address.city},
-// 															 ${theLocation.address.stateName},
-// 															 ${theLocation.address.zipcode}	<br>
-// 					Distance From You: 	 ${theLocation.distance} Miles<br>
-				
+var carBulletins = theServiceBulletin.serviceBulletinHolder
+$(".js-auto-bulletins").empty();
+
+carBulletins.forEach(function(bulletin) {
+// display all recalls available for the car.
+console.log("FOUND ALL AVAILABLE BULLETINS",bulletin)
 
 
-// 				</li>
-// 			`;
+var bulletinList = ` 
 
-// 			$(".js-auto-dealers").append(dealerList);
+<br><li> 
 
-// 	})
+			<b> Bulletin Date: 			${bulletin.bulletinDate} </b> <br>
+<br>
+					Bulletin Number: 		${bulletin.bulletinNumber}<br>
+<br>
+					Description: 				${bulletin.componentDescription}<br>
+					Summary: 						${bulletin.summaryText}<br>
+						
+		</li>
+`;
 
-// 	}
+$(".js-auto-bulletins").append(bulletinList);
+
+	})
+}
+
+
 
 

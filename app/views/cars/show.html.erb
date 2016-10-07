@@ -1,83 +1,22 @@
-<!Doctype html>
-
-<html>
-<body class="searchPage">
-   
-</body>
-
-</html>
-
 <!-- Modals for search ````````````````````````````````````````````````````````````````````````````````````````````````````````````` -->
-
+<div id="searchPage">
 
 <form>
-  <div class= "searchForm">
+  <div id= "searchForm">
   <br>
-  <div class= "searchTitle">
+  <div id= "searchTitle">
   <br><br><br>
     <h3> Maintenance Minder </h3>
     <h3><em> Find Maintenance and Recalls for Your Vehicle </em></h3>
   </div>
-    <input class= "js-search-year"  id=  "year"    type= "text" placeholder= "Year"> <br><br>
-    <input class= "js-search-make"  id=  "make"    type= "text" placeholder= "Make"><br><br>
-    <input class= "js-search-model" id=  "model"   type= "text" placeholder= "Model"><br><br> 
-      <button class= "js-search-button" data-toggle="modal" data-target="#myModal"> Find Automobile </button>
+    <input class= "js-search-year"  id=  "years"    type= "text" placeholder= "Year"> <br><br>
+    <input class= "js-search-make"  id=  "makes"    type= "text" placeholder= "Make"><br><br>
+    <input class= "js-search-model" id=  "models"   type= "text" placeholder= "Model"><br><br> 
+      <button class= "js-search-button" id="uSubmit" data-toggle="modal" data-target="#myModal"> Find Automobile </button>
    </div>
   </form>
-<!-- 
-  <script>
 
-  var storageSearches = localStorage.getItem("saved_searches");
 
-  if (storageSearches === null) {
-    var savedSearches = [];
-    getData();
-  }
-  else {
-    var savedSearches = JSON.parse(storageSearches);
-    // display saved searches if needed    
-    console.log("NOT SURE IF SAVED!");
-  }
-
-  function getData() {
-
-    var button = document.getElementById(".js-search-button");
-    button.addEventListener("click",saveData,false);
-    console.log("NOT SURE IF SAVED!");
-
-  }
-
-  function saveData () {
-    
-  var searchYear = document.getElementById("year").value;
-  var searchMake = document.getElementById("makes").value;
-  var searchModel = document.getElementById("models").value;
-  
-  var currentSearch = {
-    year: searchYear,
-    make: searchMake,
-    year: searchYear
-  }
-  savedSearches.push(currentSearch);
-
-  localStorage.setItem("saved_searches", JSON.stringify(savedSearches));
-
-  display(searchYear);
-
-  function display(searchYear) {
-    var theContent = document.getElementById("box").value;
-    var moreContent = localStorage.getItem(searchYear);
-    theContent.innerHtml = searchYear + moreContent;
-  }
-  
-  }
-
-window.addEventListener("load",getData,false);  
-
-</script>
-<section id= "box"> 
-Nothing???
-</section> -->
 
 <!-- first modal for service intervals -->
 <div class="container bothModals">
@@ -113,7 +52,7 @@ Nothing???
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title"><!-- <button class= "js-search-button" data-toggle="modal" data-target="#myModal2" > --> Recalls For Vehicle </button></h4>
+        <h4 class="modal-title"><button class= "js-search-button" data-toggle="modal" data-target="#myModal2" > Click for Technical Service Bulletins </button></h4>
       </div>
       <div class="modal-body">
     		<div >
@@ -121,7 +60,7 @@ Nothing???
 				</ul>
 			</div>
 		</div>
-    </div>
+</div>
 	
         
       </div>
@@ -132,12 +71,32 @@ Nothing???
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
-<!-- above are modals for the initial search form of the car and recalls -->
+<!-- third modal for bulletins -->
+<div class="container bothModals">
+<div class="modal right fade" id = "myModal2" tabindex="-1" role="dialog" style= "overflow-y: scroll; max-height:100%;  margin-top: 1px; margin-bottom:1px;">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Available Service Bulletins
+      </div>
+      <div class="modal-body">
+
+        <div>
+      <h5> Technical Service Bulletins </h5>
+      <ul class = "js-auto-bulletins"> 
+       </ul> 
+    </div>
+    </div>
+</div>  
+
+
+<!-- above are modals for the initial search form of the car and recalls/bulletins -->
 <!-- _______________________________________________________________________________________________________________________ -->
 
 <!-- Map for searching below -->
 
-<h3 class= "mapText"><em> Use the Map to search for a dealer near you. Recalls are FREE to fix </em></h3>
+<h3 id= "mapText"><em> Use the Map to search for a dealer near you. Recalls are FREE to fix </em></h3>
   
     <input id="origin-input" class="controls" type="text"
         placeholder="Enter an origin location">
@@ -261,3 +220,4 @@ Nothing???
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAV49mGqmaV82heE1c0FJYMaAoFVNRdi9E&libraries=places&callback=initMap"
         async defer></script>
+</div>
