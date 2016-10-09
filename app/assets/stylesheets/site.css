@@ -1,12 +1,12 @@
 
-@import 'https://fonts.googleapis.com/css?family=PT+Sans';
-/*homepage*/
 html,body {
   height:100%;
   margin:0;
   min-width: 280px;
-  zoom:10px;
+  
 }
+@import 'https://fonts.googleapis.com/css?family=PT+Sans';
+/*homepage*/
 
 .home {
   background-image: url("https://s3.amazonaws.com/maintenanceminder/car.jpg");
