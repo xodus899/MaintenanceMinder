@@ -1,12 +1,15 @@
 
-@import 'https://fonts.googleapis.com/css?family=PT+Sans';
-/*homepage*/
 html,body {
   height:100%;
   margin:0;
   min-width: 280px;
-  zoom:10px;
+  
 }
+
+@import 'https://fonts.googleapis.com/css?family=PT+Sans';
+
+
+/*homepage*/
 
 .home {
   background-image: url("https://s3.amazonaws.com/maintenanceminder/car.jpg");
@@ -179,26 +182,27 @@ nav {
 /*``````````````````````````````````````````````````*/
 /*show page for the search.*/
 
-.searchPage {
+#searchPage {
   background-image: url("https://s3.amazonaws.com/maintenanceminder/wrench.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  height:100%;
 }
 
-.searchForm {
+#searchForm {
 
   text-align: center;
   text-shadow: 2px 2px 2px black;
-  padding:0 5px;
+  padding:0px 5px;
 }
 
-.searchTitle {  
+#searchTitle {  
   text-align: center;
   text-shadow: 5px 5px 5px black;
   color: #D3D3D3;
 }
 
-.mapText {
+#mapText {
   text-shadow: 5px 5px 5px black;
   color: #D3D3D3;
    border-radius:0px;
@@ -206,7 +210,40 @@ nav {
   margin:0px;
 }
 
-/*``````````````````````````````````````````````````*/
+#map {
+  height: 400px;
+
+}
+
+
+#origin-input {
+  margin:5px;
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 200px;
+}
+
+#destination-input {
+  margin:5px;
+  background-color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 200px;
+}
+
+#origin-input:focus,
+#destination-input:focus {
+  border-color: #4d90fe ;
+}
+
+/*``````````````````````````````````````````````````
 /*log in page*/
 
 .logIn {
@@ -303,7 +340,7 @@ nav {
 
 }
 
-/*Left*/
+Left
 
 .modal.left.fade .modal-dialog{
 left: -320px;
@@ -334,8 +371,8 @@ left: -320px;
   right: 0;
 
 }
-
-/* ----- MODAL STYLE ----- */
+/*
+ ----- MODAL STYLE ----- */
 
 .modal-content {
   border-radius: 0;
@@ -348,15 +385,8 @@ left: -320px;
   background-color: #d9d9d9;
 
 }
-
-/* ----- Modal styling for colors text etc. ----- */
-
-.bothModals {
-  padding-top: 20px;
-  padding-bottom: 65px;
-
-
-}
+/*
+ ----- Modal styling for colors text etc. ----- */
 
 .btn-default {
   margin: 5px;
@@ -389,38 +419,6 @@ left: -320px;
   color: #fff;
 }
 
-/*Google Maps on search page*/
-
-#map {
-  height: 350px;
-}
-
-#origin-input {
-  margin:5px;
-  background-color: #fff;
-  font-size: 15px;
-  font-weight: 300;
-  margin-left: 12px;
-  padding: 0 11px 0 13px;
-  text-overflow: ellipsis;
-  width: 200px;
-}
-
-#destination-input {
-  margin:5px;
-  background-color: #fff;
-  font-size: 15px;
-  font-weight: 300;
-  margin-left: 12px;
-  padding: 0 11px 0 13px;
-  text-overflow: ellipsis;
-  width: 200px;
-}
-
-#origin-input:focus,
-#destination-input:focus {
-  border-color: #4d90fe ;
-}
 
 @media only screen
 and (min-width: 800px) { 
