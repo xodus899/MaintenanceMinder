@@ -70,7 +70,7 @@ console.log("CAR ID FOR THE CAR YEAR!", carId)
 // this defines serviceintervals/carid for the maintenance request.
 serviceIntervals(carId);
 automobileRecalls(carId);	
-automobileTsbs(carId);		
+// automobileTsbs(carId);		
 
 					 		}
 					 });
@@ -206,47 +206,47 @@ $(".js-auto-recalls").append(recallList);
 	})
 }
 
-function automobileTsbs(theTsb) {
-$.ajax ({ 
-	type: "get",
-	// url for all service intervals a single car from the search
-	url: `https://api.edmunds.com/v1/api/maintenance/servicebulletinrepository/findbymodelyearid?modelyearid=${carId}&fmt=json&api_key=tcd64uafxynpwvkeyaxv56qt`, 
-	// success is what you name the next function/action from the ajax url request.this shows the results. without it nothing will appear
-	success: showTsbs,
-	// // error, name of error function when something doesnt work.
-	// error: dreadedError 
-	});
-}
-function showTsbs(theServiceBulletin){
-// show all recalls for current car selection
-console.log("ALL BULLETINS FOR CURRENT CAR",theServiceBulletin);
+// function automobileTsbs(theTsb) {
+// $.ajax ({ 
+// 	type: "get",
+// 	// url for all service intervals a single car from the search
+// 	url: `https://api.edmunds.com/v1/api/maintenance/servicebulletinrepository/findbymodelyearid?modelyearid=${carId}&fmt=json&api_key=tcd64uafxynpwvkeyaxv56qt`, 
+// 	// success is what you name the next function/action from the ajax url request.this shows the results. without it nothing will appear
+// 	success: showTsbs,
+// 	// // error, name of error function when something doesnt work.
+// 	// error: dreadedError 
+// 	});
+// }
+// function showTsbs(theServiceBulletin){
+// // show all recalls for current car selection
+// console.log("ALL BULLETINS FOR CURRENT CAR",theServiceBulletin);
 
-var carBulletins = theServiceBulletin.serviceBulletinHolder
-$(".js-auto-bulletins").empty();
+// var carBulletins = theServiceBulletin.serviceBulletinHolder
+// $(".js-auto-bulletins").empty();
 
-carBulletins.forEach(function(bulletin) {
-// display all recalls available for the car.
-console.log("FOUND ALL AVAILABLE BULLETINS",bulletin)
+// carBulletins.forEach(function(bulletin) {
+// // display all recalls available for the car.
+// console.log("FOUND ALL AVAILABLE BULLETINS",bulletin)
 
 
-var bulletinList = ` 
+// var bulletinList = ` 
 
-<br><li> 
+// <br><li> 
 
-			<b> Bulletin Date: 			${bulletin.bulletinDate} </b> <br>
-<br>
-					Bulletin Number: 		${bulletin.bulletinNumber}<br>
-<br>
-					Description: 				${bulletin.componentDescription}<br>
-					Summary: 						${bulletin.summaryText}<br>
+// 			<b> Bulletin Date: 			${bulletin.bulletinDate} </b> <br>
+// <br>
+// 					Bulletin Number: 		${bulletin.bulletinNumber}<br>
+// <br>
+// 					Description: 				${bulletin.componentDescription}<br>
+// 					Summary: 						${bulletin.summaryText}<br>
 						
-		</li>
-`;
+// 		</li>
+// `;
 
-$(".js-auto-bulletins").append(bulletinList);
+// $(".js-auto-bulletins").append(bulletinList);
 
-	})
-}
+// 	})
+// }
 
 
 
