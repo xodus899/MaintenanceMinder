@@ -1,8 +1,9 @@
+//jshint esversion:6, devel:true, jquery:true, browser:true
 
-console.log("Lets find a car.")
+console.log("Lets find a car.");
 
 $(document).on("turbolinks:load", function () {
-let $navLinks = $("#navLinks");
+var $navLinks = $("#navLinks");
 
 $(".js-search-button").on("click",findCar);
 // $(".js-search-dealers").on("click",findDealers);
@@ -12,7 +13,6 @@ $("#menuBtn").click(function (e) {
 
 $navLinks.toggleClass("hideNav");
 	});
-
 });
 
 function findCar(theCar){
@@ -35,38 +35,38 @@ $.ajax ({
 console.log("Vroooooom!");
 }
 
-var carId
+var carId;
 function loadCar (response) {
 // these variables are equal to the class set in the home.html.erb  input class field.
 var theYear    = $(".js-search-year").val();
 var theMake    = $(".js-search-make").val();
 var theModel   = $(".js-search-model").val();
 
-console.log("RESPONSE", response)
+console.log("RESPONSE", response);
 // this returns all makes of cars.
-var carMakes = response.makes
-console.log("CAR MAKES", carMakes)
+var carMakes = response.makes;
+console.log("CAR MAKES", carMakes);
 // loop to loop over user input for one car make.
 carMakes.forEach(function(carMake){
 	if (carMake.name.toLowerCase() == theMake.toLowerCase() ) {
 		console.log("ONE CAR MAKE", carMake);
 // variable set to carMake input . models to retrieve all models for the make.
-var carModels = carMake.models
+var carModels = carMake.models;
 	console.log("CAR MODELS", carModels);
 // loop to return one model.
 carModels.forEach(function(carModel){
 	if (carModel.name.toLowerCase() == theModel.toLowerCase() ){
 		console.log("ONE MODEL", carModel);
 // variable set to car model to go inside the array for model then years to show all years
-var carYears = carModel.years
-console.log("MANY YEARS",carYears)
+var carYears = carModel.years;
+console.log("MANY YEARS",carYears);
 // loop to show one single year for that make and model from user input
 carYears.forEach(function(carYear){
 	if (carYear.year == theYear) {
 		console.log("ONE YEAR",carYear);
-carId = carYear.id
+carId = carYear.id;
 // shows the id for the single car from search
-console.log("CAR ID FOR THE CAR YEAR!", carId)
+console.log("CAR ID FOR THE CAR YEAR!", carId);
 // this defines serviceintervals/carid for the maintenance request.
 serviceIntervals(carId);
 automobileRecalls(carId);	
@@ -75,7 +75,7 @@ automobileRecalls(carId);
 					 		}
 					 });
 					}
-				})	 	 		
+				});
 			}
 		});
 	}
@@ -102,10 +102,10 @@ function showService(theService){
 
 $(".js-auto-list").empty();
 var theMileage = $(".js-search-mileage").val();
-var allServices = theService.actionHolder
+var allServices = theService.actionHolder;
 // console.log("All SERVICES",allServices)
 
-var actionForService = allServices.action
+var actionForService = allServices.action;
 
 	// console.log("SERVICE SELECTED",actionForService)
 
@@ -126,7 +126,7 @@ var addToMaintenanceList = `
 		`;
 
 		$(".js-auto-list").append(addToMaintenanceList);
-	})
+	});
 
 // var acceptedActions = [{action:'Change', item:'Engine Oil'},{action:'Change', item:'Automatic Transmission fluid'},
 // 											 {action:'Replace ', item:'Automatic Transmission filter'},{action:'Replace', item:'Air filter'},
@@ -179,12 +179,12 @@ function showRecalls(theRecall){
 // show all recalls for current car selection
 console.log("ALL RECALLS FOR CURRENT CAR",theRecall);
 
-var carRecalls = theRecall.recallHolder
+var carRecalls = theRecall.recallHolder;
 $(".js-auto-recalls").empty();
 
 carRecalls.forEach(function(recall) {
 // display all recalls available for the car.
-console.log("FOUND ALL AVAILABLE RECALLS",recall)
+console.log("FOUND ALL AVAILABLE RECALLS",recall);
 
 
 var recallList = ` 
@@ -203,7 +203,7 @@ var recallList = `
 
 $(".js-auto-recalls").append(recallList);
 
-	})
+	});
 }
 
 // function automobileTsbs(theTsb) {
