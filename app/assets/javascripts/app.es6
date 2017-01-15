@@ -77,7 +77,7 @@ findCar = function (theCar) {
                     console.log("MANY YEARS", carYears);
                     // loop to show one single year for that make and model from user input
                     carYears.forEach(function(carYear) {
-                        if (carYear.year === theYear) {
+                        if (String(carYear.year) === theYear) {
                             console.log("ONE YEAR", carYear);
                             carId = carYear.id;
                             // shows the id for the single car from search
