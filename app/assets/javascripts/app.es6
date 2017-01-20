@@ -2,7 +2,7 @@
 console.log("version 2");
 console.log("Lets find a car.");
 
-var 
+var
 //functions
     findCar,
     loadCar,
@@ -11,7 +11,7 @@ var
     showService,
     showRecalls,
     automobileRecalls,
- //variables   
+ //variables
     carId;
 
 $(document).on("turbolinks:load", function() {
@@ -57,7 +57,7 @@ findCar = function (theCar) {
     var theModel = $(".js-search-model").val();
     // this returns all makes of cars.
     var carMakes = response.makes;
-   
+
 
     console.log("RESPONSE", response);
     console.log("CAR MAKES", carMakes);
@@ -85,7 +85,7 @@ findCar = function (theCar) {
                             // this defines serviceintervals/carid for the maintenance request.
                             serviceIntervals(carId);
                             automobileRecalls(carId);
-                            // automobileTsbs(carId);		
+                            // automobileTsbs(carId);
 
                         }
                     });
@@ -107,7 +107,7 @@ serviceIntervals = function() {
         // success is what you name the next function/action from the ajax url request.this shows the results. without it nothing will appear
         success: showService,
         // // error, name of error function when something doesnt work.
-        // error: dreadedError 
+        // error: dreadedError
     });
 };
 
@@ -126,19 +126,21 @@ showService = function (theService) {
 
     allServices.forEach(function(service) {
         // console.log("WEEEE",service)
-
+        if (service.partCostPerUnit === undefined) {
+           service.partCostPerUnit = "Not available";
+        }
         var addToMaintenanceList = `
 
-<br><li> 
-			<b> ${service.action}: ${service.item} </b><br>
-			Every: ${service.intervalMileage} Miles <br>
-			Item Description: ${service.itemDescription}<br>
-			Time to Complete: ${service.laborUnits} Hour(s)<br>
-			Qty Needed: ${service.partUnits}<br>
-			Part Cost $ ${service.partCostPerUnit}<br>
-		</li>
+<br><li>
+            <b> ${service.action}: ${service.item} </b><br>
+            Every: ${service.intervalMileage} Miles <br>
+            Item Description: ${service.itemDescription}<br>
+            Time to Complete: ${service.laborUnits} Hour(s)<br>
+            Qty Needed: ${service.partUnits}<br>
+            Part Cost $ ${service.partCostPerUnit}<br>
+        </li>
 
-		`;
+        `;
 
         $(".js-auto-list").append(addToMaintenanceList);
     });
@@ -160,7 +162,7 @@ showService = function (theService) {
 
     // var addToMaintenanceList = `
 
-    // 	<br><li> 
+    // 	<br><li>
     // 				<b> ${oneService.action}: ${oneService.item} </b><br>
     // 				Every: ${oneService.intervalMileage} Miles <br>
     // 				Item Description: ${oneService.itemDescription}<br>
@@ -187,7 +189,7 @@ automobileRecalls = function () {
         // success is what you name the next function/action from the ajax url request.this shows the results. without it nothing will appear
         success: showRecalls,
         // // error, name of error function when something doesnt work.
-        // error: dreadedError 
+        // error: dreadedError
     });
 };
 
@@ -203,18 +205,18 @@ showRecalls = function (theRecall) {
         console.log("FOUND ALL AVAILABLE RECALLS", recall);
 
 
-        var recallList = ` 
+        var recallList = `
 
-<br><li> 
+<br><li>
 
-			<b> Defective Part: 									${recall.componentDescription} </b> <br>
+            <b> Defective Part: 									${recall.componentDescription} </b> <br>
 <br>
-			Description of defect: 								${recall.defectDescription}<br>
+            Description of defect: 								${recall.defectDescription}<br>
 <br>
-			Possible Consequense if not repaired: ${recall.consequense}<br>
-			Automobile Manufactured From: 				${recall.manufacturedFrom}<br>
-			Automobile Manufactured To: 					${recall.manufacturedTo}<br>			
-		</li>
+            Possible Consequense if not repaired: ${recall.consequense}<br>
+            Automobile Manufactured From: 				${recall.manufacturedFrom}<br>
+            Automobile Manufactured To: 					${recall.manufacturedTo}<br>
+        </li>
 `;
 
         $(".js-auto-recalls").append(recallList);
@@ -223,14 +225,14 @@ showRecalls = function (theRecall) {
 };
 
 // function automobileTsbs(theTsb) {
-// $.ajax ({ 
+// $.ajax ({
 // 	type: "get",
 // 	// url for all service intervals a single car from the search
-// 	url: `https://api.edmunds.com/v1/api/maintenance/servicebulletinrepository/findbymodelyearid?modelyearid=${carId}&fmt=json&api_key=tcd64uafxynpwvkeyaxv56qt`, 
+// 	url: `https://api.edmunds.com/v1/api/maintenance/servicebulletinrepository/findbymodelyearid?modelyearid=${carId}&fmt=json&api_key=tcd64uafxynpwvkeyaxv56qt`,
 // 	// success is what you name the next function/action from the ajax url request.this shows the results. without it nothing will appear
 // 	success: showTsbs,
 // 	// // error, name of error function when something doesnt work.
-// 	// error: dreadedError 
+// 	// error: dreadedError
 // 	});
 // }
 // function showTsbs(theServiceBulletin){
@@ -245,9 +247,9 @@ showRecalls = function (theRecall) {
 // console.log("FOUND ALL AVAILABLE BULLETINS",bulletin)
 
 
-// var bulletinList = ` 
+// var bulletinList = `
 
-// <br><li> 
+// <br><li>
 
 // 			<b> Bulletin Date: 			${bulletin.bulletinDate} </b> <br>
 // <br>
