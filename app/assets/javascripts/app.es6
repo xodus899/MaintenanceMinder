@@ -203,6 +203,9 @@ showRecalls = function (theRecall) {
     carRecalls.forEach(function(recall) {
         // display all recalls available for the car.
         console.log("FOUND ALL AVAILABLE RECALLS", recall);
+           if (recall.consequense === undefined) {
+           recall.consequense = "Not available";
+        }
 
 
         var recallList = `
