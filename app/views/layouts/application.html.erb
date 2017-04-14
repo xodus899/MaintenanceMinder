@@ -9,7 +9,7 @@
 
           <title>MaintenanceMinder</title>
 
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>    
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>  
           <link rel="stylesheet" type="text/css" href= "../../assets/stylesheets/site.css">
             <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
              <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -27,11 +27,13 @@
       <div id= "logo"> 
       </div> 
       <div id="menu-btn">
+        <div id= "asdf">
         <a id="menuBtn" href="#">
           <span></span>
           <span></span>
           <span></span>  
         </a>
+        </div>
       </div>
 
       <ul id="navLinks" class= "hideNav"> 
@@ -59,6 +61,7 @@
     <%=yield %>
   </body>
 </html>
+
 
 
 
