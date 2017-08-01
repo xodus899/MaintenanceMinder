@@ -12,7 +12,9 @@ html,body {
 /*homepage*/
 
 #img {
-	width: 60%;
+	position:absolute;
+	left:10%;
+	width: 100%;
 }
 
 #home-title {
