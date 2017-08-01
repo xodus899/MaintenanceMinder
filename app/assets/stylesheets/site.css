@@ -219,7 +219,7 @@ nav {
 
 #searchTitle {  
   text-align: center;
-  color: #fff;
+  color: black;
 }
 
 #uSubmit {
@@ -284,7 +284,7 @@ nav {
 	position:absolute;
 	height:25%;
 	width:100%;
-	color:white;
+	color:black;
 	background-color: #93aed2;
 	text-align:center;
 	bottom:0;
@@ -329,7 +329,7 @@ div#logInField {
 	width:100%;
 	bottom:0;
 	background-color: #93aed2;
-	color:white;
+	color:black;
 	height:30%;
 	padding:50px;
 
