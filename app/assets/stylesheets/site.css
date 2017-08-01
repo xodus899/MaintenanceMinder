@@ -492,7 +492,7 @@ and (max-width: 799px) {
 	}
 	#searchTitle { 
   	text-shadow: 1px 1px 1px black;
-  	color: #fff;
+  	color: black;
 	}
 
 /* log-in */
