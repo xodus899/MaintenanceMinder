@@ -11,6 +11,10 @@ html,body {
 
 /*homepage*/
 
+#img {
+	width: 60%;
+}
+
 #home-title {
 	text-align:center;
 	color: #fff;
