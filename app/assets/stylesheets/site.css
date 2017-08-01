@@ -47,17 +47,6 @@ html,body {
   margin: auto;
 }
 
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
 /* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
@@ -221,7 +210,7 @@ nav {
 #searchForm {
   text-align: center;
   padding:0px 300px 25px 300px;
-  
+
 }
 
 #searchTitle {  
