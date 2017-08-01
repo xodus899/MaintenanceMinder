@@ -502,8 +502,10 @@ and (max-width: 799px) {
 #logInBackground img {
  position:absolute;
  margin-top:50px;
+ left:50px;
  height:30%;
- width:100%;
+ width:75%;
+
 }
 
 .logIn {
