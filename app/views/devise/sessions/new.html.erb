@@ -1,32 +1,22 @@
 
+<div id= "home-title">
+	<h1>Maintenance Minder</h1> 
+</div>
+
+<div id= "logInBackground"> 
+	<img src="../assets/no-car.jpg">
+</div>
+
 <div class = "logIn">
-  <h2>Log in</h2>
-
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-    <div class="field">
-      <%= f.label :email, :id => "loginTextAboveField"  %><br />
+    <div class="field" id="logInField">
+
+      <%= f.label :email, :id => "loginTextAboveField"  %>
       <%= f.email_field :email, autofocus: true %>
-    </div>
-
-    <div class="field">
-      <%= f.label :password, :id => "loginTextAboveField"  %><br />
+      <%= f.label :password, :id => "loginTextAboveField"  %>
       <%= f.password_field :password, autocomplete: "off" %>
-    </div>
-
-    <% if devise_mapping.rememberable? -%>
-      <div class="field">
-        <%= f.check_box :remember_me %>
-        <%= f.label :remember_me, :id => "loginTextAboveField"  %>
-      </div>
-    <% end -%>
-
-    <div class="actions">
-      <%= f.submit "Log in", :id => "btn-color" %>
+      <%= f.submit "Log in", class: "actions", :id => "btn-color" %>
+      <button id="forgotPassword"> <%= render "devise/shared/links" %> </button>
     </div>
   <% end %>
-  <br>
-
-
-  <%= render "devise/shared/links" %>
-  
 </div>

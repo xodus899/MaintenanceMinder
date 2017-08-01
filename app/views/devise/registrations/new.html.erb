@@ -1,35 +1,30 @@
+<div id= "home-title">
+	<h1>Maintenance Minder</h1> 
+</div>
+
+<div id= "signUpBackground"> 
+	<img src="../assets/no-noise.jpg">
+</div>
+
+
 <div class= "signUp">
 <h2>Sign up</h2>
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
-  <div class="field">
-    <%= f.label :name, :id => "signupTextAboveField" %><br />
+  <div class="field" id="signUpField">
+    <%= f.label :name, :id => "signupTextAboveField" %>
     <%= f.text_field :name, autofocus: true %>
-  </div>
-
-  <div class="field">
-    <%= f.label :email, :id => "signupTextAboveField" %><br />
+    <%= f.label :email, :id => "signupTextAboveField" %>
     <%= f.email_field :email %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password, :id => "signupTextAboveField" %>
+     <%= f.label :password, :id => "signupTextAboveField" %>
+     <%= f.password_field :password, :id => "signupTextAboveField"%>
     <% if @minimum_password_length %>
-    <div><em id= "signupTextAboveField">(<%= @minimum_password_length %> characters minimum)</em><div>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :password_confirmation, :id => "signupTextAboveField" %><br />
+    <%= f.label :password_confirmation, :id => "signupTextAboveField" %>
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
-  </div>
-
-  <div class="actions">
     <%= f.submit "Sign up", :id => "btn-color" %>
+     <p> Minimum 6 characters </p>
+    <% end %>
   </div>
-  <br>
   <% end %>
-  <%= render "devise/shared/links" %>
 </div>

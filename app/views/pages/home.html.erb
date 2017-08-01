@@ -1,11 +1,52 @@
-    <div class="home">
-    <header>
-    	<div class="header-content ">
-    		<div class= "color">
-      	<h1>Maintenance Minder</h1>  
-        	<p class = "about">Helping you find Service Intervals and Recall Information</p>
-          <a  href="/carsearch" class="btn btn-danger btn-xl page-scroll">Click to Search</a><br><br>
-          </div>
-       </div>
-    </header> 
-    </div>
+
+<div id= "home-title">
+	<h1>Maintenance Minder</h1> 
+</div>
+
+<div class="slideshow-container">
+	<div class="mySlides fade">
+	  <div class="numbertext">1 / 4</div>
+	  <img src="assets/self-repair.jpg" style="width:100%">
+	</div>
+	<div class="mySlides fade">
+	  <div class="numbertext">2 / 4</div>
+	  <img src="assets/car-doctor.jpg" style="width:100%">
+	</div>
+	<div class="mySlides fade">
+	  <div class="numbertext">3 / 4</div>
+	  <img src="assets/stolen-car.gif" style="width:100%">
+	</div>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<div id= "textUnderCarosuel">
+	<p class = "about">Helping you find Service Intervals and Recall Information</p>
+	<a  href="/carsearch" class="btn btn-danger btn-xl page-scroll">Click to Search</a>
+</div>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>
