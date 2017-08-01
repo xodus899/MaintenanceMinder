@@ -8,22 +8,17 @@
 
 
 <div class= "signUp">
-<h2>Sign up</h2>
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
   <div class="field" id="signUpField">
-    <%= f.label :name, :id => "signupTextAboveField" %>
-    <%= f.text_field :name, autofocus: true %>
-    <%= f.label :email, :id => "signupTextAboveField" %>
-    <%= f.email_field :email %>
-     <%= f.label :password, :id => "signupTextAboveField" %>
-     <%= f.password_field :password, :id => "signupTextAboveField"%>
+    <%= f.text_field :name, autofocus: true, placeholder: "name" %>
+    <%= f.email_field :email,placeholder: "email" %>
+     <%= f.password_field :password, :id => "signupTextAboveField",placeholder: "password"%>
     <% if @minimum_password_length %>
-    <%= f.label :password_confirmation, :id => "signupTextAboveField" %>
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
-    <%= f.submit "Sign up", :id => "btn-color" %>
+    <%= f.password_field :password_confirmation, autocomplete: "off",placeholder: "password confirmation" %>
      <p> Minimum 6 characters </p>
+    <%= f.submit "Sign up", :id => "btn-color" %>
     <% end %>
   </div>
   <% end %>

@@ -542,6 +542,23 @@ div#logInField {
 #forgotPassword a {
 	color: black;
 }
+.signUp {
+	position:absolute;
+	height:40%;
+}
+
+#signUpBackground img {
+ position:absolute;
+ margin-top:10px;
+ height:30%;
+ width:50%;
+ left:25%;
+}
+
+#signupPassword {
+	letter-spacing: -10px;
+	
+}
 
 /* google maps */
 
