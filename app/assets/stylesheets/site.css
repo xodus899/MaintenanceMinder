@@ -299,8 +299,7 @@ div#logInField {
 	position:absolute;
 	margin:0 auto;
 	top:50%;
-	left:50%;
-	transform: translate(-50%,-50%);
+  left:20%;
 	color:black;
 }
 #forgotPassword {
@@ -642,6 +641,7 @@ div#logInField {
   }
 }
 
+
 @media only screen
 and (max-width: 799px) { 
 /* home page */
@@ -650,7 +650,6 @@ and (max-width: 799px) {
 		padding:5px;
 
 	}
-
 	#searchPage img {
 		width:100%;
  }
@@ -658,18 +657,17 @@ and (max-width: 799px) {
 	input,#searchForm {
 		margin-bottom:5px;
 	}
-
 	#searchFormTop {
 		background-color: #93aed2;
 		height:30%;
 	}
-
 	#searchForm {
   	text-shadow: 2px 2px 2px black;
   	padding:0;
   	margin: 0 auto;
-	}
 
+
+	}
 	#searchTitle { 
   	text-shadow: 1px 1px 1px black;
   	color: white;
@@ -691,7 +689,6 @@ and (max-width: 799px) {
 	padding:10px;
 
 }
-
 #logInBackground img {
  position:absolute;
  left:40px;
@@ -715,7 +712,7 @@ div#logInField {
 	padding:5px 0 0 0;
 }
 
-#logInPage { 
+#logInPage{
 	font:16px;
 }
 
