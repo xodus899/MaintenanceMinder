@@ -1,7 +1,7 @@
 
 html,body {
   height:100%;
-  margin:0;
+  margin:0 auto;
   min-width: 280px;
   
 }
@@ -219,7 +219,7 @@ nav {
 
 #searchTitle {  
   text-align: center;
-  color: black;
+  color: white;
 }
 
 #uSubmit {
@@ -290,13 +290,19 @@ nav {
 	background-color: #93aed2;
 	text-align:center;
 	bottom:0;
-	
 }
+
+
+
 
 div#logInField {
 	position:absolute;
+	margin:0 auto;
+	position:absolute;
 	top:50%;
-	left:25%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	color:black;
 }
 #forgotPassword {
 	height:30px;
@@ -325,15 +331,22 @@ div#logInField {
 /*sign up page*/
 
 .signUp {
+	margin:0 auto;
 	position:absolute;
-	letter-spacing: 0.1em;
-	text-align:center;
 	width:100%;
 	bottom:0;
 	background-color: #93aed2;
-	color:black;
 	height:30%;
-	padding:50px;
+}
+
+.signUp form {
+	width:20%;
+	margin:0 auto;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	color:black;
 
 }
 
@@ -469,19 +482,19 @@ left: -320px;
 }
 
 
-
 @media only screen
-and (max-width: 799px) { 
-/* home page */
+and (max-width: 1024px) { 
 	#textUnderCarosuel {
-	font-size: 1em;
+		font-size: 1em;
+		padding:5px;
+
 	}
 	#searchPage img {
-	width:100%;
+		width:100%;
  }
 
 	input,#searchForm {
-		margin-bottom:10px;
+		margin-bottom:5px;
 	}
 	#searchFormTop {
 		background-color: #93aed2;
@@ -490,34 +503,52 @@ and (max-width: 799px) {
 	#searchForm {
   	text-shadow: 2px 2px 2px black;
   	padding:0;
-  	margin:1px 0 0 1px;
+  	margin: 0 auto;
+
+
 	}
 	#searchTitle { 
   	text-shadow: 1px 1px 1px black;
+  	color: white;
+	}
+
+	#searchTitle input { 
   	color: black;
+  	width:30%;
+  	height:30%;
+  	margin: 5px auto;
+  	overflow:auto;
 	}
 
 /* log-in */
 
+
+#logInBackground  {
+	margin: 0 auto;
+	padding:10px;
+
+}
 #logInBackground img {
  position:absolute;
- margin-top:50px;
- left:50px;
+ left:40px;
  height:30%;
  width:75%;
+ margin: 0 auto;
 
 }
 
 .logIn {
+	margin:0 auto;
 	position:absolute;
+	background-color: #93aed2;
+	color:black;
 	height:30%;
 	width:100%;
-	color:white;
-	background-color: #93aed2;
-	text-align:center;
-	padding-top:10px;
-	bottom:0;
-	
+}
+div#logInField {
+	top:10%;
+	right:20%;
+	padding:5px 0 0 0;
 }
 
 #logInPage{
@@ -528,16 +559,15 @@ and (max-width: 799px) {
   color: black;
   background-color: #80858e;
   width: 152px;
+  font-size:13px;
 }
-div#logInField {
-	position:absolute;
-	top:5%;
-	right:20%;
-}
+
 #forgotPassword {
-	height:30px;
+	height:29px;
+	width: 152px;
 	color: black;
   background-color: #80858e;
+  font-size:13px;
 }
 #forgotPassword a {
 	color: black;
@@ -555,14 +585,185 @@ div#logInField {
  left:25%;
 }
 
-#signupPassword {
-	letter-spacing: -10px;
-	
+#new_user {
+	margin:0 auto;
+	width:50%;
+	padding:10px 0 0 0;
 }
+
+
 
 /* google maps */
 
 	h3#mapText {
+		font-size:18px;
+		padding: 0 0 0 10px;
+		color: #fff;
+	}
+  #origin-input {
+  	margin:5px;
+  	background-color: #fff;
+  	font-size: 15px;
+  	font-weight: 300;
+  	margin-left: 12px;
+  	padding: 0 11px 0 13px;
+  	text-overflow: ellipsis;
+  	width: 140px;
+	}
+	#destination-input {
+	  margin:5px;
+	  background-color: #fff;
+	  font-size: 15px;
+	  font-weight: 300;
+	  margin-left: 12px;
+	  padding: 0 11px 0 13px;
+	  text-overflow: ellipsis;
+	  width: 140px;
+  }
+  .modal.left .modal-dialog {
+	  position: fixed;
+	  margin: auto;
+	  width: 100%;
+	  height: 100%;
+	  -webkit-transform: translate3d(0%, 0, 0);
+	  -ms-transform: translate3d(0%, 0, 0);
+	  -o-transform: translate3d(0%, 0, 0);
+	  transform: translate3d(0%, 0, 0);
+
+	}
+	.modal.right .modal-dialog {
+	  position: fixed;
+	  margin: auto;
+	  width: 100%;
+	  height: 100%;
+	  -webkit-transform: translate3d(0%, 0, 0);
+	  -ms-transform: translate3d(0%, 0, 0);
+	  -o-transform: translate3d(0%, 0, 0);
+	  transform: translate3d(0%, 0, 0);
+  }
+}
+
+
+}
+
+
+
+@media only screen
+and (max-width: 799px) { 
+/* home page */
+	#textUnderCarosuel {
+		font-size: 1em;
+		padding:5px;
+
+	}
+	#searchPage img {
+		width:100%;
+ }
+
+	input,#searchForm {
+		margin-bottom:5px;
+	}
+	#searchFormTop {
+		background-color: #93aed2;
+		height:30%;
+	}
+	#searchForm {
+  	text-shadow: 2px 2px 2px black;
+  	padding:0;
+  	margin: 0 auto;
+
+
+	}
+	#searchTitle { 
+  	text-shadow: 1px 1px 1px black;
+  	color: white;
+	}
+
+	#searchTitle input { 
+  	color: black;
+  	width:30%;
+  	height:30%;
+  	margin: 5px auto;
+  	overflow:auto;
+	}
+
+/* log-in */
+
+
+#logInBackground  {
+	margin: 0 auto;
+	padding:10px;
+
+}
+#logInBackground img {
+ position:absolute;
+ left:40px;
+ height:30%;
+ width:75%;
+ margin: 0 auto;
+
+}
+
+.logIn {
+	margin:0 auto;
+	position:absolute;
+	background-color: #93aed2;
+	color:black;
+	height:30%;
+	width:100%;
+}
+div#logInField {
+	top:10%;
+	right:20%;
+	padding:5px 0 0 0;
+}
+
+#logInPage{
+	font:16px;
+}
+
+#btn-color {
+  color: black;
+  background-color: #80858e;
+  width: 152px;
+  font-size:13px;
+}
+
+#forgotPassword {
+	height:29px;
+	width: 152px;
+	color: black;
+  background-color: #80858e;
+  font-size:13px;
+}
+#forgotPassword a {
+	color: black;
+}
+.signUp {
+	position:absolute;
+	height:40%;
+}
+
+#signUpBackground img {
+ position:absolute;
+ margin-top:10px;
+ height:30%;
+ width:50%;
+ left:25%;
+}
+
+#new_user {
+	margin:0 auto;
+	width:50%;
+	padding:10px 0 0 0;
+}
+
+
+
+/* google maps */
+
+	h3#mapText {
+		font-size:18px;
 		padding: 0 0 0 10px;
 		color: #fff;
 	}
