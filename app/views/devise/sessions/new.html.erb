@@ -11,7 +11,7 @@
 <div class = "logIn">
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <div class="field" id="logInField">
-      <%= f.email_field :email, autofocus: true, placeholder: "email" %>
+      <%= f.email_field :email, placeholder: "email" %>
       <%= f.password_field :password, autocomplete: "off", placeholder: "password" %>
       <%= f.submit "Log in", class: "actions", :id => "btn-color" %>
       <button id="forgotPassword"> <%= render "devise/shared/links" %> </button>
