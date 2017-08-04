@@ -34,10 +34,10 @@ body {
     text-align: center;
 }
 * {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 .mySlides {
-    display: none
+    display: none;
 }
 /* Slideshow container */
 
