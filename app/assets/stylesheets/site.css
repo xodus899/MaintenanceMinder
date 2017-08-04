@@ -575,7 +575,6 @@ and (max-width: 1050px) {
 
 }
 
-
 #signUpBackground img {
     margin:0 auto;
     position:absolute;
@@ -692,25 +691,25 @@ and (max-width: 799px) {
 /*sign up page*/
 
 .signUp {
-  margin:0 auto;
-  position:absolute;
-  width:100%;
-  bottom:0;
-  background-color: #93aed2;
-  height:30%;
-}
+    margin:0 auto;
+    position:absolute;
+    width:100%;
+    bottom:0;
+    background-color: #93aed2;
+    height:30%;
+  }
 
 .signUp form {
-  font-size: 16px;
-  width:50%;
-  margin:0 auto;
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-40%,-50%);
-  color:black;
+    font-size: 16px;
+    width:50%;
+    margin:0 auto;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-40%,-50%);
+    color:black;
 
-}
+  }
 
 #signUpBackground img {
     margin:0 auto;
@@ -725,7 +724,7 @@ and (max-width: 799px) {
   }
 
   #searchForm {
-    width: 100%
+    width: 100%;
   }
   #searchFormTop {
     background-color: #93aed2;
@@ -754,21 +753,21 @@ and (max-width: 799px) {
   @media only screen
 and (max-width: 320px) { 
   #textUnderCarosuel p  {
-  margin:0 auto;
-  font-size: 18px;
-  position:absolute;
-  top:55%;
-  left:50%;
-  transform: translate(-50%,-50%);
-}
+    margin:0 auto;
+    font-size: 18px;
+    position:absolute;
+    top:55%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
 
-#textUnderCarosuel a  {
-  margin:0 auto;
-  position:absolute;
-  top:20%;
-  left:50%;
-  transform: translate(-50%,-50%);
-}
+  #textUnderCarosuel a  {
+    margin:0 auto;
+    position:absolute;
+    top:20%;
+    left:50%;
+    transform: translate(-50%,-50%);
+  }
   
   .signUp form {
     font-size: 12px;
