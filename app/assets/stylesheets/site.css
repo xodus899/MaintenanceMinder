@@ -351,11 +351,13 @@ div#logInField {
 }
 
 #signUpBackground img {
- position:absolute;
- margin-top:50px;
- height:40%;
- width:50%;
- left:25%;
+  margin:0 auto;
+  position:absolute;
+  top:45%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  height:40%;
+  width:50%;
 }
 
 
@@ -483,7 +485,7 @@ left: -320px;
 
 
 @media only screen
-and (max-width: 1024px) { 
+and (max-width: 1366px) { 
 	#textUnderCarosuel {
 		font-size: 1em;
 		padding:5px;
@@ -525,30 +527,30 @@ and (max-width: 1024px) {
 
 #logInBackground  {
 	margin: 0 auto;
-	padding:10px;
-
 }
 #logInBackground img {
- position:absolute;
- left:40px;
- height:30%;
- width:75%;
- margin: 0 auto;
+   margin:0 auto;
+  position:absolute;
+  top:40%;
+  left:50%;
+  transform: translate(-50%,-50%);
 
 }
 
 .logIn {
 	margin:0 auto;
-	position:absolute;
 	background-color: #93aed2;
 	color:black;
 	height:30%;
 	width:100%;
 }
 div#logInField {
-	top:10%;
-	right:20%;
-	padding:5px 0 0 0;
+  position:absolute;
+  margin:0 auto;
+  width:40%;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
 }
 
 #logInPage{
@@ -574,15 +576,18 @@ div#logInField {
 }
 .signUp {
 	position:absolute;
+  margin: 0 auto;
 	height:40%;
 }
 
 #signUpBackground img {
- position:absolute;
- margin-top:10px;
- height:30%;
- width:50%;
- left:25%;
+  position:absolute;
+  margin:0 auto;
+  height:30%;
+  width:50%;
+  top:35%;
+  left:50%;
+  transform: translate(-50%,-50%);
 }
 
 #new_user {
