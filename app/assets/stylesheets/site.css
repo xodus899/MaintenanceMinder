@@ -275,11 +275,13 @@ nav {
 /*log in page*/
 
 #logInBackground img {
- position:absolute;
- height:40%;
- width:60%;
- left:20%;
- margin-top:50px;
+  margin:0 auto;
+  position:absolute;
+  top:45%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  height:35%;
+  width:60%;
 }
 
 .logIn {
@@ -288,7 +290,6 @@ nav {
 	width:100%;
 	color:black;
 	background-color: #93aed2;
-	text-align:center;
 	bottom:0;
 }
 
@@ -296,10 +297,11 @@ nav {
 
 
 div#logInField {
-	position:absolute;
-	margin:0 auto;
-	top:50%;
-  left:20%;
+  margin:0 auto;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
 	color:black;
 }
 #forgotPassword {
