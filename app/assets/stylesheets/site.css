@@ -182,7 +182,7 @@ nav {
   top:25%;
   left:35%;
   transform:translate(-35%,-35%);
-  margin: 4px ;
+  margin: 4px;
   background: rgb(0,0,0);
   z-index: 99;
 }
@@ -223,10 +223,10 @@ nav {
 
 #uSubmit {
 	background-color: rgba(0,0,0,0.1);
-	color: #fff;;
+	color: #fff;
 }
 #uSubmit a {
-	color: #fff;;
+	color: #fff;
 }
 
 #mapText {
@@ -241,7 +241,6 @@ nav {
   height: 350px;
   width:100%;
 }
-
 
 #origin-input {
   margin:5px;
@@ -292,9 +291,6 @@ nav {
 	bottom:0;
 }
 
-
-
-
 div #logInField {
   margin:0 auto;
   position:absolute;
@@ -323,8 +319,6 @@ div #logInField {
   text-shadow:  2px 2px 3px black;
 
 }
-
-
 
 /*``````````````````````````````````````````````````*/
 /*sign up page*/
@@ -356,10 +350,6 @@ div #logInField {
  width:50%;
  left:25%;
 }
-
-
-
-
 
 /*``````````````````````````````````````````````````*/
 /*Modals*/
