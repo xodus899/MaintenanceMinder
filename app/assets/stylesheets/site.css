@@ -7,6 +7,7 @@ body {
 @import 'https://fonts.googleapis.com/css?family=PT+Sans';
 /*homepage*/
 
+
 #img {
     width: 100%;
 }
@@ -14,7 +15,7 @@ body {
     text-align: center;
     color: #fff;
     background-color: #93aed2;
-    padding: 3px 10px 13px 10px;
+    padding: 15px 10px 25px 10px;
     margin: 0 0 10px 0;
 }
 #textUnderCarosuel {
@@ -639,26 +640,28 @@ div #logInField {
     }
   }
     @media only screen and (max-width: 320px) {
+
         #textUnderCarosuel p {
             margin: 0 auto;
-            font-size: 18px;
+            font-size: 12px;
             position: absolute;
-            top: 55%;
+            top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
         #textUnderCarosuel a {
             margin: 0 auto;
             position: absolute;
+            font-size: 10px;
             top: 20%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
         .signUp form {
-            font-size: 12px;
+            font-size: 11px;
         }
         #btn-color {
-            width: 152px;
+            width: 130px;
         }
         #searchTitle {
             font-size: 8px;
@@ -675,6 +678,25 @@ div #logInField {
         }
         #mapText em {
             font-size: 18px;
+        }
+
+       #signUpBackground img {
+        margin:20px 0 0 0;
+        height: 30%;
+        width:100%;
+       }
+
+       #logInBackground img {
+        margin:30px 0 0 0;
+        height: 30%;
+        width:100%;
+       }
+
+       .logIn form {
+            font-size: 11px;
+        }
+         #forgotPassword {
+            width: 130px;
         }
     }
 

@@ -5,10 +5,7 @@
      <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <%= csrf_meta_tags %>
-
-
           <title>MaintenanceMinder</title>
-
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>  
           <link rel="stylesheet" type="text/css" href= "../../assets/stylesheets/site.css">
             <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -17,7 +14,6 @@
   </head>
   <body>
 
-   
     <nav> 
       <% if current_user %>
       <div id="userAvatar">
@@ -35,7 +31,6 @@
         </a>
         </div>
       </div>
-
       <ul id="navLinks" class= "hideNav"> 
         <li>
           <%= link_to "Home", root_path %>
@@ -56,9 +51,9 @@
         </li>
         <% end %>
       </ul>
-
     </nav>
     <%=yield %>
+    
   </body>
 </html>
 

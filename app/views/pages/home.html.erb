@@ -1,32 +1,39 @@
-
-<div id= "home-title">
-	<h1>Maintenance Minder</h1> 
+<div class="container-fluid">
+  <div class="row">
+    <div id= "home-title">
+	   <h1>Maintenance Minder</h1> 
+    </div>
+  </div>
+  <div class="row">
+    <div class="slideshow-container">
+    	<div class="mySlides fade">
+    	  <div class="numbertext">1 / 4</div>
+    	  <%= image_tag("self-repair.jpg",:id => "img")%>
+    	</div>
+    	<div class="mySlides fade">
+    	  <div class="numbertext">2 / 4</div>
+    	  <%= image_tag("car-doctor.jpg",:id => "img")%>
+    	</div>
+    	<div class="mySlides fade">
+    	  <div class="numbertext">3 / 4</div>
+    	  <%= image_tag("stolen-car.gif",:id => "img")%>
+    	</div>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+  </div>
+  <div class="row">
+    <div id= "textUnderCarosuel">
+    	<p class = "about">Helping you find Service Intervals and Recall Information</p>
+    	<a  href="/carsearch" class="btn btn-danger btn-xl page-scroll">Click to Search</a>
+    </div>
+  </div>
 </div>
 
-<div class="slideshow-container">
-	<div class="mySlides fade">
-	  <div class="numbertext">1 / 4</div>
-	  <%= image_tag("self-repair.jpg",:id => "img")%>
-	</div>
-	<div class="mySlides fade">
-	  <div class="numbertext">2 / 4</div>
-	  <%= image_tag("car-doctor.jpg",:id => "img")%>
-	</div>
-	<div class="mySlides fade">
-	  <div class="numbertext">3 / 4</div>
-	  <%= image_tag("stolen-car.gif",:id => "img")%>
-	</div>
-</div>
-<br>
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-</div>
-<div id= "textUnderCarosuel">
-	<p class = "about">Helping you find Service Intervals and Recall Information</p>
-	<a  href="/carsearch" class="btn btn-danger btn-xl page-scroll">Click to Search</a>
-</div>
 
 
 <script>
