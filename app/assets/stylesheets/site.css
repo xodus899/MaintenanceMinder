@@ -683,10 +683,10 @@ div #logInField {
        }
 
        .logIn form {
-            font-size: 10px;
+            font-size: 8px;
         }
          #forgotPassword {
-            width: 150px;
+            width: 130px;
         }
         .modal.left .modal-dialog {
             position: fixed;
