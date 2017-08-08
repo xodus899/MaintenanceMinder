@@ -676,52 +676,7 @@ div #logInField {
 
     @media (min-resolution: 258dpi) {
 
-        #textUnderCarosuel p {
-            margin: 0 auto;
-            font-size: 12px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        #textUnderCarosuel a {
-            margin: 0 auto;
-            position: absolute;
-            font-size: 10px;
-            top: 20%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-        .signUp form {
-            font-size: 11px;
-        }
-        #btn-color {
-            width: 130px;
-        }
-        #searchTitle {
-            font-size: 8px;
-            text-align: center;
-            color: white;
-        }
-        #searchTitle h3 {
-            font-size: 18px;
-        }
-        #searchTitle input,
-        button {
-            margin-bottom: 5px;
-            color: black;
-        }
-        #mapText em {
-            font-size: 18px;
-        }
-
-       #signUpBackground img {
-        margin:20px 0 0 0;
-        height: 30%;
-        width:100%;
-       }
-
-       #logInBackground img {
+        #logInBackground img {
         margin:30px 0 0 0;
         height: 30%;
         width:100%;
@@ -731,7 +686,7 @@ div #logInField {
             font-size: 10px;
         }
          #forgotPassword {
-            width: 130px;
+            width: 150px;
         }
         .modal.left .modal-dialog {
             position: fixed;
