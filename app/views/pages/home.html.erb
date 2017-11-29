@@ -1,35 +1,35 @@
 <div class="container-fluid">
   <div class="row">
     <div id= "home-title">
-	   <h1>Maintenance Minder</h1> 
+     <h1>Maintenance Minder</h1>
     </div>
   </div>
   <div class="row">
     <div class="slideshow-container">
-    	<div class="mySlides fade">
-    	  <div class="numbertext">1 / 4</div>
-    	  <%= image_tag("self-repair.jpg",:class => "img")%>
-    	</div>
-    	<div class="mySlides fade">
-    	  <div class="numbertext">2 / 4</div>
-    	  <%= image_tag("car-doctor.jpg",:class => "img")%>
-    	</div>
-    	<div class="mySlides fade">
-    	  <div class="numbertext">3 / 4</div>
-    	  <%= image_tag("stolen-car.gif",:class => "img")%>
-    	</div>
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 4</div>
+        <%= image_tag("self-repair.jpg",:class => "img")%>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 4</div>
+        <%= image_tag("car-doctor.jpg",:class => "img")%>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 4</div>
+        <%= image_tag("stolen-car.gif",:class => "img")%>
+      </div>
     </div>
     <br>
     <div style="text-align:center">
-      <span class="dot"></span> 
-      <span class="dot"></span> 
-      <span class="dot"></span> 
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
     </div>
   </div>
   <div class="row">
     <div id= "textUnderCarosuel">
-    	<p class = "about">Helping you find Service Intervals and Recall Information</p>
-    	<a  href="/carsearch" class="btn btn-danger btn-xl page-scroll">Click to Search</a>
+      <p class = "about">Helping you find Service Intervals and Recall Information</p>
+      <a  href="/carsearch" class="btn btn-danger btn-xl page-scroll">Click to Search</a>
     </div>
   </div>
 </div>
@@ -45,14 +45,14 @@ function showSlides() {
     var slides = document.getElementsByClassName("mySlides");
     var dots = document.getElementsByClassName("dot");
     for (i = 0; i < slides.length; i++) {
-       slides[i].style.display = "none";  
+       slides[i].style.display = "none";
     }
     slideIndex++;
-    if (slideIndex> slides.length) {slideIndex = 1}    
+    if (slideIndex> slides.length) {slideIndex = 1}
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    slides[slideIndex-1].style.display = "block";  
+    slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
     setTimeout(showSlides, 3000); // Change image every 3 seconds
 }
