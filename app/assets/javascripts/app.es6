@@ -122,7 +122,8 @@ showService = function (theService) {
         if (service.partCostPerUnit === undefined) {
            service.partCostPerUnit = "Not available";
         }
-        var addToMaintenanceList = `
+        var addToMaintenanceList =
+          `
             <br><li>
               <b> ${service.action}: ${service.item} </b><br>
               Every: ${service.intervalMileage} Miles <br>
@@ -130,7 +131,7 @@ showService = function (theService) {
               Time to Complete: ${service.laborUnits} Hour(s)<br>
               Qty Needed: ${service.partUnits}<br>
               Part Cost $ ${service.partCostPerUnit}<br>
-        </li> `;
+            </li> `;
 
         $(".js-auto-list").append(addToMaintenanceList);
     });
@@ -141,7 +142,7 @@ automobileRecalls = function () {
         type: "get",
         // url for all service intervals a single car from the search
           url: `https://{carId}`,
-//        url: `https://api.edmunds.com/v1/api/maintenance/recallrepository/findbymodelyearid?modelyearid=${carId}&fmt=json&api_key=tcd64uafxynpwvkeyaxv56qt`,
+        //url: `https://api.edmunds.com/v1/api/maintenance/recallrepository/findbymodelyearid?modelyearid=${carId}&fmt=json&api_key=tcd64uafxynpwvkeyaxv56qt`,
         // success is what you name the next function/action from the ajax url request.this shows the results. without it nothing will appear
         success: showRecalls,
         // // error, name of error function when something doesnt work.

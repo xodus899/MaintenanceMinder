@@ -7,7 +7,6 @@ body {
 @import 'https://fonts.googleapis.com/css?family=PT+Sans';
 /*homepage*/
 
-
 .img {
     width: 100%;
 }
@@ -37,9 +36,6 @@ body {
 * {
     box-sizing: border-box;
 }
-.mySlides {
-    display: none;
-}
 /* Slideshow container */
 
 .slideshow-container {
@@ -47,26 +43,7 @@ body {
     position: relative;
     margin: auto;
 }
-/* Number text (1/3 etc) */
 
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-/* The dots/bullets/indicators */
-
-.dot {
-    height: 13px;
-    width: 13px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
 .active {
     background-color: #717171;
 }
@@ -352,10 +329,10 @@ div #logInField {
 
 .modal.left.fade .modal-dialog {
     left: -320px;
-    -webkit-transition: opacity 0.3s linear, left 0.1s ease-out;
-    -moz-transition: opacity 0.3s linear, left 0.1s ease-out;
-    -o-transition: opacity 0.3s linear, left 0.1s ease-out;
-    transition: opacity 0.3s linear, left 0.1s ease-out;
+    -webkit-transition: opacity 0.1s linear, left 0.1s ease-out;
+    -moz-transition: opacity 0.1s linear, left 0.1s ease-out;
+    -o-transition: opacity 0.1s linear, left 0.1s ease-out;
+    transition: opacity 0.1s linear, left 0.1s ease-out;
 }
 .modal.left.fade.in .modal-dialog {
     left: 0;
@@ -364,10 +341,10 @@ div #logInField {
 
 .modal.right.fade .modal-dialog {
     right: -320px;
-    -webkit-transition: opacity 0.3s linear, right 0.1s ease-out;
-    -moz-transition: opacity 0.3s linear, right 0.1s ease-out;
-    -o-transition: opacity 0.3s linear, right 0.1s ease-out;
-    transition: opacity 0.3s linear, right 0.1s ease-out;
+    -webkit-transition: opacity 0.1s linear, right 0.1s ease-out;
+    -moz-transition: opacity 0.1s linear, right 0.1s ease-out;
+    -o-transition: opacity 0.1s linear, right 0.1s ease-out;
+    transition: opacity 0.1s linear, right 0.1s ease-out;
 }
 .modal.right.fade.in .modal-dialog {
     right: 0;
@@ -427,7 +404,7 @@ div #logInField {
     }
     /*``````````````````````````````````````````````````
 /*log in page*/
-    
+
     #logInBackground img {
         margin: 0 auto;
         position: absolute;
@@ -472,7 +449,7 @@ div #logInField {
     }
     /*``````````````````````````````````````````````````*/
     /*sign up page*/
-    
+
     .signUp {
         margin: 0 auto;
         position: absolute;
@@ -549,7 +526,7 @@ div #logInField {
     }
     /*``````````````````````````````````````````````````
 /*log in page*/
-    
+
     #logInBackground img {
         margin: 0 auto;
         position: absolute;
@@ -596,7 +573,7 @@ div #logInField {
     }
     /*``````````````````````````````````````````````````*/
     /*sign up page*/
-    
+
     .signUp {
         margin: 0 auto;
         position: absolute;
