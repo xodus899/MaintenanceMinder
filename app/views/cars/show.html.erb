@@ -2,21 +2,21 @@
 <!-- Modals for search ````````````````````````````````````````````````````````````````````````````````````````````````````````````` -->
 <div id="searchFormTop">
 
-	<form>
-	  <div id= "searchForm">
-	  	<div id= "searchTitle">
-	    	<h3><em> Search for Maintenance and Recalls </em></h3>
-	    	<input class= "js-search-year"  id=  "years"    type= "text" placeholder= "Year">
-	    	<input class= "js-search-make"  id=  "makes"    type= "text" placeholder= "Make">
-	    	<input class= "js-search-model" id=  "models"   type= "text" placeholder= "Model"> 
-	      <button class= "js-search-button" id="uSubmit" data-toggle="modal" data-target="#myModal"> Find Automobile </button>
-	      <button id="uSubmit"> <a href= "#mapText"> Find Retailer </a> </button>
-	    </div>
-	   </div>
-	  </form>
+  <form>
+    <div id= "searchForm">
+      <div id= "searchTitle">
+        <h3><em> Search for Maintenance and Recalls </em></h3>
+        <input class= "js-search-year"  id=  "years"    type= "text" placeholder= "Year">
+        <input class= "js-search-make"  id=  "makes"    type= "text" placeholder= "Make">
+        <input class= "js-search-model" id=  "models"   type= "text" placeholder= "Model">
+        <button class= "js-search-button" id="uSubmit" data-toggle="modal" data-target="#myModal"> Find Automobile </button>
+        <button id="uSubmit"> <a href= "#mapText"> Find Retailer </a> </button>
+      </div>
+     </div>
+    </form>
 </div>
 <div id="searchPage">
-	<%= image_tag("car-garage.jpg",:id => "car-garage")%>
+  <%= image_tag("car-garage.jpg",:id => "car-garage")%>
 </div>
 
 
@@ -26,58 +26,58 @@
 
 
 <!-- first modal for service intervals -->
-	<div class="container bothModals">
-	<div class="modal left fade" id = "myModal" tabindex="-1" role="dialog" style= "overflow-y: scroll; max-height:100%;  margin-top: 1px; margin-bottom:1px;">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h4 class="modal-title"><button class= "js-search-button" data-toggle="modal" data-target="#myModal1" > Click To See Available Recalls </button></h4>
-	      </div>
-	      <div class="modal-body">
+  <div class="container bothModals">
+  <div class="modal left fade" id = "myModal" tabindex="-1" role="dialog" style= "overflow-y: scroll; max-height:100%;  margin-top: 1px; margin-bottom:1px;">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title"><button class= "js-search-button" data-toggle="modal" data-target="#myModal1" > Click To See Available Recalls </button></h4>
+        </div>
+        <div class="modal-body">
 
-		        <div>
-		          <h5> Maintenace Intervals </h5>
-		        <ul class = "js-auto-list"> 
-					  </ul> 
-				    </div>
-				  </div>
-				</div>	   
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	      </div>
-	    </div><!-- /.modal-content -->
-	  </div><!-- /.modal-dialog -->
-	</div><!-- /.modal -->
+            <div>
+              <h5> Maintenace Intervals </h5>
+            <ul class = "js-auto-list">
+            </ul>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
 
 <!-- second modal for recalls -->
-	<div class="container bothModals">
-	<div class="modal right fade" id = "myModal1" tabindex="-1" role="dialog" style="overflow-y: scroll; max-height:100%;  margin-top: 1px; margin-bottom:1px;">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h4 class="modal-title"> Available Recalls </h4>
-	      </div>
-	      <div class="modal-body">
-	    
-	        <div>
-	          <ul class = "js-auto-recalls">
-					</ul>
-				</div>
-			</div>
-	</div>
-		
-	        
-	      </div>
-	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	      </div>
-	    </div><!-- /.modal-content -->
-	  </div><!-- /.modal-dialog -->
-	</div><!-- /.modal -->
-</div>  
+  <div class="container bothModals">
+  <div class="modal right fade" id = "myModal1" tabindex="-1" role="dialog" style="overflow-y: scroll; max-height:100%;  margin-top: 1px; margin-bottom:1px;">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title"> Available Recalls </h4>
+        </div>
+        <div class="modal-body">
+
+          <div>
+            <ul class = "js-auto-recalls">
+          </ul>
+        </div>
+      </div>
+  </div>
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+</div>
 
 
 
@@ -85,29 +85,17 @@
 <!-- _______________________________________________________________________________________________________________________ -->
 
 <h3 id= "mapText"><em> Use the Map to search for a dealer near you. Recalls are FREE to fix </em></h3>
-  
+
     <input id="origin-input" class="controls" type="text"
         placeholder="Enter an origin location">
 
     <input id="destination-input" class="controls" type="text"
         placeholder="Enter a destination location">
- 
 
-<!--     <div id="mode-selector" class="controls">
-      <input type="radio" name="type" id="changemode-walking" checked="checked">
-      <label for="changemode-walking">Walking</label>
-
-      <input type="radio" name="type" id="changemode-transit">
-      <label for="changemode-transit">Transit</label>
-
-      <input type="radio" name="type" id="changemode-driving">
-      <label for="changemode-driving">Driving</label>
-    </div>
- -->
     <div id="map">
 
     <script>
-    
+
       function initMap() {
         var origin_place_id = null;
         var destination_place_id = null;

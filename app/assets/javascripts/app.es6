@@ -13,7 +13,6 @@ var
     automobileRecalls,
  //variables
     carId;
-
 $(document).on("turbolinks:load", function() {
     var $navLinks = $("#navLinks");
 
@@ -28,17 +27,16 @@ $(document).on("turbolinks:load", function() {
 });
 
 findCar = function (theCar) {
-
     // take the parameter name/this causes the page to not refresh.
     theCar.preventDefault();
     // console.log to make sure your getting results.
     console.log("Did you find the car?");
-
     console.log("WORKING???");
     $.ajax({
         type: "get",
         // url for all makes of cars
-        url: "https://api.edmunds.com/api/vehicle/v2/makes?view=basic&fmt=json&api_key=tcd64uafxynpwvkeyaxv56qt ",
+        url: "http://api2.carmd.com/v2.0/maintstatuspolicy?vehicleID=541655333c10813ac8a0f766",
+        //url: "https://api.edmunds.com/api/vehicle/v2/makes?view=basic&fmt=json&api_key=tcd64uafxynpwvkeyaxv56qt ",
         // success is what you name the next function/action from the ajax url request.
         success: loadCar,
         // // error, name of error function when something doesnt work.
@@ -48,8 +46,6 @@ findCar = function (theCar) {
     console.log("Vroooooom!");
 };
 
-
-
  loadCar = function(response) {
     // these variables are equal to the class set in the home.html.erb  input class field.
     var theYear = $(".js-search-year").val();
@@ -57,7 +53,6 @@ findCar = function (theCar) {
     var theModel = $(".js-search-model").val();
     // this returns all makes of cars.
     var carMakes = response.makes;
-
 
     console.log("RESPONSE", response);
     console.log("CAR MAKES", carMakes);
@@ -86,7 +81,6 @@ findCar = function (theCar) {
                             serviceIntervals(carId);
                             automobileRecalls(carId);
                             // automobileTsbs(carId);
-
                         }
                     });
                 }
@@ -114,7 +108,6 @@ serviceIntervals = function() {
 showService = function (theService) {
     // console.log("ALL SERVICE INTERVALS FROM THE SEARCH BAR",theService);
 
-
     $(".js-auto-list").empty();
     //var theMileage = $(".js-search-mileage").val();
     var allServices = theService.actionHolder;
@@ -130,62 +123,25 @@ showService = function (theService) {
            service.partCostPerUnit = "Not available";
         }
         var addToMaintenanceList = `
-
-<br><li>
-            <b> ${service.action}: ${service.item} </b><br>
-            Every: ${service.intervalMileage} Miles <br>
-            Item Description: ${service.itemDescription}<br>
-            Time to Complete: ${service.laborUnits} Hour(s)<br>
-            Qty Needed: ${service.partUnits}<br>
-            Part Cost $ ${service.partCostPerUnit}<br>
-        </li>
-
-        `;
+            <br><li>
+              <b> ${service.action}: ${service.item} </b><br>
+              Every: ${service.intervalMileage} Miles <br>
+              Item Description: ${service.itemDescription}<br>
+              Time to Complete: ${service.laborUnits} Hour(s)<br>
+              Qty Needed: ${service.partUnits}<br>
+              Part Cost $ ${service.partCostPerUnit}<br>
+        </li> `;
 
         $(".js-auto-list").append(addToMaintenanceList);
     });
-
-    // var acceptedActions = [{action:'Change', item:'Engine Oil'},{action:'Change', item:'Automatic Transmission fluid'},
-    // 											 {action:'Replace ', item:'Automatic Transmission filter'},{action:'Replace', item:'Air filter'},
-    // 											 {action:'Replace', item:'Spark Plugs'},{action:'Replace', item:'Cabin Air filter'},
-    // 											 {action:'Flush / replace', item:'Coolant'},{action:'Flush / replace', item:'Brake Fluid'},
-    // 											 {action:'Inspect ', item:'Drive belt(s)'},{action:'Inspect/rotate', item:'Wheels & tires'},
-    // 											 {action:'Inspect', item:'Brake system'},{action:'Inspect', item:'Steering & suspension'},
-    // 											 {action:'Inspect', item:'Brakes'},]
-
-    // acceptedActions.forEach(function (acceptedService) {
-    // 	allServices.forEach(function (oneService) {
-    // 		if (oneService.action.toLowerCase() == acceptedService.action.toLowerCase() &&
-    // 				oneService.item.toLowerCase() == acceptedService.item.toLowerCase()) {
-    // 					console.log("FOUND ONE");
-    // 						console.log(oneService);
-
-    // var addToMaintenanceList = `
-
-    // 	<br><li>
-    // 				<b> ${oneService.action}: ${oneService.item} </b><br>
-    // 				Every: ${oneService.intervalMileage} Miles <br>
-    // 				Item Description: ${oneService.itemDescription}<br>
-    // 				Time to Complete: ${oneService.laborUnits} Hour(s)<br>
-    // 				Qty Needed: ${oneService.partUnits}<br>
-    // 				Part Cost $ ${oneService.partCostPerUnit}<br>
-    // 		</li>
-
-    // 			`;
-
-    // 			$(".js-auto-list").append(addToMaintenanceList);
-
-    // }
-    // 	});
-    // });
-
 };
 
 automobileRecalls = function () {
     $.ajax({
         type: "get",
         // url for all service intervals a single car from the search
-        url: `https://api.edmunds.com/v1/api/maintenance/recallrepository/findbymodelyearid?modelyearid=${carId}&fmt=json&api_key=tcd64uafxynpwvkeyaxv56qt`,
+          url: `https://{carId}`,
+//        url: `https://api.edmunds.com/v1/api/maintenance/recallrepository/findbymodelyearid?modelyearid=${carId}&fmt=json&api_key=tcd64uafxynpwvkeyaxv56qt`,
         // success is what you name the next function/action from the ajax url request.this shows the results. without it nothing will appear
         success: showRecalls,
         // // error, name of error function when something doesnt work.
@@ -207,23 +163,18 @@ showRecalls = function (theRecall) {
            recall.consequense = "Not available";
         }
 
-
         var recallList = `
-
-<br><li>
-
-            <b> Defective Part: 									${recall.componentDescription} </b> <br>
-<br>
-            Description of defect: 								${recall.defectDescription}<br>
-<br>
-            Possible Consequense if not repaired: ${recall.consequense}<br>
-            Automobile Manufactured From: 				${recall.manufacturedFrom}<br>
-            Automobile Manufactured To: 					${recall.manufacturedTo}<br>
-        </li>
-`;
+            <br><li>
+              <b> Defective Part: ${recall.componentDescription} </b> <br>
+              <br>
+              Description of defect: ${recall.defectDescription}<br>
+              <br>
+              Possible Consequense if not repaired: ${recall.consequense}<br>
+              Automobile Manufactured From: ${recall.manufacturedFrom}<br>
+              Automobile Manufactured To: ${recall.manufacturedTo}<br>
+            </li>`;
 
         $(".js-auto-recalls").append(recallList);
-
     });
 };
 
